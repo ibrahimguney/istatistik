@@ -21,7 +21,7 @@ manifestlerle eşleşecek şekilde onarıldı. B01 için yeni manifest oluşturu
 Proje kökünden salt okunur sayısal ve dosya denetimi:
 
 ```bash
-python companion/bolumler/kontrol.py
+python bolumler/kontrol.py
 ```
 
 Eksik paket veya bütünlük farkı varsa komut `1` çıkış koduyla biter;
@@ -71,19 +71,19 @@ paket değildir. B02–B04, B06–B14, çoklu regresyon ve ANOVA için ayrı bir
 Proje kökünden şu komutlar çalıştırılır:
 
 ```bash
-python companion/code/00_prepare_data.py
-python companion/code/01_validate_data.py
-python companion/code/02_chapter_examples.py
-python companion/code/03_make_figures.py
-python companion/code/05_resampling_examples.py
-python companion/code/06_multiple_regression.py
-python companion/code/04_record_environment.py
+python code/00_prepare_data.py
+python code/01_validate_data.py
+python code/02_chapter_examples.py
+python code/03_make_figures.py
+python code/05_resampling_examples.py
+python code/06_multiple_regression.py
+python code/04_record_environment.py
 ```
 
 Tüm süreci tek komutla çalıştırmak için:
 
 ```bash
-python companion/code/run_all.py
+python code/run_all.py
 ```
 
 ## Paketteki gerçek veriler
@@ -142,7 +142,7 @@ yükleme yapılmadı; bu dosyalar nihai toplu yayın değildir.
 ## Bilgisayarınızda toplu R testi
 
 ```bash
-python companion/bolumler/r_kontrol.py --rapor companion/r-sonuc-bilgisayar.json
+python bolumler/r_kontrol.py --rapor r-sonuc-bilgisayar.json
 ```
 
 Rscript kurulu ve erişilebilir olmalıdır. Script sürümleri, çıktıları ve

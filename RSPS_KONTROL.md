@@ -24,7 +24,7 @@ tarihsel kapsamlarını korur; bu rapor onların yerine yapılmamış test yazma
 `r-toplu-kontrol.R.txt` dosyasını indirin. R Console'da
 `source(file.choose(), encoding="UTF-8")` çalıştırıp önce bu metin betiğini
 seçin. Betiğin açtığı ikinci pencerede bilgisayarınızdaki
-`companion/bolumler/b01/ornek-01/cozum.R` dosyasını seçin.
+`bolumler/b01/ornek-01/cozum.R` dosyasını seçin.
 
 B01 dahil 17 paket kontrol edilir; hepsi geçerse 545 pozitif referans
 beklenir. Her paket bağımsız Rscript işleminde ve geçici veri kopyasında
@@ -33,7 +33,7 @@ bozulur; betiğin bunu hata kodu 1 ile reddetmesi de aranır. Negatif testin
 logunda hata bulunması bu nedenle beklenir. Paket kodlarının ANOVA dahil
 mevcut toleransları korunur; otomatik olarak gevşetilmez.
 
-`companion/r-toplu-sonuc-*` altında `ozet.csv`, R oturumu, paket logları
+`r-toplu-sonuc-*` altında `ozet.csv`, R oturumu, paket logları
 ve giriş dosyalarının MD5 kayıtları oluşur. MD5 kayıtları girdileri
 belgelemek içindir; paket SHA-256 manifest denetiminin yerine geçmez.
 Kaynak veriler/referanslar ve önceki sonuç klasörleri değiştirilmez.
@@ -49,11 +49,11 @@ görüldü; bu, diğer paketlerin veya negatif testin geçtiğini göstermez.
 
 ## R: kurulu olduğu bilgisayarda toplu çalıştırma
 
-Tüm `companion` klasörünü aynı dizin yapısıyla bilgisayarınıza alın. Proje
+Tüm depoyu aynı dizin yapısıyla bilgisayarınıza alın. Proje
 kökünde, Python ve Rscript erişilebilirken:
 
 ```bash
-python companion/bolumler/r_kontrol.py --rapor companion/r-sonuc-bilgisayar.json
+python bolumler/r_kontrol.py --rapor r-sonuc-bilgisayar.json
 ```
 
 Rscript PATH'te değilse `--rscript` seçeneğine proje kökünden göreli çalıştırılabilir
@@ -83,7 +83,7 @@ bir çalışma testi değildir.
 Her paket için:
 
 1. Önce kendi açık çalışmanızı kaydedin. Ayrı bir temiz SPSS oturumunda
-   çalışma dizinini ilgili `companion/bolumler/<paket>/ornek-01` klasörüne getirin.
+   çalışma dizinini ilgili `bolumler/<paket>/ornek-01` klasörüne getirin.
 2. O klasördeki `analiz.sps` dosyasının tamamını çalıştırın; Hata/Uyarı
    mesajlarını inceleyin. `.sps` görünmüyorsa `.sps.txt` yedeğini kullanmadan
    önce dosya bütünlüğünü onarın; yalnız uzantıyı değiştirmek hash farkını çözmez.
@@ -111,17 +111,17 @@ IBM çıktı kaydetme örneği: `https://www.ibm.com/docs/en/spss-statistics/32.
 
 Dosya bütünlüğü engelleri bu çalışma kopyasında giderildi; R ve SPSS'in
 uçtan uca doğrulandığı iddiasıyla yayın yapılmamalı. Henüz GitHub'a yükleme
-veya lisans ataması yapılmadı. Aktarım sonrası `python companion/bolumler/kontrol.py`
+veya lisans ataması yapılmadı. Aktarım sonrası `python bolumler/kontrol.py`
 komutunu yeniden çalıştırın; dosya panelinin aktarım davranışı bu testle doğrulanmaz.
 
 ## Aktarımda dosya veya satır sonu kaybı olursa
 
-`dagitim_onar.py.txt` dosyasını `companion` içinde tutun. Proje kökünden:
+`dagitim_onar.py.txt` dosyasını depo kökünde tutun. Proje kökünden:
 
 ```bash
-python companion/dagitim_onar.py.txt
-python companion/dagitim_onar.py.txt --uygula
-python companion/bolumler/kontrol.py
+python dagitim_onar.py.txt
+python dagitim_onar.py.txt --uygula
+python bolumler/kontrol.py
 ```
 
 İlk komut yalnız planı gösterir. İkinci komut, tüm dosyalar için ön inceleme

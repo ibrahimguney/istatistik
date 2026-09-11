@@ -27,8 +27,8 @@ verisini kullanır; iki dosya id üzerinden birleştirilmez.
 
 ## SPSS'te çalıştırma
 
-1. Paketi klasör düzeni korunacak biçimde açın. Çalışma dizini, companion
-   klasörünü içeren üst klasör olmalıdır; doğrudan syntax klasörü değil.
+1. Paketi klasör düzeni korunacak biçimde açın. Çalışma dizini, depo kökü
+   olmalıdır; doğrudan syntax klasörü değil.
 2. SPSS Syntax penceresinde CD komutunu kendi proje klasörünüzü gösterecek
    şekilde çalıştırın. Komutta dizin adı tek tırnak içinde, sonunda nokta
    olmalıdır. Bilgisayara özel bir dizin bu pakete sabitlenmemiştir.
@@ -54,7 +54,7 @@ https://www.ibm.com/docs/en/SSLVMB_31.0.0/pdf/IBM_SPSS_Statistics_Command_Syntax
 LaTeX derlemesinde bir `syntax/bXX.sps` dosyası eksikse kitap ilgili
 komut listesinin yerine eksik dosya uyarısı basar ve derlemeye devam eder.
 Komut listelerinin de basılması için özgün `.sps` dosyalarını
-`companion/spss/syntax` klasörüne ekleyip kitabı yeniden derleyin.
+`spss/syntax` klasörüne ekleyip kitabı yeniden derleyin.
 
 - excel/bXX.xlsx: veri, sozluk, kaynak sayfaları.
 - csv/bXX.csv: aynı veri sayfasının taşınabilir kopyası.
@@ -78,8 +78,8 @@ silmenin doğru olduğu iddia edilmez.
 
 Proje kökünde, mevcut numpy/pandas/scipy ile:
 
-    python companion/spss/build_package.py
-    python companion/spss/validate_package.py
+    python spss/build_package.py
+    python spss/validate_package.py
 
 Betiği tekrar çalıştırmak üretilmiş Excel, CSV, SPSS ve sonuç dosyalarını
 yeniler; öğrencilerin özgün yüklemesi değiştirilmez. Kitaptaki metinler

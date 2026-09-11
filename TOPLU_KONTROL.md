@@ -131,7 +131,7 @@ başka dağıtım dosyası bulunmadı.
   örneklerin LaTeX metniyle içerik eşleştirmesi yeniden yapılmadı.
 - Önceki `DOGRULAMA.md` dosyalarındaki ayrıntılı senaryoların tamamı yeniden
   çalıştırılmadı. Tarihsel kayıtlar değiştirilmedi.
-- Eski gerçek veri hattı (`companion/code/run_all.py`), veri izinleri,
+- Eski gerçek veri hattı (`code/run_all.py`), veri izinleri,
   LaTeX/PDF derlemesi, B01'e özel eski ZIP/yükleme taslakları ve uzak GitHub
   deposu denetlenmedi. Bu çalışma bölüm bazlı yerel paketlerle sınırlıdır.
 
@@ -143,13 +143,13 @@ SciPy 1.17.0, Matplotlib 3.10.8, statsmodels 0.14.6.
 Proje kökünde:
 
 ```bash
-python companion/bolumler/kontrol.py
+python bolumler/kontrol.py
 ```
 
 Yeni tarihli/isimli bir JSON raporu kaydetmek için:
 
 ```bash
-python companion/bolumler/kontrol.py --rapor companion/toplu-kontrol-yeni.json
+python bolumler/kontrol.py --rapor toplu-kontrol-yeni.json
 ```
 
 Rapor yolu göreli olmalı; mevcut raporun üzerine yazılmaz. Denetleyici eksik

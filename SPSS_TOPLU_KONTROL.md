@@ -11,7 +11,7 @@ Kitabın veya bölüm paketlerinin kaynak dosyaları değiştirilmez.
 
 ## 1. R'de hazırlık
 
-`companion/spss-toplu-hazirla.R.txt` dosyasını bilgisayarınıza indirin.
+`spss-toplu-hazirla.R.txt` dosyasını bilgisayarınıza indirin.
 R Console'da:
 
 ```r
@@ -19,9 +19,9 @@ source(file.choose(), encoding = "UTF-8")
 ```
 
 İlk pencerede bu hazırlayıcıyı, ikinci pencerede bilgisayarınızdaki
-`companion/bolumler/b01/ornek-01/cozum.R` dosyasını seçin. R burada analiz
+`bolumler/b01/ornek-01/cozum.R` dosyasını seçin. R burada analiz
 **yapmaz**; paket kökünü bulur, gerekli CSV'leri kontrol eder ve yeni bir
-`companion/spss-toplu-sonuc-*` klasöründe kopyalarını oluşturur. Kopyalar
+`spss-toplu-sonuc-*` klasöründe kopyalarını oluşturur. Kopyalar
 MD5 ile kaynaklarıyla karşılaştırılır; bu kayıt paket SHA-256 denetiminin
 yerine geçmez. Eksik CSV varsa hazırlık durur; eksik değer uydurulmaz.
 
