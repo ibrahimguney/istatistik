@@ -1,6 +1,6 @@
 # İstatistik kitabı veri ve kod paketi
 Öğrenci sitesi — İstatistik Atölyesi
-İstatistik Atölyesi’ni aç
+[İstatistik Atölyesi’ni aç](https://ibrahimguney.github.io/istatistik/)
 B01 için iki ayrı çalışma yolu bulunur: beş yapay kayıtlı öğretim örneği
 ve 395 öğrenci kaydıyla gerçek veri uygulaması. Her birinin ayrı veri/kod
 indirme paketi vardır. Kodlar tarayıcıda çalışmaz; indirilen paket kendi
