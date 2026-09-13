@@ -1,0 +1,144 @@
+{
+  "python_executed": true,
+  "r_executed": false,
+  "spss_executed": false,
+  "rows": 395,
+  "columns": 10,
+  "source_mapping_pass": true,
+  "excel_cell_comparison_pass": true,
+  "numeric_comparisons": 24,
+  "missing_column_checks": 10,
+  "python_version": "3.13.15",
+  "pandas_version": "2.3.3",
+  "numpy_version": "2.4.1",
+  "scipy_version": "1.17.0",
+  "summary": [
+    {
+      "variable": "age",
+      "measure": "count",
+      "value": 395
+    },
+    {
+      "variable": "age",
+      "measure": "mean",
+      "value": 16.696202531645568
+    },
+    {
+      "variable": "age",
+      "measure": "std",
+      "value": 1.2760427246056283
+    },
+    {
+      "variable": "age",
+      "measure": "min",
+      "value": 15
+    },
+    {
+      "variable": "age",
+      "measure": "max",
+      "value": 22
+    },
+    {
+      "variable": "g1",
+      "measure": "count",
+      "value": 395
+    },
+    {
+      "variable": "g1",
+      "measure": "mean",
+      "value": 10.90886075949367
+    },
+    {
+      "variable": "g1",
+      "measure": "std",
+      "value": 3.319194671507669
+    },
+    {
+      "variable": "g1",
+      "measure": "min",
+      "value": 3
+    },
+    {
+      "variable": "g1",
+      "measure": "max",
+      "value": 19
+    },
+    {
+      "variable": "g2",
+      "measure": "count",
+      "value": 395
+    },
+    {
+      "variable": "g2",
+      "measure": "mean",
+      "value": 10.713924050632912
+    },
+    {
+      "variable": "g2",
+      "measure": "std",
+      "value": 3.7615046595560298
+    },
+    {
+      "variable": "g2",
+      "measure": "min",
+      "value": 0
+    },
+    {
+      "variable": "g2",
+      "measure": "max",
+      "value": 19
+    },
+    {
+      "variable": "g3",
+      "measure": "count",
+      "value": 395
+    },
+    {
+      "variable": "g3",
+      "measure": "mean",
+      "value": 10.415189873417722
+    },
+    {
+      "variable": "g3",
+      "measure": "std",
+      "value": 4.5814426109978434
+    },
+    {
+      "variable": "g3",
+      "measure": "min",
+      "value": 0
+    },
+    {
+      "variable": "g3",
+      "measure": "max",
+      "value": 20
+    }
+  ],
+  "frequencies": [
+    {
+      "variable": "school",
+      "category": "GP",
+      "count": 349,
+      "percent": 88.35443037974683
+    },
+    {
+      "variable": "school",
+      "category": "MS",
+      "count": 46,
+      "percent": 11.645569620253164
+    },
+    {
+      "variable": "sex",
+      "category": "F",
+      "count": 208,
+      "percent": 52.65822784810127
+    },
+    {
+      "variable": "sex",
+      "category": "M",
+      "count": 187,
+      "percent": 47.34177215189873
+    }
+  ],
+  "checked_date": "2026-09-13"
+}

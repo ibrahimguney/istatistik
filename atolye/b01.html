@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="tr">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>B01 · İstatistiksel düşünme | İstatistik Atölyesi</title><link rel="stylesheet" href="assets/site.css"></head>
+<body>
+<a class="skip" href="#icerik">İçeriğe geç</a>
+<header class="masthead"><a class="brand" href="index.html"><span class="mark">İ.</span><span>İstatistik<br><strong>Atölyesi</strong></span></a><nav aria-label="Ana gezinme"><a href="index.html#bolumler">Uygulamalar</a><a href="b01.html" aria-current="page">B01 çalışma sayfası</a><a href="#dogrulama">Doğrulama</a></nav><span class="tag">YEREL ÖNİZLEME · V2</span></header>
+<main class="wrap" id="icerik"><p class="breadcrumb"><a href="index.html">Atölye</a> / B01 · Öğretim örneği</p><header class="lesson-head"><p class="eyebrow">BÖLÜM 01 · SORUDAN SAVUNULABİLİR SONUCA</p><h1>İstatistiksel düşünme<br>ve araştırma süreci.</h1><p class="lead">“Program A daha başarılıdır” demeden önce: birimimiz ne, neyi hesapladık ve elimizde hangi tasarım bilgisi var?</p><div class="actions"><span class="pill">5 yapay kayıt</span><span class="tag">Python: 18 kontrol geçti</span><span class="tag">R / SPSS: çalıştırma bekliyor</span><a class="button primary" href="indir/b01-ogretim.zip" download>Tüm B01 paketini indir ↓</a></div></header>
+<div class="workbench"><aside><nav aria-label="Bu sayfada"><p class="eyebrow">ÇALIŞMA ROTAN</p><a href="#soru">01 · Soruyu kur</a><a href="#veri">02 · Veriyi tanı</a><a href="#yazilim">03 · Yazılımını seç</a><a href="#cikti">04 · Çıktıyı oku</a><a href="#yorum">05 · Sonucunu yaz</a><a href="#deneme">06 · Kendini dene</a><a href="#dogrulama">Kanıt ve dosyalar</a></nav><p class="small">Kodlar bu sayfada çalışmaz. Paketi indirip kendi yazılımında çalıştır.</p></aside><div class="lesson">
+<section id="soru"><p class="eyebrow">01 / SORUYU KUR</p><h2>Bu beş kaydı nasıl betimleriz?</h2><p>Ortalama devam kaç saattir? Ortalama başarı kaç puandır? A ve B etiketli kayıtların oranları nedir? Bu sorular bir <strong>betimleme</strong> ister; program etkisi tahmini değil.</p><dl class="analysis"><div><dt>Gözlem birimi</dt><dd>Bir yapay öğrenci kaydı</dd></div><div><dt>Kapsam</dt><dd>Tablodaki beş satırın tamamı</dd></div><div><dt>Yöntem</dt><dd>Ortalama, frekans ve oran</dd></div><div><dt>Eksik değer kuralı</dt><dd>Python/R betikleri eksik hücrede durur</dd></div></dl><div class="notice"><strong>Bu örneğin sınırı</strong><p>Veri öğretim için hazırlanmıştır. Rastgele örnekleme veya atama kaydı yoktur. Bu uygulamada güven aralığı ya da nedensel etki hesaplanmaz.</p></div></section>
+<section id="veri"><p class="eyebrow">02 / VERİYİ TANI</p><h2>Küçük bir tabloyu dikkatle oku.</h2><div class="table-wrap"><table><caption>Kaynak CSV’deki beş yapay kayıt</caption><thead><tr><th scope="col">Devam (saat)</th><th scope="col">Başarı (puan)</th><th scope="col">Program</th></tr></thead><tbody><tr><td>8</td><td>68</td><td>A</td></tr>
+<tr><td>10</td><td>75</td><td>A</td></tr>
+<tr><td>7</td><td>64</td><td>B</td></tr>
+<tr><td>12</td><td>83</td><td>B</td></tr>
+<tr><td>9</td><td>72</td><td>A</td></tr></tbody></table></div><div class="links"><a href="bolumler/b01/ornek-01/veri.csv" download>CSV’yi indir</a><a href="bolumler/b01/ornek-01/veri-sozlugu.csv" download>Veri sözlüğü</a></div><p>Devam nicel/oran; program nominal kategoriktir. Başarı için bu öğretim örneğinde aralık ölçeği varsayılır. Gerçek bir başarı ölçeğinin özellikleri bu beş satırdan doğrulanamaz.</p><p class="small">395 öğrencilik UCI uygulaması değildir. Bu verinin kaynağı olarak UCI yazılmamalıdır.</p></section>
+<section id="yazilim"><p class="eyebrow">03 / YAZILIMINI SEÇ</p><h2>Aynı veri, üç çalışma yolu.</h2><p>ZIP’i açın. Çalışma dizininiz <code>b01/ornek-01</code> olsun. Kod, <code>veri.csv</code> ve <code>beklenen-sonuclar.csv</code> aynı klasörde bulunmalı. Kod blokları dosyalardan otomatik aktarılır.</p>
+<details open><summary>Python <small>Çalıştırıldı · 18/18 kontrol</small></summary><div class="detail-body"><p>Python ve pandas gerekir. Terminalde:</p><pre><code>python cozum.py --check</code></pre><a href="bolumler/b01/ornek-01/cozum.py" download>Python dosyasını indir</a><pre class="source" tabindex="0" aria-label="Python kaynak kodu"><code>import argparse
+import math
+import platform
+
+import pandas as pd
+
+
+def hesapla(veri):
+    if list(veri.columns) != [&quot;devam_saati&quot;, &quot;basari&quot;, &quot;program&quot;]:
+        raise ValueError(&quot;CSV sutunlari ve sirasi veri sozluguyle uyusmuyor.&quot;)
+    if veri.empty or veri.isna().any().any():
+        raise ValueError(&quot;Bu ornek bos veri veya eksik hucre kabul etmiyor.&quot;)
+    if not veri[&quot;program&quot;].isin([&quot;A&quot;, &quot;B&quot;]).all():
+        raise ValueError(&quot;Program etiketleri A veya B olmali.&quot;)
+    veri = veri.copy()
+    for alan in [&quot;devam_saati&quot;, &quot;basari&quot;]:
+        veri[alan] = pd.to_numeric(veri[alan], errors=&quot;raise&quot;)
+        if not veri[alan].map(math.isfinite).all():
+            raise ValueError(&quot;Sayisal degerler sonlu olmali.&quot;)
+    if (veri[&quot;devam_saati&quot;] &lt; 0).any():
+        raise ValueError(&quot;Devam suresi negatif olamaz.&quot;)
+    veri[&quot;program&quot;] = pd.Categorical(veri[&quot;program&quot;], categories=[&quot;A&quot;, &quot;B&quot;])
+    satirlar = [
+        (&quot;veri&quot;, &quot;satir_sayisi&quot;, len(veri)),
+        (&quot;veri&quot;, &quot;degisken_sayisi&quot;, len(veri.columns)),
+    ]
+    for alan in [&quot;devam_saati&quot;, &quot;basari&quot;]:
+        degerler = veri[alan]
+        satirlar.extend([
+            (alan, &quot;gecerli&quot;, degerler.count()),
+            (alan, &quot;eksik&quot;, degerler.isna().sum()),
+            (alan, &quot;ortalama&quot;, degerler.mean()),
+            (alan, &quot;en_kucuk&quot;, degerler.min()),
+            (alan, &quot;en_buyuk&quot;, degerler.max()),
+        ])
+    satirlar.extend([
+        (&quot;program&quot;, &quot;gecerli&quot;, veri[&quot;program&quot;].count()),
+        (&quot;program&quot;, &quot;eksik&quot;, veri[&quot;program&quot;].isna().sum()),
+    ])
+    for program in [&quot;A&quot;, &quot;B&quot;]:
+        frekans = (veri[&quot;program&quot;] == program).sum()
+        satirlar.extend([
+            (&quot;program&quot;, program + &quot;_frekans&quot;, frekans),
+            (&quot;program&quot;, program + &quot;_oran&quot;, frekans / len(veri)),
+        ])
+    return pd.DataFrame(satirlar, columns=[&quot;degisken&quot;, &quot;olcu&quot;, &quot;deger&quot;])
+
+
+def main():
+    parser = argparse.ArgumentParser(description=&quot;B01 ortak CSV cozumu&quot;)
+    parser.add_argument(&quot;--check&quot;, action=&quot;store_true&quot;,
+                        help=&quot;Sonuclari beklenen degerlerle karsilastir&quot;)
+    args = parser.parse_args()
+    veri = pd.read_csv(&quot;veri.csv&quot;, dtype={&quot;program&quot;: &quot;string&quot;})
+    sonuc = hesapla(veri)
+    print(f&quot;Python {platform.python_version()} | pandas {pd.__version__}&quot;)
+    print(sonuc.to_string(index=False))
+    if args.check:
+        beklenen = pd.read_csv(&quot;beklenen-sonuclar.csv&quot;)
+        anahtarlar = [&quot;degisken&quot;, &quot;olcu&quot;]
+        if not sonuc[anahtarlar].equals(beklenen[anahtarlar]):
+            raise ValueError(&quot;Beklenen sonuc satirlari veya sirasi farkli.&quot;)
+        for hesaplanan, hedef in zip(sonuc[&quot;deger&quot;], beklenen[&quot;deger&quot;]):
+            if not math.isclose(hesaplanan, hedef, rel_tol=1e-9, abs_tol=1e-9):
+                raise ValueError(f&quot;Sonuc uyusmazligi: {hesaplanan} != {hedef}&quot;)
+        print(f&quot;DOGRULANDI: {len(beklenen)} kontrol degeri eslesiyor.&quot;)
+
+
+if __name__ == &quot;__main__&quot;:
+    main()</code></pre></div></details>
+<details><summary>R <small>Kod mevcut · burada çalıştırılmadı</small></summary><div class="detail-body"><p>Temel R işlevlerini kullanır. Aynı çalışma klasöründe:</p><pre><code>Rscript cozum.R --check</code></pre><p>Python’un geçmesi R’nin çalıştığını kanıtlamaz.</p><a href="bolumler/b01/ornek-01/cozum.R" download>R dosyasını indir</a><pre class="source" tabindex="0" aria-label="R kaynak kodu"><code>veri &lt;- read.csv(&quot;veri.csv&quot;, stringsAsFactors = FALSE,
+                 fileEncoding = &quot;UTF-8&quot;)
+stopifnot(identical(names(veri),
+                    c(&quot;devam_saati&quot;, &quot;basari&quot;, &quot;program&quot;)),
+          nrow(veri) &gt; 0, !anyNA(veri),
+          all(veri$program %in% c(&quot;A&quot;, &quot;B&quot;)),
+          is.numeric(veri$devam_saati), is.numeric(veri$basari),
+          all(is.finite(veri$devam_saati)),
+          all(is.finite(veri$basari)),
+          all(veri$devam_saati &gt;= 0))
+veri$program &lt;- factor(veri$program, levels = c(&quot;A&quot;, &quot;B&quot;))
+sonuc &lt;- data.frame(
+  degisken = &quot;veri&quot;,
+  olcu = c(&quot;satir_sayisi&quot;, &quot;degisken_sayisi&quot;),
+  deger = c(nrow(veri), ncol(veri))
+)
+for (alan in c(&quot;devam_saati&quot;, &quot;basari&quot;)) {
+  degerler &lt;- veri[[alan]]
+  ozet &lt;- data.frame(
+    degisken = alan,
+    olcu = c(&quot;gecerli&quot;, &quot;eksik&quot;, &quot;ortalama&quot;, &quot;en_kucuk&quot;, &quot;en_buyuk&quot;),
+    deger = c(sum(!is.na(degerler)), sum(is.na(degerler)),
+              mean(degerler), min(degerler), max(degerler))
+  )
+  sonuc &lt;- rbind(sonuc, ozet)
+}
+sonuc &lt;- rbind(sonuc, data.frame(
+  degisken = &quot;program&quot;, olcu = c(&quot;gecerli&quot;, &quot;eksik&quot;),
+  deger = c(sum(!is.na(veri$program)), sum(is.na(veri$program)))
+))
+for (program in c(&quot;A&quot;, &quot;B&quot;)) {
+  frekans &lt;- sum(veri$program == program)
+  sonuc &lt;- rbind(sonuc, data.frame(
+    degisken = &quot;program&quot;,
+    olcu = paste0(program, c(&quot;_frekans&quot;, &quot;_oran&quot;)),
+    deger = c(frekans, frekans / nrow(veri))
+  ))
+}
+cat(R.version.string, &quot;\n&quot;)
+print(sonuc, row.names = FALSE)
+if (&quot;--check&quot; %in% commandArgs(trailingOnly = TRUE)) {
+  beklenen &lt;- read.csv(&quot;beklenen-sonuclar.csv&quot;, stringsAsFactors = FALSE)
+  stopifnot(nrow(sonuc) == nrow(beklenen),
+            all(sonuc$degisken == beklenen$degisken),
+            all(sonuc$olcu == beklenen$olcu),
+            isTRUE(all.equal(sonuc$deger, beklenen$deger,
+                             tolerance = 1e-9, check.attributes = FALSE)))
+  cat(&quot;DOGRULANDI:&quot;, nrow(beklenen), &quot;kontrol degeri eslesiyor.\n&quot;)
+}</code></pre></div></details>
+<details><summary>SPSS <small>Sözdizimi mevcut · burada çalıştırılmadı</small></summary><div class="detail-body"><p>Çalışma dizinini <code>b01/ornek-01</code> klasörüne ayarlayın. <code>analiz.sps</code> dosyasını Syntax penceresinde açıp tamamını çalıştırın.</p><p>Komutlar etkin veri kümesini ve filtre/ağırlık ayarlarını değiştirir; önce açık çalışmanızı kaydedin. Frekans ve betimsel tablolar üretir, otomatik 18 satırlık doğrulama yapmaz.</p><a href="bolumler/b01/ornek-01/analiz.sps" download>SPSS sözdizimini indir</a><pre class="source" tabindex="0" aria-label="SPSS kaynak kodu"><code>GET DATA
+  /TYPE=TXT
+  /FILE=&#x27;veri.csv&#x27;
+  /ENCODING=&#x27;UTF8&#x27;
+  /ARRANGEMENT=DELIMITED
+  /DELCASE=LINE
+  /DELIMITERS=&quot;,&quot;
+  /QUALIFIER=&#x27;&quot;&#x27;
+  /FIRSTCASE=2
+  /VARIABLES=
+    devam_saati F8.0
+    basari F8.0
+    program A1.
+DATASET NAME B01Ornek.
+FILTER OFF.
+USE ALL.
+WEIGHT OFF.
+SPLIT FILE OFF.
+VARIABLE LABELS
+  devam_saati &#x27;Devam suresi (saat)&#x27;
+  /basari &#x27;Basari puani (ogretim verisi)&#x27;
+  /program &#x27;Program etiketi&#x27;.
+VARIABLE LEVEL devam_saati basari (SCALE)
+  /program (NOMINAL).
+EXECUTE.
+DISPLAY DICTIONARY.
+FREQUENCIES VARIABLES=program
+  /ORDER=ANALYSIS.
+DESCRIPTIVES VARIABLES=devam_saati basari
+  /STATISTICS=MEAN MIN MAX.</code></pre></div></details></section>
+<section id="cikti"><p class="eyebrow">04 / ÇIKTIYI OKU</p><h2>Sonuç kadar, neyin sonucu olduğu da önemli.</h2><div class="result-grid"><div><span>Ortalama devam</span><strong>9,2 <small>saat</small></strong></div><div><span>Ortalama başarı</span><strong>72,4 <small>puan</small></strong></div><div><span>A programının oranı</span><strong>%60 <small>3/5</small></strong></div></div><p>Ortalama devam 46/5, ortalama başarı 362/5 ile bulunur. %60, A etiketli kayıtların payıdır; başarı oranı değildir.</p><details><summary>Python’un ürettiği 18 kontrol satırını göster</summary><div class="table-wrap"><table><caption>Önizleme üretilirken hesaplanan Python sonuçları</caption><thead><tr><th scope="col">Değişken</th><th scope="col">Ölçü</th><th scope="col">Değer</th></tr></thead><tbody><tr><td>veri</td><td>satir_sayisi</td><td>5.0</td></tr>
+<tr><td>veri</td><td>degisken_sayisi</td><td>3.0</td></tr>
+<tr><td>devam_saati</td><td>gecerli</td><td>5.0</td></tr>
+<tr><td>devam_saati</td><td>eksik</td><td>0.0</td></tr>
+<tr><td>devam_saati</td><td>ortalama</td><td>9.2</td></tr>
+<tr><td>devam_saati</td><td>en_kucuk</td><td>7.0</td></tr>
+<tr><td>devam_saati</td><td>en_buyuk</td><td>12.0</td></tr>
+<tr><td>basari</td><td>gecerli</td><td>5.0</td></tr>
+<tr><td>basari</td><td>eksik</td><td>0.0</td></tr>
+<tr><td>basari</td><td>ortalama</td><td>72.4</td></tr>
+<tr><td>basari</td><td>en_kucuk</td><td>64.0</td></tr>
+<tr><td>basari</td><td>en_buyuk</td><td>83.0</td></tr>
+<tr><td>program</td><td>gecerli</td><td>5.0</td></tr>
+<tr><td>program</td><td>eksik</td><td>0.0</td></tr>
+<tr><td>program</td><td>A_frekans</td><td>3.0</td></tr>
+<tr><td>program</td><td>A_oran</td><td>0.6</td></tr>
+<tr><td>program</td><td>B_frekans</td><td>2.0</td></tr>
+<tr><td>program</td><td>B_oran</td><td>0.4</td></tr></tbody></table></div></details><div class="links"><a href="bolumler/b01/ornek-01/ciktilar/python/sonuc.csv" download>Hesaplanan sonuç CSV</a><a href="bolumler/b01/ornek-01/ciktilar/python/calistirma.txt">Python çalışma kaydı</a><a href="bolumler/b01/ornek-01/beklenen-sonuclar.csv" download>Beklenen sonuçlar</a></div><p class="small">Bunlar SPSS veya R’de üretilmiş çıktı dosyaları değildir.</p></section>
+<section id="yorum"><p class="eyebrow">05 / SONUCUNU YAZ</p><h2>Sayıyı bağlama yerleştir.</h2><blockquote>“Beş gözlemlik öğretim verisinde ortalama devam 9,2 saat, ortalama başarı 72,4 puandır. Üç gözlem A (%60), iki gözlem B (%40) programındadır. Tabloda eksik değer bulunmamaktadır.”</blockquote><div class="notice caution"><strong>Söyleyemeyeceğimiz şey</strong><p>“Program B başarıyı artırır” veya “Türkiye’deki öğrencilerin ortalaması 72,4’tür” diyemeyiz. Betimsel hesap, atama mekanizmasının veya temsilin kanıtı değildir.</p></div></section>
+<section id="deneme"><p class="eyebrow">06 / KENDİNİ DENE</p><h2>Yanıtı açmadan gerekçeni yaz.</h2><details><summary>1. A/B yerine 1/2 yazarsak program nicel olur mu?</summary><div class="detail-body">Hayır. 1 ve 2 kategori kodlarıdır; sayı biçimi ölçme düzeyini değiştirmez. Kodların ortalaması anlamlı değildir.</div></details><details><summary>2. Her başarı puanına 5 eklersek ne değişir?</summary><div class="detail-body">Başarı ortalaması 77,4 olur. Program frekansları ve oranları değişmez. Denemeyi özgün veride değil, ayrı kopyada yapın.</div></details><details><summary>3. Program ortalamaları farklıysa bu bir etki midir?</summary><div class="detail-body">A ortalaması 71,6667, B ortalaması 73,5; B−A farkı 1,8333 puandır. Veri yapaydır ve rastgele atama bilgisi yoktur. Bu fark nedensel etki olarak raporlanamaz.</div></details><div class="links"><a href="bolumler/b01/alistirmalar.md">10 alıştırmanın tamamı</a><a href="bolumler/b01/cozumler.md">Gerekçeli yanıtlar</a></div></section>
+<section id="dogrulama"><p class="eyebrow">KANIT VE SINIRLAR · 2026-09-13</p><h2>Bu sayfada ne doğrulandı?</h2><div class="table-wrap"><table><caption>Önizlemenin kontrol kapsamı</caption><thead><tr><th scope="col">Alan</th><th scope="col">Durum</th></tr></thead><tbody><tr><td>Özgün paket</td><td>13 dosya eski manifest SHA-256 değerleriyle eşleşiyor.</td></tr><tr><td>Python</td><td>Çalıştırıldı; 18/18 kontrol geçti.</td></tr><tr><td>R ve SPSS</td><td>Kaynak kodları mevcut; burada çalıştırılmadı.</td></tr><tr><td>Araştırma iddiası</td><td>Yalnız yapay verinin betimlenmesi.</td></tr><tr><td>Yayın</td><td>Yerel taslak; GitHub’a gönderilmedi, yeni lisans atanmadı.</td></tr></tbody></table></div><div class="links"><a href="bolumler/b01/YAYIN-KONTROLU.json">Güncel kontrol kaydı</a><a href="bolumler/b01/BU-SURUMU-OKUYUN.md">Paketin kapsamı</a><a href="bolumler/b01/MANIFEST.json">Özgün manifest</a><a href="yayin-manifest.json">Yeni yayın manifesti</a></div><p class="small">Eski paket belgeleri tarihsel kaynak kopyalarıdır. Öğrenci pilotu veya öğrenme etkisi değerlendirmesi yapılmadı.</p></section>
+</div></div></main><footer class="wrap between"><div><strong>İstatistik Atölyesi</strong><p>İbrahim Güney · B01 öğretim önizlemesi V2</p></div><a href="index.html">← Atölyeye dön</a></footer>
+</body></html>

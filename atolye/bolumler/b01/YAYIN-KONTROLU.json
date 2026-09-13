@@ -1,0 +1,108 @@
+{
+  "checked_date": "2026-09-13",
+  "data_type": "synthetic_teaching",
+  "records": 5,
+  "source_zip_sha256": "5811be0c8d6251bde2e2167f3a310e4a1d2bd7941af879168ca84ae74a76aef7",
+  "source_manifest_sha256": "c256e713a5ae05e802a76ea86db1982cf678bdfeec89c5829255cb0eb3a11ce7",
+  "original_manifest_files": 13,
+  "python_executed": true,
+  "python_checks": 18,
+  "python_environment": "Python 3.13.15 | pandas 2.3.3",
+  "independent_basic_summary_pass": true,
+  "r_executed": false,
+  "spss_executed": false,
+  "published": false,
+  "original_package_files": [
+    {
+      "path": "DOGRULAMA.md",
+      "source_member": "istatistik-main/bolumler/b01/DOGRULAMA.md",
+      "text_backup_used": false,
+      "status": "exact",
+      "sha256": "04358a91fd59d66765d8b96882e0ca4d4564a32c62e6dfc9a745bfa4a988a63a"
+    },
+    {
+      "path": "README.md",
+      "source_member": "istatistik-main/bolumler/b01/README.md",
+      "text_backup_used": false,
+      "status": "exact",
+      "sha256": "15670e6561f8d2550ed09161eb16b512e3bdfa53a8ed7fd4b80bf0ae05810b22"
+    },
+    {
+      "path": "alistirmalar.md",
+      "source_member": "istatistik-main/bolumler/b01/alistirmalar.md",
+      "text_backup_used": false,
+      "status": "exact",
+      "sha256": "53146aee107f6e92d1323db0df72faa9dab3920f1f41f3e4c15aac5d8ea021aa"
+    },
+    {
+      "path": "cozumler.md",
+      "source_member": "istatistik-main/bolumler/b01/cozumler.md",
+      "text_backup_used": false,
+      "status": "exact",
+      "sha256": "c90207163c3d5dd2e1e0fc69bd7b5db0d481cad38ab23b0fc1a2966a7cf5215e"
+    },
+    {
+      "path": "ornek-01/README.md",
+      "source_member": "istatistik-main/bolumler/b01/ornek-01/README.md",
+      "text_backup_used": false,
+      "status": "exact",
+      "sha256": "cb979b9a33692bfff97f26a2a20f1b2fec3bc0b5a7682434baa8b0e8a8aae4cf"
+    },
+    {
+      "path": "ornek-01/analiz.sps",
+      "source_member": "istatistik-main/bolumler/b01/ornek-01/analiz.sps.txt",
+      "text_backup_used": true,
+      "status": "exact",
+      "sha256": "a71aa1b0fc3dd9060ed6568435d12474be2caf7df79b01c4c3473c9e281c308a"
+    },
+    {
+      "path": "ornek-01/analiz.sps.txt",
+      "source_member": "istatistik-main/bolumler/b01/ornek-01/analiz.sps.txt",
+      "text_backup_used": false,
+      "status": "exact",
+      "sha256": "a71aa1b0fc3dd9060ed6568435d12474be2caf7df79b01c4c3473c9e281c308a"
+    },
+    {
+      "path": "ornek-01/beklenen-sonuclar.csv",
+      "source_member": "istatistik-main/bolumler/b01/ornek-01/beklenen-sonuclar.csv",
+      "text_backup_used": false,
+      "status": "exact",
+      "sha256": "41e098b11a3cb8531933a7cbeb856b7602015facaec73f213e07753869af54d2"
+    },
+    {
+      "path": "ornek-01/cozum.R",
+      "source_member": "istatistik-main/bolumler/b01/ornek-01/cozum.R",
+      "text_backup_used": false,
+      "status": "exact",
+      "sha256": "ec371ef342789ef430bac9938721d28a0934aef2ece2ed4aad60ef3bf3a7fde1"
+    },
+    {
+      "path": "ornek-01/cozum.md",
+      "source_member": "istatistik-main/bolumler/b01/ornek-01/cozum.md",
+      "text_backup_used": false,
+      "status": "exact",
+      "sha256": "4e547e35c02fbe7b88ef2b522952550c715feff60614684874907499db4cb52e"
+    },
+    {
+      "path": "ornek-01/cozum.py",
+      "source_member": "istatistik-main/bolumler/b01/ornek-01/cozum.py",
+      "text_backup_used": false,
+      "status": "exact",
+      "sha256": "4cab73d5758b6db87ab86bb608eb6cdb41de1ebd8bc7e03dd552be0e6999812c"
+    },
+    {
+      "path": "ornek-01/veri-sozlugu.csv",
+      "source_member": "istatistik-main/bolumler/b01/ornek-01/veri-sozlugu.csv",
+      "text_backup_used": false,
+      "status": "exact",
+      "sha256": "2e238d2b0a2f37da3e8b2f0429fea5e372bda9cdce5d275dc2afe1a81f2280b8"
+    },
+    {
+      "path": "ornek-01/veri.csv",
+      "source_member": "istatistik-main/bolumler/b01/ornek-01/veri.csv",
+      "text_backup_used": false,
+      "status": "exact",
+      "sha256": "99b94973b2fe172449dc4fcf2199b99202cf529df09b1668f612fbbff211290f"
+    }
+  ]
+}
