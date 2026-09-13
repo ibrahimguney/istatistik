@@ -1,14 +1,21 @@
 # İstatistik kitabı veri ve kod paketi
-Öğrenci sitesi — İstatistik Atölyesi
+## Öğrenci sitesi — İstatistik Atölyesi
+
 [İstatistik Atölyesi’ni aç](https://ibrahimguney.github.io/istatistik/)
+
 B01 için iki ayrı çalışma yolu bulunur: beş yapay kayıtlı öğretim örneği
 ve 395 öğrenci kaydıyla gerçek veri uygulaması. Her birinin ayrı veri/kod
 indirme paketi vardır. Kodlar tarayıcıda çalışmaz; indirilen paket kendi
 Python, R veya SPSS ortamınızda çalıştırılır.
+
 İlk yayın 13 Eylül 2026 tarihinde kullanıcı tarafından kontrol edildi.
 Bu yayın kontrolü tüm deponun veya bütün analizlerin doğrulandığı anlamına
-gelmez. Beş yapay kayıtlı örneğin R/SPSS çalıştırması beklemektedir;
-gerçek veri uygulamasının karşılaştırma kapsamı sitedeki kanıt özetindedir.
+gelmez. Beş yapay kayıtlı örnekte kullanıcının R konsolundaki 18 değerlik
+karşılaştırma geçti; SPSS görüntüsündeki tablolar beklenenle eşleşti.
+Bu, otomatik 18 satırlık SPSS testi veya bağımsız yeniden çalıştırma
+değildir. Ayrıntılar sitedeki öğretim örneğinin kanıt özetindedir;
+395 kayıtlı gerçek veri uygulamasının karşılaştırma kapsamı ayrı tutulur.
+İndirme paketlerinin ilk üretim belgeleri tarihsel olarak korunur.
 
 Bu klasör, kitaptaki analizlerin gerçek verilerle ve yeniden üretilebilir
 kodla yürütülmesi için ortak çalışma alanıdır. Paket üç ilkeye dayanır:
