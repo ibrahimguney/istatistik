@@ -1,8 +1,11 @@
-# B01 aktarım adayı — V4
+# B01 — yayın kopyası V4.1
 
-ZIP’in tamamını çıkarıp atolye/index.html dosyasını açın.
-V3 tasarımı, CSS, analiz kodları, veriler ve iki indirme ZIP’i korunur.
-Yalnız ana sayfa ve gerçek veri sayfasının kanıt açıklamaları güncellendi.
-Yeni kullanıcı R/SPSS kanıtının kapsamı kanit-ozeti.md içindedir.
-Beş yapay kaydın R/SPSS kodları bu takipte sınanmadı.
-Bu yerel adaydır; GitHub veya Pages yayını yapılmadı.
+İlk V4 yayını 13 Eylül 2026 tarihinde kullanıcı ekran görüntüleriyle
+izlendi. Sayfa ve indirme kontrolleri kullanıcı tarafından bildirildi.
+Kanıtın kapsamı YAYIN-DURUMU.md ve kanit-ozeti.md içindedir.
+
+Tam site kopyasında index.html tarayıcıda çevrimdışı açılabilir.
+V4.1 güncelleme ZIP’i ise tam site değildir; yalnız değişen dosyaları
+içerir ve mevcut V4 ağacına birleştirilir. CSS ve iki analiz ZIP’i
+değişmez. Tarihsel analiz belgeleri ve özgün manifestler korunur.
+Beş yapay kaydın R/SPSS çalıştırması bu takipte yapılmadı.
