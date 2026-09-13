@@ -1,32 +1,31 @@
 # B01 — yayın durumu ve sınırlar
 
-İlk yayın tarihi: 13 Eylül 2026. Sunum güncellemesi: V4.1.
+İlk yayın: 13 Eylül 2026. Kanıt metni güncellemesi: V4.2.
+Bu sürüm yerelde hazırlanmıştır; bu belge tek başına GitHub'a
+gönderildiğini veya başarılı bir V4.2 dağıtımını kanıtlamaz.
 
-V4 yayını için kullanıcının paylaştığı GitHub Actions ekranında Atolye
-Pages #7, `9adf704` commit'i başarılıdır. Kullanıcı canlı ana sayfa ve
-beş yapay kayıtlı öğretim sayfasının ekran görüntülerini paylaşmış,
-son kontrol isteğine “çalışıyor” yanıtını vermiştir.
+V4 için kullanıcı görüntüsünde Atolye Pages #7, `9adf704` başarılıdır.
+V4.1 için kullanıcı altı dosyayı commit ettiğini bildirdi; canlı ana
+sayfa görüntüsünde V4.1 etiketi görüldü. README ekinin birleştirildiği
+ve bağlantısının çalıştığı kullanıcı tarafından bildirildi.
 
-Bu, kullanıcı tarayıcısına ve beyanına dayalı yayın kontrolüdür. Canlı
-sunucudan tüm dosyaların bağımsız indirilip hash karşılaştırması veya
-her bağlantı için ayrı tarayıcı testi yapıldığı anlamına gelmez.
-Gerçek veri sayfası ve iki ZIP için ayrı tamamlanmış canlı indirme
-kayıtları bu son takipte alınmadı. Mobil görünüm ayrıca sınanmadı.
-
-V4.1 yalnız yayın etiketleri ve durum açıklamalarını günceller. Bu belge
-V4.1 için yeni bir başarılı Actions çalıştırması iddia etmez. Veriler,
-CSS, analiz kodları, iki analiz ZIP'i ve özgün manifestler korunur.
-ZIP içindeki eski “çalıştırılmadı / gönderilmedi” ifadeleri ilk üretim
-aşamasının kayıtlarıdır; güncel kapsam bu site belgelerinde açıklanır.
+Bu, kullanıcı görüntüsü ve beyanına dayalı yayın takibidir. Canlı
+sunucudaki tüm dosyalar bağımsız indirilip hash karşılaştırılmadı.
+Her bağlantı ve iki indirme için ayrı tamamlanmış kontrol kaydı,
+mobil görünüm testi veya yeni V4.2 Actions sonucu yoktur.
 
 ## Analiz kontrolü yayın kontrolünden ayrıdır
 
-- Beş yapay kayıt: Python 18 kontrol; R/SPSS çalıştırması bekliyor.
-- 395 kayıtlı gerçek veri: Python sonuçları kullanıcının R/SPSS
-  çıktılarıyla karşılaştırıldı; ayrıntılar [kanıt özetinde](kanit-ozeti.md).
-- Yayın iş akışı analiz çalıştırmaz; dosya listesi ve SHA-256 denetler.
-- B01 dışındaki bölümler, öğrenci pilotu ve öğrenme etkisi bu kontrolün
-  kapsamında değildir. Yeni bir kitap/kod lisansı atanmadı.
-
-Ekran görüntüleri ve SPV yerel denetim kanıtı olarak tutulur; bu
-güncellemeyle siteye eklenmez.
+- Beş yapay kayıt: önceki Python 18 kontrolü korunur. Kullanıcı R
+  konsolunda 18 değerlik karşılaştırma geçti; SPSS görüntüsündeki
+  tablolar beklenenle eşleşti. [Kapsam ve eksik kanıtlar](ogretim-kanit-ozeti.md).
+- 395 kayıtlı gerçek veri: önceki kullanıcı R/SPSS karşılaştırmasının
+  kapsamı değişmedi; [ayrı kanıt özeti](kanit-ozeti.md).
+- Burada R/SPSS yeniden çalıştırılmadı. Yayın iş akışı analiz çalıştırmaz;
+  dosya listesi ve SHA-256 denetler.
+- V4.2 yalnız sunum/kanıt metinlerini ve yayın manifestini günceller.
+  CSS, veri/kod, iki analiz ZIP'i ve özgün manifestler aynıdır.
+  ZIP içindeki eski durumlar ilk üretimin tarihsel kayıtlarıdır.
+- Ekran görüntüleri ve SPV siteye eklenmez. Öğrenci pilotu, öğrenme
+  etkisi veya B01 dışındaki bölümler bu kontrolün kapsamında değildir.
+  Yeni bir kitap/kod lisansı atanmadı.

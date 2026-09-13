@@ -2,11 +2,11 @@
   "algorithm": "SHA-256",
   "files": {
     ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "ONIZLEME.md": "39ee060566bf7612d963d101c2f98a7059e602832e78fd499b230feaf1b33be9",
-    "YAYIN-DURUMU.md": "476294ee1cd4c4ab2a3df2dfe8ea90ea79b9e4f688fae37e5c894524c649d6aa",
+    "ONIZLEME.md": "5f0cacccb749684890c48dcb77301fe0a0b652ab4e618c27572b22c6bac81671",
+    "YAYIN-DURUMU.md": "cfd02248d48b4e3bfc7d425f37c3ca30df865b51fbc6b013538824188c3e9c65",
     "assets/site.css": "df0f459df954dcc1f1a7c84e6cce65b1bcebb371bdcebaefbcbf427ed874de1f",
-    "b01-gercek.html": "2c13d9aa99a2193cbcf84f19221ca6490c17720c15c8e473d9ab24bb61c63f25",
-    "b01.html": "1a16baec7b6a6e876846215198b3ae1b7f594f3e79ca3cd18e194a036489474f",
+    "b01-gercek.html": "af604205ee07745e22b11bf86729ad1df2797264fdc6dba742fb5338257c6df3",
+    "b01.html": "419fd3f5fb4d4ce951791b2011d3affa6502204e77bcb553dc90bf29b04e91ad",
     "bolumler/b01/BU-SURUMU-OKUYUN.md": "eae60e3d9b53ce050083c1ce339080b22523b0f01485923fce04d20b95fad540",
     "bolumler/b01/DOGRULAMA.md": "04358a91fd59d66765d8b96882e0ca4d4564a32c62e6dfc9a745bfa4a988a63a",
     "bolumler/b01/MANIFEST.json": "c256e713a5ae05e802a76ea86db1982cf678bdfeec89c5829255cb0eb3a11ce7",
@@ -43,9 +43,10 @@
     "gercek/b01/dogrula.py": "568bab9a58554b7728227927c3e1059d6c478d79adedb72c7f9730c8ff983eab",
     "gercek/b01/manifest.json": "9b57b1c6f4dbee067ff7304ebfb9931cddb4e4fb80e4a1664d360c2a4960713a",
     "gercek/b01/sozluk.csv": "6803f90a99e18caa676b997b433fa0fdfc57b9cae9c2f10dbb3376c49682968c",
-    "index.html": "c0e78088a11115b8c0f1f9e96287187ec5e333d123475f98d12459947d869e61",
+    "index.html": "9908494754f69052be16848ea8712bcd718e0b5b4cd2578f6fcc5b5d88fd84a2",
     "indir/b01-gercek.zip": "d132b7305fb45241cf03bcba1630ff4602d946dad7c78d3f0b0ac2010b04b056",
     "indir/b01-ogretim.zip": "858012b48ee156a310b6d9f7a7e522972b277b9f24cefc841a7c1ba2f3932e62",
-    "kanit-ozeti.md": "98a280ee6c2cabad0fe1813328533881051d8d3ce4bfa4bd736bc6da73cf79e4"
+    "kanit-ozeti.md": "98a280ee6c2cabad0fe1813328533881051d8d3ce4bfa4bd736bc6da73cf79e4",
+    "ogretim-kanit-ozeti.md": "63402d7a4c0eef7ccc37c92adfebd39461c3557844605e52dc01d37c762fc02a"
   }
 }
