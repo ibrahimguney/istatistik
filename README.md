@@ -1,4 +1,14 @@
 # İstatistik kitabı veri ve kod paketi
+Öğrenci sitesi — İstatistik Atölyesi
+İstatistik Atölyesi’ni aç
+B01 için iki ayrı çalışma yolu bulunur: beş yapay kayıtlı öğretim örneği
+ve 395 öğrenci kaydıyla gerçek veri uygulaması. Her birinin ayrı veri/kod
+indirme paketi vardır. Kodlar tarayıcıda çalışmaz; indirilen paket kendi
+Python, R veya SPSS ortamınızda çalıştırılır.
+İlk yayın 13 Eylül 2026 tarihinde kullanıcı tarafından kontrol edildi.
+Bu yayın kontrolü tüm deponun veya bütün analizlerin doğrulandığı anlamına
+gelmez. Beş yapay kayıtlı örneğin R/SPSS çalıştırması beklemektedir;
+gerçek veri uygulamasının karşılaştırma kapsamı sitedeki kanıt özetindedir.
 
 Bu klasör, kitaptaki analizlerin gerçek verilerle ve yeniden üretilebilir
 kodla yürütülmesi için ortak çalışma alanıdır. Paket üç ilkeye dayanır:
