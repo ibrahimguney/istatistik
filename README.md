@@ -1,23 +1,28 @@
 # İstatistik kitabı veri ve kod paketi
 ## Öğrenci sitesi — İstatistik Atölyesi
-
 [İstatistik Atölyesi’ni aç](https://ibrahimguney.github.io/istatistik/)
 
-B01 ve B02 için öğretim örnekleri ile gerçek veri uygulamaları ayrı
-sunulur. B01 öğretim örneği beş, B02 öğretim örneği dört yapay kayıttır.
-Gerçek veri yolları aynı 395 öğrenci kaydını kullanır; iki bağımsız
-örneklem veya toplam 790 öğrenci değildir. B02 evren/örneklem,
-parametre/istatistik ve veri türlerine odaklanır.
+B01, B02 ve B03 için öğretim örnekleri ile gerçek veri uygulamaları
+ayrı sunulur. B01 öğretim örneği beş, B02 öğretim örneği dört yapay
+kayıttır. B03, 2, 3, 3, 4 ve 13 saatten oluşan ayrı beş yapay gözlemle
+ortalama, medyan, yayılım, çeyrekler ve aykırı gözlem duyarlılığını işler.
+13 saat ana veriden silinmez; hariç tutma yalnız ayrı duyarlılık hesabıdır.
 
-Her uygulamanın ayrı veri/kod indirme paketi vardır. Kodlar tarayıcıda
+Üç bölümün gerçek veri yolları aynı 395 öğrenci kaydını kullanır;
+üç bağımsız örneklem veya toplam 1185 öğrenci değildir. B02 evren/örneklem,
+parametre/istatistik ve veri türlerine; B03 not ve devamsızlığın betimsel
+özetlerine odaklanır. Sıfır notlu 38 kayıt gerçek veride korunur.
+
+Altı uygulamanın ayrı veri/kod indirme paketi vardır. Kodlar tarayıcıda
 çalışmaz; indirilen paket kendi Python, R veya SPSS ortamınızda çalıştırılır.
 
-B01 küçük örneğinde kullanıcının R konsolundaki 18, B02 küçük örneğinde
-23 değerlik karşılaştırma geçti; kullanıcı SPSS görüntülerindeki tablolar
-beklenenle eşleşti. Bunlar otomatik SPSS kabul testleri veya bağımsız
-yeniden çalıştırma değildir. Gerçek verinin karşılaştırma kapsamı ayrı
-tutulur. Kanıt sınırları ilgili sayfalardaki özetlerde açıklanır;
-indirme paketlerinin ilk üretim belgeleri tarihsel olarak korunur.
+B01 küçük örneğinde 18, B02 küçük örneğinde 23 değerlik kullanıcı R
+karşılaştırmaları kaydedilmiştir. B03 öğretim Python kontrolü 26 değeri
+sınar; kullanıcı R/SPSS görüntüleri de paylaşmıştır. Ekran görüntüleri
+otomatik SPSS kabul testi, tam günlük, sürüm veya dosya hash doğrulaması
+değildir. Gerçek verinin kanıt kapsamı ayrı tutulur; küçük örneğin testi
+onun yerine geçmez. Kanıt sınırları ilgili sayfalarda açıklanır;
+indirmelerin ilk üretim belgeleri tarihsel olarak korunur.
 
 Sayfa yayını veya sayısal uyum, bütün deponun doğrulandığı, nedensellik,
 temsiliyet ya da öğrenme etkisinin kanıtlandığı anlamına gelmez.
