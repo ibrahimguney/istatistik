@@ -1,0 +1,32 @@
+<!doctype html><html lang="tr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="assets/site.css"><title>B02 · Dört yapay öğrenci</title></head>
+<body><a class="skip" href="#icerik">İçeriğe geç</a><header class="masthead">
+<a class="brand" href="index.html">İstatistik Atölyesi</a><nav aria-label="Ana gezinme">
+<a href="b02.html">B02 öğretim</a><a href="b02-gercek.html">B02 gerçek veri</a>
+<a href="b01.html">B01</a></nav><span class="tag">B02 · V1</span></header>
+<main id="icerik" class="wrap"><section class="section"><h1>B02 · Dört yapay öğrenci</h1>
+<p class="lead">Evren, örneklem, parametre, istatistik ve veri türleri.</p>
+<a class="button primary" href="indir/b02-ogretim.zip" download>Öğretim paketini indir</a>
+<h2>1. Birimi ve evreni tanımla</h2><p>Gözlem birimi öğrencidir. Hedef evren sonucun
+genellenmek istendiği topluluk, erişilebilir evren fiilen ulaşılabilen bölümdür.</p>
+<h2>2. Veriyi tanı</h2><div class="table-wrap"><table><thead><tr><th>Okul</th><th>Sınıf</th><th>Puan</th></tr></thead>
+<tbody><tr><td>Devlet</td><td>1</td><td>72</td></tr><tr><td>Özel</td><td>2</td><td>81</td></tr>
+<tr><td>Devlet</td><td>1</td><td>68</td></tr><tr><td>Devlet</td><td>3</td><td>77</td></tr></tbody></table></div>
+<p>Okul nominal, sınıf ordinal, puan niceldir. Bunlar gerçek araştırma kayıtları değildir.</p>
+<h2>3. Özeti yorumla</h2><p>Devlet 3 (%75), özel 1 (%25); sınıf frekansları 2/1/1.
+Genel ortalama 74,50; min 68, max 81. Devlet ortalaması 72,333333…; özel 81,00.</p>
+<p>Dört kaydı evrenin tamamı sayarsak 74,50 parametredir; daha geniş evrene göre
+örneklem sayarsak örneklem istatistiğidir. Aynı sayı, farklı evren tanımı.</p>
+<h2>4. Yazılım yolu</h2><p>ZIP'in tamamını çıkarın; çalışma dizini b02/ornek-01.
+Python: <code>python cozum.py --check</code>; R: <code>Rscript cozum.R --check</code>.
+SPSS'te çalışmaları kaydedin, ayrı oturumda bu dizini seçip analiz.sps çalıştırın.
+Etkin veri kümesi ve filtre/ağırlık/split ayarları değişir. Ayrıntılar paketin README'sinde.
+Kodlar tarayıcıda çalışmaz. Tamamladığınız testi tekrarlamanız gerekmiyor.</p>
+<h2>5. Kanıt ve soru</h2><p>R karşılaştırması 23 değer için geçti; SPSS görüntü tabloları eşleşti.
+<a href="b02-kanit.md">Kabul sınırları</a>. Özel okulun tek öğrencisi okulun etkisini gösterir mi?</p>
+<details><summary>Yanıt</summary><p>Hayır. Seçilme mekanizması bilinmeyen dört kayıt,
+özellikle tek kişilik grup, nedensel etki veya temsiliyet kanıtı değildir.</p></details>
+</section></main><footer class="wrap section"><a href="index.html">Ana sayfa</a> ·
+<a href="b02-kanit.md">B02 kanıtı</a> · <a href="B02-ONIZLEME.md">B02 yayın kapsamı</a>
+</footer></body></html>

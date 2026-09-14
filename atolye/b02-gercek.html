@@ -1,0 +1,34 @@
+<!doctype html><html lang="tr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="assets/site.css"><title>B02 · Aynı 395 kayıt, farklı sorular</title></head>
+<body><a class="skip" href="#icerik">İçeriğe geç</a><header class="masthead">
+<a class="brand" href="index.html">İstatistik Atölyesi</a><nav aria-label="Ana gezinme">
+<a href="b02.html">B02 öğretim</a><a href="b02-gercek.html">B02 gerçek veri</a>
+<a href="b01.html">B01</a></nav><span class="tag">B02 · V1</span></header>
+<main id="icerik" class="wrap"><section class="section"><h1>B02 · Aynı 395 kayıt, farklı sorular</h1>
+<p class="lead">B01 ile aynı öğrenciler; yeni veya bağımsız örneklem değildir.</p>
+<a class="button primary" href="indir/b02-gercek.zip" download>Gerçek veri paketini indir</a>
+<h2>1. Hedef evren</h2><p>İki Portekiz okulunun kayıtları Türkiye'deki bütün lise
+öğrencilerini temsil ediyor sayılamaz. Dosyayı eğitim için sonlu evren kabul etmek ayrı bir tanımdır.</p>
+<h2>2. Veri türleri</h2><p>Okul ve kaynak cinsiyet kodları nominal; çalışma süresi
+ordinal; yaş ve son not niceldir. Çalışma süresi 1–4 kodları saat miktarı değildir;
+kategoriler &lt;2, 2–5, 5–10, &gt;10 saattir. Not sıfırı eksik veri sayılmaz.</p>
+<h2>3. Beklenen özetler</h2><p>N=395; okul GP/MS: 349/46; cinsiyet F/M: 208/187;
+çalışma süresi 1/2/3/4: 105/198/65/27. 198 kayıt 2–5 saat kategorisindedir; tam iki saat değildir.</p>
+<p>Yaş: ortalama 16,696203, örneklem SS 1,276043, min 15, max 22.
+Son not: ortalama 10,415190, örneklem SS 4,581443, min 0, max 20.</p>
+<h2>4. Yazılım yolu</h2><p>Tam ZIP'i ayrı klasöre çıkarın. Çalışma dizini companion
+klasörünü içeren b02-gercek olmalıdır. Python ve R komutları:
+<code>python companion/spss/python/b02.py</code> ve <code>Rscript companion/spss/r/b02.R</code>.</p>
+<p>SPSS: açık çalışmaları kaydedin; ayrı oturumda paket kökünü çalışma dizini yapıp
+companion/spss/syntax/b02.sps çalıştırın. open-b01.sps CSV okuyup b01.sav üretir;
+aynı adlı SAV üzerine yazabilir ve oturum ayarlarını değiştirir. Hazır SAV/Excel yoktur.
+<a href="gercek/b02/README.md">Çalıştırma rehberi</a> · <a href="gercek/b02/sozluk.csv">Sözlük</a> ·
+<a href="gercek/b02/KAYNAK.json">Korunan kaynak açıklamaları</a>.</p>
+<h2>5. Kanıt ve soru</h2><p><a href="b02-kanit.md">Önceki kullanıcı kanıtları</a>
+yeni bağımsız R/SPSS çalıştırması değildir. B01 ve B02'yi birleştirip 790 öğrenci diyebilir miyiz?</p>
+<details><summary>Yanıt</summary><p>Hayır. İki bölüm aynı 395 kaydı kullanır.
+Dosyaya ilişkin ortalama daha geniş bir evrenin parametresini bilmek anlamına gelmez.</p></details>
+</section></main><footer class="wrap section"><a href="index.html">Ana sayfa</a> ·
+<a href="b02-kanit.md">B02 kanıtı</a> · <a href="B02-ONIZLEME.md">B02 yayın kapsamı</a>
+</footer></body></html>

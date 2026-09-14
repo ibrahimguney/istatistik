@@ -1,3 +1,16 @@
+# B02 V1 — ek yayın kapsamı (14 Eylül 2026)
+
+B01 V4.2 kapsamına B02 öğretim ve gerçek veri sayfaları eklenmiştir.
+Bu belge aktarım adayıyla birlikte hazırlanır; canlı yayın başarısı
+iddiası değildir. Birleşmiş site 80 dosyadır. Güncel ek kapsam için
+[B02 yayın kapsamı](B02-ONIZLEME.md), analiz kanıtı için
+[B02 kanıtı](b02-kanit.md) okunmalıdır.
+
+Aşağıdaki B01 metni önceki sürümün tarihsel kaydıdır; dosya sayıları
+ve kapsam ifadeleri yalnız B01 aşamasına aittir.
+
+---
+
 # B01 — yayın kopyası V4.2
 
 Bu aday, V4.1 üzerine beş yapay kayıtlı örneğin kullanıcı R/SPSS
