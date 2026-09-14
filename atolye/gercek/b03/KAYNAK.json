@@ -1,0 +1,22 @@
+{
+  "source_zip_sha256": "5811be0c8d6251bde2e2167f3a310e4a1d2bd7941af879168ca84ae74a76aef7",
+  "source_zip_data_exact": true,
+  "input_sha256": {
+    "companion/spss/raw/student-mat.csv": "041d88ddca1da9fb8a1a9261bbf090d2f7c75625c228392e1077c2cf656051e8",
+    "companion/spss/csv/b01.csv": "b71d797eb8f1d0584d8afaa27ff9b8a942bd44d615688224b4252659a5c30bd1",
+    "chapters/spss/b01.tex": "dfb47e18ca98610cf52ba366e9859e94c4051f63ea9dd11302823117a8deeade",
+    "companion/spss/build_package.py": "202997b5a08f9b6659a6d9c3e46577827d7d0598a36c5c6576aedd94bde55884",
+    "companion/spss/chapter_code.py": "0cfcb73d4d0e2e16c2062171cff89129fd1ddbd770c2d95cca28e187018b85a2"
+  },
+  "source_url": "https://archive.ics.uci.edu/dataset/320/student+performance",
+  "source_checked_date": "2026-09-13",
+  "license": "CC BY 4.0 (data only)",
+  "local_data_redownloaded": false,
+  "chapter_code_extraction": "Exact listing contents plus terminal LF",
+  "transformation": "8 selected columns + id + pass10; explicit school/sex recoding; all rows and zero grades retained",
+  "legacy_manifests_modified": false,
+  "r_executed": false,
+  "spss_executed": false,
+  "published": false,
+  "excel_application_import_tested": false
+}

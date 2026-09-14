@@ -1,0 +1,11 @@
+degisken,anlam,kod_birim,olcme_duzeyi
+id,Dosya içi sıra numarası; özgün öğrenci kimliği değildir,1..N; mat ve por arasında eşleştirme anahtarı DEĞİL,nominal
+school,Okul,1=GP; 2=MS,nominal
+sex,Kaynak dosyasındaki cinsiyet kodu,1=F; 2=M,nominal
+age,Yaş,Tamamlanmış yıl,scale
+studytime,Haftalık çalışma süresi kategorisi; saat sayısı değildir,1:<2; 2:2-5; 3:5-10; 4:>10 saat (kaynak kategorileri),ordinal
+absences,Devamsızlık sayısı,Kaynakta sayım; gün veya saat olduğu varsayılmadı,scale
+g1,Birinci dönem notu,0..20; sıfır eksik kodu değildir,scale
+g2,İkinci dönem notu,0..20; sıfır eksik kodu değildir,scale
+g3,Yıl sonu notu,0..20; sıfır eksik kodu değildir,scale
+pass10,Eğitim amaçlı türetilmiş eşik göstergesi,1:g3>=10; 0:g3<10; kurum kararı yerine kullanılmaz,nominal

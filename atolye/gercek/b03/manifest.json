@@ -1,0 +1,17 @@
+{
+  "algorithm": "SHA-256",
+  "files": {
+    "KAYNAK.json": "eb3156b786e396b39bf70a2252d8ac1ed5b0d33f1aa3a9e3fa3284051d074c3c",
+    "README.md": "61b1b3b0174a89dac78adaccbad62a43a693d35fd50606da1cc4c146e26c8958",
+    "beklenen-sonuclar.csv": "448ecdddb6f55f5fff1beb43b5a999ef010190f4ce119f64fd99254a3674e8fb",
+    "companion/spss/csv/b01.csv": "b71d797eb8f1d0584d8afaa27ff9b8a942bd44d615688224b4252659a5c30bd1",
+    "companion/spss/csv/b03.csv": "b71d797eb8f1d0584d8afaa27ff9b8a942bd44d615688224b4252659a5c30bd1",
+    "companion/spss/python/b03.py": "6e077455b9d277db25a72ff9e71b542571b309db23d2d76446e8a079bdb69e22",
+    "companion/spss/r/b03.R": "bf2e90dd8d53ba7b9dbe8081c59f3e8ffab40ad3626394bb00daf8ecaf15c744",
+    "companion/spss/raw/student-mat.csv": "041d88ddca1da9fb8a1a9261bbf090d2f7c75625c228392e1077c2cf656051e8",
+    "companion/spss/sav/README.txt": "50fec429211a239becafb533236a002df5cdb70317ad3f7f218efa3040839a32",
+    "companion/spss/syntax/b03.sps": "12a7e0f2a755b6ba78f34d6da0ad534cf2411356261fc212269d3f7c5d6cc020",
+    "companion/spss/syntax/open-b01.sps": "4c666c15d11c330220e681ece1e5bb5fac2a58e82c413a202f64d541e17af32b",
+    "sozluk.csv": "6803f90a99e18caa676b997b433fa0fdfc57b9cae9c2f10dbb3376c49682968c"
+  }
+}

@@ -1,3 +1,16 @@
+# B03 V1 — ek yayın kapsamı (14 Eylül 2026)
+
+B01 V4.2/B02 V1 üzerine iki B03 sayfası ve iki B03 indirmesi eklenir.
+Birleşmiş site 115 dosyadır. Bu belge aktarım adayı için hazırlanmıştır;
+canlı yayın başarısı iddiası değildir. Kullanıcı yerel önizlemeyi
+kontrol ettiğini bildirip aktarım hazırlığını onayladı.
+
+[B03 yayın kapsamı](B03-ONIZLEME.md) ve [B03 kanıt sınırları](b03-kanit.md)
+güncel B03 kapsamını açıklar. Aşağıdaki B01/B02 metinleri önceki
+sürümlerin tarihsel kayıtlarıdır; dosya sayıları o aşamalara aittir.
+
+---
+
 # B02 V1 — ek yayın kapsamı (14 Eylül 2026)
 
 B01 V4.2 kapsamına B02 öğretim ve gerçek veri sayfaları eklenmiştir.
