@@ -3,19 +3,24 @@
 
 [İstatistik Atölyesi’ni aç](https://ibrahimguney.github.io/istatistik/)
 
-B01 için iki ayrı çalışma yolu bulunur: beş yapay kayıtlı öğretim örneği
-ve 395 öğrenci kaydıyla gerçek veri uygulaması. Her birinin ayrı veri/kod
-indirme paketi vardır. Kodlar tarayıcıda çalışmaz; indirilen paket kendi
-Python, R veya SPSS ortamınızda çalıştırılır.
+B01 ve B02 için öğretim örnekleri ile gerçek veri uygulamaları ayrı
+sunulur. B01 öğretim örneği beş, B02 öğretim örneği dört yapay kayıttır.
+Gerçek veri yolları aynı 395 öğrenci kaydını kullanır; iki bağımsız
+örneklem veya toplam 790 öğrenci değildir. B02 evren/örneklem,
+parametre/istatistik ve veri türlerine odaklanır.
 
-İlk yayın 13 Eylül 2026 tarihinde kullanıcı tarafından kontrol edildi.
-Bu yayın kontrolü tüm deponun veya bütün analizlerin doğrulandığı anlamına
-gelmez. Beş yapay kayıtlı örnekte kullanıcının R konsolundaki 18 değerlik
-karşılaştırma geçti; SPSS görüntüsündeki tablolar beklenenle eşleşti.
-Bu, otomatik 18 satırlık SPSS testi veya bağımsız yeniden çalıştırma
-değildir. Ayrıntılar sitedeki öğretim örneğinin kanıt özetindedir;
-395 kayıtlı gerçek veri uygulamasının karşılaştırma kapsamı ayrı tutulur.
-İndirme paketlerinin ilk üretim belgeleri tarihsel olarak korunur.
+Her uygulamanın ayrı veri/kod indirme paketi vardır. Kodlar tarayıcıda
+çalışmaz; indirilen paket kendi Python, R veya SPSS ortamınızda çalıştırılır.
+
+B01 küçük örneğinde kullanıcının R konsolundaki 18, B02 küçük örneğinde
+23 değerlik karşılaştırma geçti; kullanıcı SPSS görüntülerindeki tablolar
+beklenenle eşleşti. Bunlar otomatik SPSS kabul testleri veya bağımsız
+yeniden çalıştırma değildir. Gerçek verinin karşılaştırma kapsamı ayrı
+tutulur. Kanıt sınırları ilgili sayfalardaki özetlerde açıklanır;
+indirme paketlerinin ilk üretim belgeleri tarihsel olarak korunur.
+
+Sayfa yayını veya sayısal uyum, bütün deponun doğrulandığı, nedensellik,
+temsiliyet ya da öğrenme etkisinin kanıtlandığı anlamına gelmez.
 
 Bu klasör, kitaptaki analizlerin gerçek verilerle ve yeniden üretilebilir
 kodla yürütülmesi için ortak çalışma alanıdır. Paket üç ilkeye dayanır:
