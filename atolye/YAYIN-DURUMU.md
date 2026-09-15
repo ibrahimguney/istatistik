@@ -1,13 +1,3 @@
-# B04 V1 — ek yayın kapsamı (15 Eylül 2026)
-
-B01–B03 korunarak iki B04 sayfası ve iki B04 indirmesi eklenir.
-Birleşmiş site 150 dosyadır. Kullanıcı yerel önizlemeyi onayladı;
-bu belge aktarım adayına aittir, canlı yayın başarısı iddiası değildir.
-[B04 yayın kapsamı](B04-ONIZLEME.md) ve [kanıt sınırları](b04-kanit.md)
-güncel B04 durumunu açıklar. Aşağıdaki metinler tarihsel kayıtlardır.
-
----
-
 # B03 V1 — ek yayın kapsamı (14 Eylül 2026)
 
 B01 V4.2/B02 V1 üzerine iki B03 sayfası ve iki B03 indirmesi eklenir.
