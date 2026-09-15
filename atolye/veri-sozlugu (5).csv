@@ -1,0 +1,4 @@
+degisken,anlam,olcek
+rep,1-2000 benzetim tekrar numarası; öğrenci kimliği değildir,nominal
+ort5,Aynı tekrardaki ilk 5 geri koymalı çekimin not ortalaması,scale
+ort30,Aynı tekrardaki ilk 30 geri koymalı çekimin not ortalaması,scale
