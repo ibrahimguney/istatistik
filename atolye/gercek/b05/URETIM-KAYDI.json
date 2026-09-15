@@ -1,0 +1,38 @@
+{
+  "acceptance": "Old logs are not new R/SPSS acceptance of this test delivery.",
+  "date": "2026-09-15",
+  "draw_shape": [
+    2000,
+    100
+  ],
+  "empirical_mu": 10.415189873417722,
+  "empirical_sigma_ddof0": 4.57563964146053,
+  "github_upload": false,
+  "independent_columns": false,
+  "means": "draws[:, :n].mean(axis=1); n=5,30,100",
+  "old_logs": [
+    "prism-uploads/b05_python.txt",
+    "prism-uploads/b05_R_3.txt"
+  ],
+  "population_records": 395,
+  "r_spss_executed_by_packager": false,
+  "raw_student_data_distributed": false,
+  "replace": true,
+  "rng": "numpy.random.default_rng",
+  "seed": 2026,
+  "simulation_executed_by_packager": false,
+  "source": "Student Performance; student-mat.csv; G3; Cortez ve Silva (2008)",
+  "source_reconstruction_audit": "2026-09-15: six numeric columns matched exactly in local NumPy audit",
+  "source_sha256": {
+    "chapters/spss/b05.tex": "3950249ea15cb64589f4117f0b1ae012b5f21f8835121095e3b29c5096c54c23",
+    "companion/spss/build_package.py": "202997b5a08f9b6659a6d9c3e46577827d7d0598a36c5c6576aedd94bde55884",
+    "companion/spss/csv/b05.csv": "e4bc608bc97a675dd4617c63bf8be0c72ed4151ab697be8df6e804d46358bada",
+    "companion/spss/python/b05.py": "3791b9f1c0663e270759de0a18bd3b74fe158dcb22885847a1b69035006ce3d2",
+    "companion/spss/r/b05.R": "f9a6fbefae87794215fc4ef8e2d7b9d4b9650f4925373dc40a92fbaa5efbb2f2",
+    "companion/spss/raw/student-mat.csv": "041d88ddca1da9fb8a1a9261bbf090d2f7c75625c228392e1077c2cf656051e8"
+  },
+  "spss_extraction": "chapters/spss/b05.tex: single prismSPSS block, unchanged",
+  "standardization": "(ortN-mu)/(sigma/sqrt(N)); sigma ddof=0",
+  "summary_sd_ddof": 1,
+  "zero_grades_preserved": 38
+}

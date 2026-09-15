@@ -1,0 +1,14 @@
+{
+  "algorithm": "SHA-256",
+  "files": {
+    "README.md": "13646df44ad28444edb4b404be06e429e12b3a531c11be7ad6af748b19b0278f",
+    "URETIM-KAYDI.json": "2391662842b91005de4d12a60fbf6d7a54281fa2e2a90822e310aee063de2d5d",
+    "beklenen-sonuclar.csv": "bad19ea8ab46b849bd7a0578ad967d3d1f6573eded24a47fb453d6dc9f87962c",
+    "companion/spss/csv/b05.csv": "e4bc608bc97a675dd4617c63bf8be0c72ed4151ab697be8df6e804d46358bada",
+    "companion/spss/python/b05.py": "3791b9f1c0663e270759de0a18bd3b74fe158dcb22885847a1b69035006ce3d2",
+    "companion/spss/r/b05.R": "f9a6fbefae87794215fc4ef8e2d7b9d4b9650f4925373dc40a92fbaa5efbb2f2",
+    "companion/spss/syntax/b05.sps": "dc85118788751ed19d980fa9aa81b0b09aaabf356b0ad826ef7ef9004ee93ce7",
+    "companion/spss/syntax/b05.sps.txt": "dc85118788751ed19d980fa9aa81b0b09aaabf356b0ad826ef7ef9004ee93ce7",
+    "kontrol.py": "ecf4ecef8cbbe1a0b5a7c5b438105a515b72ecc4103cc6221db2da3c6473bed8"
+  }
+}
