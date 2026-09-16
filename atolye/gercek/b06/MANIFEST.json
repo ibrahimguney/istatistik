@@ -1,0 +1,11 @@
+{
+  "algorithm": "SHA-256",
+  "files": {
+    "KAYNAK.md": "d52423d2b659ba9d8efd02acdbe812800c9639f9e58bcefa8924e727ee4b45ab",
+    "README.md": "b67e4f7f6b6ee648a6ee81bae985e8efd196cec36630b45b9f4378d04a71f827",
+    "companion/spss/csv/b06.csv": "8854db111ed4b445c279ff142e165fe7e25d1089bf258bc443b4aad611efe400",
+    "companion/spss/python/b06.py": "1e25b454f0c4d7ff02d3f1fd8437b3d229aa854187eee7d8ac0f5be6ebc4c569",
+    "companion/spss/r/b06.R": "6378fcd924a6b2f8a1523f35432834039279030cb0ae2b0cfe08528df04a33ee",
+    "companion/spss/syntax/b06.sps": "b672b7ba6f61ea68ab107cb40365721a98047395cc7927fed0999a0e4ffab859"
+  }
+}

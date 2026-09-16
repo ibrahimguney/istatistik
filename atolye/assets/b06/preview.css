@@ -1,0 +1,6 @@
+.b06-main{padding-block:24px 48px;max-width:1080px}.b06-main h1{font-size:clamp(2rem,4.5vw,3.6rem)}
+.b06-main section{padding-block:28px;border-bottom:1px solid var(--line)}.b06-main figure{margin:22px 0;background:white;padding:14px;border:1px solid var(--line);border-radius:8px}
+.b06-main img{display:block;width:100%;height:auto}.b06-main figcaption{margin-top:12px;font-size:.85rem;color:var(--muted)}
+.b06-main td{font-variant-numeric:tabular-nums}.b06-main .links{overflow-wrap:anywhere}.b06-main footer{padding-top:28px}
+.b06-main .actions{flex-wrap:wrap}.b06-main nav a[aria-current=page]{font-weight:700}.b06-main .notice{margin-block:20px}
+@media(max-width:600px){.b06-main figure{padding:6px}.b06-main th,.b06-main td{padding:10px 8px}.b06-main .button{max-width:100%;white-space:normal}}
