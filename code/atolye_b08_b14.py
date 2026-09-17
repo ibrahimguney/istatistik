@@ -214,17 +214,8 @@ def main():
     if not report['gecti']: raise SystemExit('Python/R doğrulaması başarısız; yayın üretilemez.')
     for n,d in DATA.items(): chapter(n,d)
     (SITE/'assets/chapters.css').write_text('.chapter-figure{display:block;max-width:100%;height:auto;border:1px solid var(--line);border-radius:8px;background:white}.chapter-catalog .card:last-child{grid-column:auto}.lesson{min-width:0}.lesson .table-wrap td:last-child{font-variant-numeric:tabular-nums}.lesson-head .lead{max-width:850px}@media print{details{display:block}.chapter-figure{max-height:100mm;object-fit:contain}}\n')
-    index=(SITE/'index.html').read_text(encoding='utf-8')
-    index=index.replace('B01 öğretim uygulamaları.','14 bölümde Python, R ve IBM SPSS öğretim uygulamaları.')
-    index=index.replace('B01 · YAYIN SÜRÜMÜ V4.2','14 BÖLÜM · İSTATİSTİK ATÖLYESİ')
-    # Ana sayfayı tüm bölümlere erişilen tek katalogla başlat; mevcut sayfalar korunur.
-    import re
-    index=re.sub(r'<main id="icerik">.*?(?=<section class="hero wrap">)','<main id="icerik">\n',index,flags=re.S)
-    cards=''.join(f'<article class="card"><p class="eyebrow">B{n:02}</p><h3>{E(title)}</h3><p>{E(DATA[n]["scope"]) if n in DATA else "Öğretim verileri, yazılım kodları ve bölüm uygulamaları."}</p><a class="card-link" href="b{n:02}.html">Çalışma sayfasını aç →</a></article>' for n,title in TITLES.items())
-    catalog=f'<section class="wrap section" id="bolumler"><p class="eyebrow">14 BÖLÜM · ORTAK VERİ VE KOD</p><h2>Bir bölüm seç, birlikte inceleyelim.</h2><p>B07–B14 için Python ve R çalıştırma kontrolleri tamamlandı. B08–B14’te toplam 214 SPSS sayısal kontrolünün geçtiği kullanıcı ekran görüntüleriyle görüldü. İlk bölümlerin kanıt kapsamı kendi sayfalarında yer alır.</p><div class="cards chapter-catalog">{cards}</div><h3 style="margin-top:2rem">Gerçek veri ve benzetim uygulamaları</h3><div class="links"><a href="b01-gercek.html">B01 · Gerçek veri</a><a href="b02-gercek.html">B02 · Gerçek veri</a><a href="b03-gercek.html">B03 · Gerçek veri</a><a href="b04-benzetim.html">B04 · Benzetim</a><a href="b05-benzetim.html">B05 · Benzetim</a><a href="b06-gercek.html">B06 · Gerçek veri</a></div></section>'
-    index=re.sub(r'<section class="wrap section" id="bolumler">.*?</section>',lambda m:catalog,index,flags=re.S)
-    if 'assets/chapters.css' not in index:index=index.replace('</head>','<link rel="stylesheet" href="assets/chapters.css">\n</head>')
-    (SITE/'index.html').write_text(index,encoding='utf-8')
+    from home_page import build_home
+    build_home(ROOT, TITLES)
     (SITE/'dogrulama').mkdir(exist_ok=True)
     shutil.copy2(ROOT/'dogrulama/python-r-2026-09-17.json',SITE/'dogrulama/python-r-2026-09-17.json')
     shutil.copy2(ROOT/'dogrulama/spss-kullanici-kabulu.json',SITE/'dogrulama/spss-kullanici-kabulu.json')
