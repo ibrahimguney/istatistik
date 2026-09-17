@@ -2,7 +2,8 @@
 
 14 bölümün çalışma sayfaları ve indirme paketleri katalogda yer alır.
 B08–B14 için 214, B07 için 21 referans Python ve gerçek R ile karşılaştırıldı.
-SPSS çalışma kabulü henüz yapılmadı; B08–B14 için dışa aktarım ve karşılaştırma araçları hazır.
+B08–B14 için 214 SPSS sayısal kontrolünün geçtiği kullanıcı konsol görüntülerinde görüldü.
+[SPSS kabul kaydı](dogrulama/spss-kullanici-kabulu.json). Ham JSON/CSV ve tam SPV ayrıca incelenmedi.
 [Güncel günlük](dogrulama/python-r-2026-09-17.json).
 
 Aşağıdaki belgeler önceki yayın aşamalarının tarihsel kayıtlarıdır.

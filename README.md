@@ -8,8 +8,11 @@
 - [B08–B14 çalışma ve kontrol rehberi](dogrulama/README.md)
 - [Gerçek Python/R çalıştırma kaydı](dogrulama/python-r-2026-09-17.json)
 
-**IBM SPSS çalıştırması bekliyor.** Her B08–B14 paketinde `spss-dogrula.sps`,
-CSV sonuç karşılaştırıcısı ve SPSS 29 rehberi bulunur.
+**B08–B14 SPSS sayısal kontrolleri kullanıcı ortamında geçti: 214/214.**
+Başarılı konsol mesajları paylaşılan ekran görüntülerinde görüldü.
+[SPSS kabul kaydı ve kanıt kapsamı](dogrulama/spss-kullanici-kabulu.json).
+Ham JSON/CSV ve tam SPV dosyaları ayrıca incelenmedi. Her pakette yeniden
+çalıştırma araçları ve SPSS 29 rehberi bulunur.
 Aşağıdaki eski tarihlere ait durumlar tarihsel kayıttır; güncel kapsam bu bölümde açıklanır.
 
 ## Öğrenci sitesi — İstatistik Atölyesi

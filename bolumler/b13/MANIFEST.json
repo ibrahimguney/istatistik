@@ -1,13 +1,13 @@
 {
   "algorithm": "SHA-256",
   "files": {
-    "DOGRULAMA.md": "650c9b0d7e54734b9cb2e95725e7f05b1756981d5da2fb1b5a86d8fe684a5cc4",
-    "GUNCEL-DOGRULAMA.md": "d355cdb7960969d2db788accf47cfbc292135a888c88bff1f71de938d4af7579",
-    "README.md": "d2652c3b9e9b5577610c697bc419244e150fb8e06075fc71d6721439bbbbb5fe",
-    "SPSS-KONTROL.md": "5a02d02fc30885fcab1e3751feacb9884846509f2bd1f047e1529e5058a3a61c",
+    "DOGRULAMA.md": "21ed32837ab5ef8bba1725bf91ba9967cfb1480b7a9a8e9d32c7c6adb0935a9b",
+    "GUNCEL-DOGRULAMA.md": "015cd0b3ec522d2b43bd6710f03c70fd852912b7038ec9c6f19190ef1823c5c8",
+    "README.md": "9bf443bf3505aa2385043d10fcbc1532a7e84e3c66531448c5c75cfa587248a6",
+    "SPSS-KONTROL.md": "b1d376ea91015445d5947053ba182b4f2c2ab665467fcc70df80975dc19fe681",
     "alistirmalar.md": "42fd0a4b16393d595943ded96b4cd713b33bcae8575f332dceb063650fa3669f",
     "cozumler.md": "e8bcff017906026e0fb43cc805135bcfb4c911c0aab634e4d0f02092de1dc939",
-    "ornek-01/README.md": "5e4101c1a22b024dcf8e2cd786a134f755dad93b6596d1568579e5623503b80d",
+    "ornek-01/README.md": "0338539090ebf813250b452324f10ee4f65ed47bbf8804d3a50e87f5884de7c7",
     "ornek-01/analiz.sps": "0fb166ef26d70d2562573c8c5b49f565588aae6b248ffc3b5a24e62ee34d396c",
     "ornek-01/analiz.sps.txt": "0fb166ef26d70d2562573c8c5b49f565588aae6b248ffc3b5a24e62ee34d396c",
     "ornek-01/beklenen-sonuclar.csv": "ce3c66f1e1a6381762fb61f3253c02a03aeedf214e0a64d4f55a3b515f6b0089",

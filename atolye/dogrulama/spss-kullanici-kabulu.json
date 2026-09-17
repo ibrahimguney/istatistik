@@ -1,0 +1,61 @@
+{
+  "kayit_tarihi": "2026-09-17",
+  "kapsam": "B08–B14 kullanıcı ortamında SPSS CSV sonuçlarının Python karşılaştırıcısıyla denetimi",
+  "kanit_turu": "Kullanıcının bu çalışma oturumunda paylaştığı PowerShell ekran görüntüleri",
+  "spss_surumu": "29 (kullanıcı komutundaki beyan)",
+  "toplam_kontrol": 214,
+  "ham_json_csv_incelendi": false,
+  "tam_spv_incelendi": false,
+  "sinir": "Konsoldaki başarılı kontrol mesajları görüldü. Ham spss-sonuc.json/CSV dosyaları ve tam SPV günlüğü bu kayıt için teslim alınmadı; kaynak hash veya SPSS sürümünün bağımsız doğrulaması iddia edilmez.",
+  "bolumler": [
+    {
+      "bolum": "b08",
+      "kontrol_sayisi": 19,
+      "gozlenen_mesaj": "GECTI: 19 kontrol; rapor: spss-sonuc.json",
+      "durum": "kullanici_ekraninda_gecti",
+      "not": ""
+    },
+    {
+      "bolum": "b09",
+      "kontrol_sayisi": 20,
+      "gozlenen_mesaj": "GECTI: 20 kontrol; rapor: spss-sonuc.json",
+      "durum": "kullanici_ekraninda_gecti",
+      "not": ""
+    },
+    {
+      "bolum": "b10",
+      "kontrol_sayisi": 30,
+      "gozlenen_mesaj": "GECTI: 30 kontrol; rapor: spss-sonuc.json",
+      "durum": "kullanici_ekraninda_gecti",
+      "not": ""
+    },
+    {
+      "bolum": "b11",
+      "kontrol_sayisi": 34,
+      "gozlenen_mesaj": "GECTI: 34 kontrol; rapor: spss-sonuc.json",
+      "durum": "kullanici_ekraninda_gecti",
+      "not": ""
+    },
+    {
+      "bolum": "b12",
+      "kontrol_sayisi": 32,
+      "gozlenen_mesaj": "GECTI: 32 kontrol; rapor: spss-sonuc.json",
+      "durum": "kullanici_ekraninda_gecti",
+      "not": "Dışa aktarım V2 düzeltmesinden sonraki başarılı tekrar."
+    },
+    {
+      "bolum": "b13",
+      "kontrol_sayisi": 62,
+      "gozlenen_mesaj": "GECTI: 62 kontrol; rapor: spss-sonuc.json",
+      "durum": "kullanici_ekraninda_gecti",
+      "not": ""
+    },
+    {
+      "bolum": "b14",
+      "kontrol_sayisi": 17,
+      "gozlenen_mesaj": "GECTI: 17 kontrol; rapor: spss-sonuc.json",
+      "durum": "kullanici_ekraninda_gecti",
+      "not": ""
+    }
+  ]
+}

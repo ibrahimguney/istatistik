@@ -1,6 +1,6 @@
 # B14 — IBM SPSS 29 kontrolü
 
-Bu paket SPSS'te henüz çalıştırılmadı. Kontrol için:
+Kullanıcının paylaştığı konsol görüntüsünde **GECTI: 17 kontrol** sonucu görüldü. Kanıt kapsamı güncel doğrulama kaydındadır. Yeniden çalıştırmak için:
 
 1. ZIP'i tamamen ayıklayın; açık SPSS çalışmalarınızı kaydedin.
 2. Syntax penceresinde gerçek klasörünüze göre `CD 'C:/.../b14/ornek-01'.` çalıştırın.

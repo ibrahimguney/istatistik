@@ -123,19 +123,27 @@ Güncel tam çalıştırma günlüğü depo kökündeki
 Kod, veri ve paket dosyalarının SHA-256 değerleri güncel MANIFEST.json içindedir.
 Ham veri/özet ayrımı, örnekleme varsayımları ve yorum sınırları devam eder.
 '''
-    if n == 12:
+    if n >= 8:
+        acceptance = json.loads((ROOT/'dogrulama/spss-kullanici-kabulu.json').read_text(encoding='utf-8'))
+        entry = next(x for x in acceptance['bolumler'] if x['bolum'] == code)
+        assert entry['kontrol_sayisi'] == d['count'] and entry['durum'] == 'kullanici_ekraninda_gecti'
         current = current.replace('**IBM SPSS çalıştırılmadı.** Kaynak incelemesi ve Python/R eşleşmesi SPSS kabulü değildir.',
-            '**Kullanıcının SPSS 29 tabloları incelendi:** Pearson ki-kare, p, Cramér V ve toplam beklenen değerlerle görüntü hassasiyetinde uyumlu. İlk dışa aktarımda FORMATS/alfa hatası oluştu; 32 değerlik otomatik kabul henüz geçmedi. V2 dışa aktarımı yeniden çalıştırılmalıdır. [Düzeltme kaydı](SPSS-DUZELTME.md).')
+            f"**Kullanıcı ortamında sayısal kontrol geçti: {d['count']}/{d['count']}.** SPSS 29 beyanıyla çalıştırılan karşılaştırıcının `GECTI: {d['count']} kontrol` mesajı paylaşılan konsol görüntüsünde görüldü. Ham JSON/CSV dosyaları ve tam SPV günlüğü bu kayıt için teslim alınmadı; çalışma kanıtı ekran görüntüsüyle sınırlıdır.")
+        if n == 12:
+            current += '\nB12 ilk dışa aktarım hatasından sonra V2 ile yeniden çalıştırıldı; 32 kontrol geçti. [Düzeltme kaydı](SPSS-DUZELTME.md).\n'
+
     (package/'GUNCEL-DOGRULAMA.md').write_text(current,encoding='utf-8')
     for path,link in [(package/'DOGRULAMA.md','GUNCEL-DOGRULAMA.md'),(package/'README.md','GUNCEL-DOGRULAMA.md'),(example/'README.md','../GUNCEL-DOGRULAMA.md')]:
         text=path.read_text(encoding='utf-8')
-        if not text.startswith('> **17 Eylül'):
-            path.write_text(f'> **17 Eylül 2026 güncellemesi:** Python ve R çalıştırıldı; IBM SPSS çalışma kabulü bekliyor. [Güncel kayıt]({link}). Aşağıdaki eski çalışma/yayın durumları tarihsel kayıttır.\n\n'+text,encoding='utf-8')
+        status = (f"kullanıcının SPSS sayısal kontrolünde {d['count']}/{d['count']} eşleşme görüldü" if n >= 8 else 'IBM SPSS çalışma kabulü bekliyor')
+        if text.startswith('> **17 Eylül'):
+            text = text.split('\n\n', 1)[1]
+        path.write_text(f'> **17 Eylül 2026 güncellemesi:** Python ve R çalıştırıldı; {status}. [Güncel kayıt]({link}). Aşağıdaki eski çalışma/yayın durumları tarihsel kayıttır.\n\n'+text,encoding='utf-8')
     if n>=8:
         shutil.copy2(ROOT/'code/spss_karsilastir.py',example/'spss_karsilastir.py')
         guide=f'''# {code.upper()} — IBM SPSS 29 kontrolü
 
-Bu paket SPSS'te henüz çalıştırılmadı. Kontrol için:
+Kullanıcının paylaştığı konsol görüntüsünde **GECTI: {d['count']} kontrol** sonucu görüldü. Kanıt kapsamı güncel doğrulama kaydındadır. Yeniden çalıştırmak için:
 
 1. ZIP'i tamamen ayıklayın; açık SPSS çalışmalarınızı kaydedin.
 2. Syntax penceresinde gerçek klasörünüze göre `CD 'C:/.../{code}/ornek-01'.` çalıştırın.
@@ -166,8 +174,6 @@ B12'de düzeltmesiz Pearson satırı esas alınır. B13'te REGRESSION yordamın�
 **Yorum:** {d['caution']}
 '''
         if n == 12:
-            guide = guide.replace('Bu paket SPSS\'te henüz çalıştırılmadı. Kontrol için:',
-                'V1 kullanıcı çalıştırmasında analiz sonuçları uyumlu, dışa aktarım başarısızdı. V2 için 32 değerlik kabul bekliyor. [Düzeltme kaydı](SPSS-DUZELTME.md). Kontrol için:')
             guide = guide.replace('`analiz.sps` içeri alınır;\n   veri ve plan girdileri aynı klasörden okunur.',
                 'V2 dosyası analizi ve dışa aktarımı tek akışta yürütür; önce dört hücreyi, sonra tek özet satırını kaydeder. `veri.csv` aynı klasörden okunur.')
         (package/'SPSS-KONTROL.md').write_text(guide,encoding='utf-8')
@@ -187,6 +193,8 @@ B12'de düzeltmesiz Pearson satırı esas alınır. B13'te REGRESSION yordamın�
     figure=f'<figure><img class="chapter-figure" src="{prefix}/ciktilar/python/{graph.name}" alt="{E(d["title"])}: hesaplanan sonuçların grafiği; sayısal değerler aşağıdaki sonuç tablosundadır."><figcaption>Ortak veriden üretilen Python grafiği. <a href="{prefix}/grafik-aciklamasi.md">Grafiğin ayrıntılı açıklaması</a></figcaption></figure>'
     links=''.join(f'<a href="{prefix}/{name}">{label}</a>' for name,label in [('veri.csv','Ortak CSV'),('veri-sozlugu.csv','Veri sözlüğü'),('cozum.py','Python kodu'),('cozum.R','R kodu'),('analiz.sps','SPSS syntax'),('beklenen-sonuclar.csv','Beklenen sonuçlar'),('README.md','Çalıştırma rehberi')])
     spss=(f'<p><a href="bolumler/{code}/SPSS-KONTROL.md">SPSS 29 adım adım kontrol rehberi</a></p><pre><code>CD \'C:/.../{code}/ornek-01\'.\nINSERT FILE=\'spss-dogrula.sps\' ERROR=STOP.</code></pre><p>Sonra aynı klasörde terminalden:</p><pre><code>py spss_karsilastir.py --surum 29 --rapor spss-sonuc.json</code></pre><p>SPSS dışa aktarımı olmadan bu kontrol geçmez. SPV çıktısını ve JSON raporunu birlikte saklayın.</p>' if n>=8 else f'<p>SPSS’te çalışma klasörünü <code>{code}/ornek-01</code> yapıp <code>analiz.sps</code> çalıştırın; <a href="{prefix}/README.md">bölüm rehberindeki tabloları</a> karşılaştırın.</p>')
+    spss_badge = 'kullanıcı sayısal kontrolü geçti' if n >= 8 else 'çalışma kabulü bekliyor'
+    spss_state = (f'{d["count"]}/{d["count"]} kontrol kullanıcı ortamında geçti; başarılı konsol sonucu paylaşıldı. Ham JSON/CSV ve tam SPV günlüğü ayrıca incelenmedi.' if n >= 8 else 'Syntax hazır. Gerçek SPSS çalıştırması ve çıktı kabulü bekliyor.')
     page=f'''<!doctype html>
 <html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="{E(d['title'])}: Python, R ve IBM SPSS uygulaması, ortak veri ve doğrulama."><title>{code.upper()} · {E(d['title'])} · İstatistik Atölyesi</title><link rel="stylesheet" href="assets/site.css"><link rel="stylesheet" href="assets/chapters.css"></head>
 <body><a class="skip" href="#icerik">İçeriğe geç</a><header class="masthead"><a class="brand" href="index.html"><span class="mark">İ.</span>İstatistik Atölyesi</a><nav aria-label="Ana gezinme"><a href="index.html#bolumler">14 bölüm</a><a href="#uygula">Uygula</a><a href="#dogrulama">Doğrulama</a></nav><span class="tag">{code.upper()} · PYTHON / R / SPSS</span></header>
@@ -194,9 +202,9 @@ B12'de düzeltmesiz Pearson satırı esas alınır. B13'te REGRESSION yordamın�
 <div class="workbench"><aside><nav aria-label="Bölüm içeriği"><p class="eyebrow">ÇALIŞMA ROTASI</p><a href="#soru">01 · Soru ve yöntem</a><a href="#sonuclar">02 · Görsel ve yorum</a><a href="#uygula">03 · Yazılımda uygula</a><a href="#dene">04 · Kendini sına</a><a href="#dogrulama">05 · Kontrol kaydı</a></nav></aside><div class="lesson">
 <section id="soru"><h2>Sorudan yönteme</h2><p class="lead">{E(d['question'])}</p><div class="notice"><strong>Hesaplama fikri</strong><p>{E(d['theory'])}</p></div></section>
 <section id="sonuclar"><h2>Gör, karşılaştır, yorumla</h2>{figure}<blockquote>{E(d['interpretation'])}</blockquote><div class="notice caution"><strong>Yorum sınırı</strong><p>{E(d['caution'])}</p></div><details><summary>{d['count']} referans değerinin tamamı</summary><div class="detail-body"><p>Gösterim yuvarlatılmıştır; kodlar tam duyarlıklı CSV’yi kullanır.</p><div class="table-wrap"><table><caption>Ortak Python / R / SPSS hedefleri</caption><thead><tr><th scope="col">Grup</th><th scope="col">Ölçü</th><th scope="col">Değer</th></tr></thead><tbody>{rows}</tbody></table></div></div></details></section>
-<section id="uygula"><h2>Aynı veri, üç yazılım</h2><p>ZIP’i tamamen ayıklayın. Çalışma klasörü <code>{code}/ornek-01</code> olmalıdır. Kodlar bilgisayarınızda çalışır.</p><details open><summary>Python</summary><div class="detail-body"><pre><code>py cozum.py --check --grafik</code></pre><p>NumPy, pandas, SciPy ve Matplotlib gerekir. Beklenen: {d['count']} kontrol değeri eşleşiyor.</p></div></details><details><summary>R / RStudio</summary><div class="detail-body"><pre><code>Rscript --vanilla cozum.R --check --grafik</code></pre><p>Standart R yeterlidir. RStudio konsolunda <code>source("cozum.R")</code> yalnız hesapları gösterir; otomatik kontrol için:</p><pre><code>kontrol_et(sonuc, read.csv("beklenen-sonuclar.csv", stringsAsFactors=FALSE))</code></pre></div></details><details><summary>IBM SPSS 29 · çalışma kabulü bekliyor</summary><div class="detail-body">{spss}</div></details><div class="links">{links}</div></section>
+<section id="uygula"><h2>Aynı veri, üç yazılım</h2><p>ZIP’i tamamen ayıklayın. Çalışma klasörü <code>{code}/ornek-01</code> olmalıdır. Kodlar bilgisayarınızda çalışır.</p><details open><summary>Python</summary><div class="detail-body"><pre><code>py cozum.py --check --grafik</code></pre><p>NumPy, pandas, SciPy ve Matplotlib gerekir. Beklenen: {d['count']} kontrol değeri eşleşiyor.</p></div></details><details><summary>R / RStudio</summary><div class="detail-body"><pre><code>Rscript --vanilla cozum.R --check --grafik</code></pre><p>Standart R yeterlidir. RStudio konsolunda <code>source("cozum.R")</code> yalnız hesapları gösterir; otomatik kontrol için:</p><pre><code>kontrol_et(sonuc, read.csv("beklenen-sonuclar.csv", stringsAsFactors=FALSE))</code></pre></div></details><details><summary>IBM SPSS 29 · {spss_badge}</summary><div class="detail-body">{spss}</div></details><div class="links">{links}</div></section>
 <section id="dene"><h2>Önce tahmin et, sonra açıkla</h2><p>{E(d['exercise'])}</p><details><summary>Gerekçeli yanıtı göster</summary><div class="detail-body"><p>{E(d['answer'])}</p></div></details><div class="links"><a href="bolumler/{code}/alistirmalar.md">Bölüm alıştırmaları</a><a href="bolumler/{code}/cozumler.md">Gerekçeli çözümler</a><a href="{prefix}/cozum.md">Tam çözüm tablosu</a></div></section>
-<section id="dogrulama"><h2>Doğrulama durumu</h2><div class="table-wrap"><table><thead><tr><th scope="col">Ortam</th><th scope="col">Durum</th></tr></thead><tbody><tr><th scope="row">Python</th><td>{d['count']} referans değeri; grafik üretimi ve hatalı girdi kontrolleri geçti.</td></tr><tr><th scope="row">R 4.3.3</th><td>{d['count']} referans değeri ve Python–R sonuç karşılaştırması geçti.</td></tr><tr><th scope="row">IBM SPSS</th><td>Syntax hazır. Gerçek SPSS çalıştırması ve çıktı kabulü bekliyor.</td></tr></tbody></table></div><p>17 Eylül 2026. Sayısal uyum, araştırma varsayımlarının sağlandığını kanıtlamaz.</p><div class="links"><a href="bolumler/{code}/GUNCEL-DOGRULAMA.md">Güncel kayıt</a><a href="dogrulama/python-r-2026-09-17.json">Tam çalıştırma günlüğü</a><a href="bolumler/{code}/MANIFEST.json">Dosya bütünlüğü</a></div></section></div></div>
+<section id="dogrulama"><h2>Doğrulama durumu</h2><div class="table-wrap"><table><thead><tr><th scope="col">Ortam</th><th scope="col">Durum</th></tr></thead><tbody><tr><th scope="row">Python</th><td>{d['count']} referans değeri; grafik üretimi ve hatalı girdi kontrolleri geçti.</td></tr><tr><th scope="row">R 4.3.3</th><td>{d['count']} referans değeri ve Python–R sonuç karşılaştırması geçti.</td></tr><tr><th scope="row">IBM SPSS</th><td>{spss_state}</td></tr></tbody></table></div><p>17 Eylül 2026. Sayısal uyum, araştırma varsayımlarının sağlandığını kanıtlamaz.</p><div class="links"><a href="bolumler/{code}/GUNCEL-DOGRULAMA.md">Güncel kayıt</a><a href="dogrulama/python-r-2026-09-17.json">Tam çalıştırma günlüğü</a><a href="bolumler/{code}/MANIFEST.json">Dosya bütünlüğü</a></div></section></div></div>
 <footer><div class="between"><a href="b{n-1:02}.html">← {n-1}. bölüm</a><a href="{'b'+str(n+1).zfill(2)+'.html' if n<14 else 'index.html#bolumler'}">{'Sonraki bölüm →' if n<14 else '14 bölüme dön →'}</a></div><p>İbrahim Güney · İstatistik Atölyesi · Ortak veri, yeniden üretilebilir hesaplar.</p></footer></main></body></html>'''
     (SITE/f'{code}.html').write_text(page,encoding='utf-8')
 
@@ -213,12 +221,13 @@ def main():
     import re
     index=re.sub(r'<main id="icerik">.*?(?=<section class="hero wrap">)','<main id="icerik">\n',index,flags=re.S)
     cards=''.join(f'<article class="card"><p class="eyebrow">B{n:02}</p><h3>{E(title)}</h3><p>{E(DATA[n]["scope"]) if n in DATA else "Öğretim verileri, yazılım kodları ve bölüm uygulamaları."}</p><a class="card-link" href="b{n:02}.html">Çalışma sayfasını aç →</a></article>' for n,title in TITLES.items())
-    catalog=f'<section class="wrap section" id="bolumler"><p class="eyebrow">14 BÖLÜM · ORTAK VERİ VE KOD</p><h2>Bir bölüm seç, birlikte inceleyelim.</h2><p>B07–B14 için Python ve R çalıştırma kontrolleri tamamlandı. IBM SPSS çalışma kabulü bekliyor. İlk bölümlerin kanıt kapsamı kendi sayfalarında yer alır.</p><div class="cards chapter-catalog">{cards}</div><h3 style="margin-top:2rem">Gerçek veri ve benzetim uygulamaları</h3><div class="links"><a href="b01-gercek.html">B01 · Gerçek veri</a><a href="b02-gercek.html">B02 · Gerçek veri</a><a href="b03-gercek.html">B03 · Gerçek veri</a><a href="b04-benzetim.html">B04 · Benzetim</a><a href="b05-benzetim.html">B05 · Benzetim</a><a href="b06-gercek.html">B06 · Gerçek veri</a></div></section>'
+    catalog=f'<section class="wrap section" id="bolumler"><p class="eyebrow">14 BÖLÜM · ORTAK VERİ VE KOD</p><h2>Bir bölüm seç, birlikte inceleyelim.</h2><p>B07–B14 için Python ve R çalıştırma kontrolleri tamamlandı. B08–B14’te toplam 214 SPSS sayısal kontrolünün geçtiği kullanıcı ekran görüntüleriyle görüldü. İlk bölümlerin kanıt kapsamı kendi sayfalarında yer alır.</p><div class="cards chapter-catalog">{cards}</div><h3 style="margin-top:2rem">Gerçek veri ve benzetim uygulamaları</h3><div class="links"><a href="b01-gercek.html">B01 · Gerçek veri</a><a href="b02-gercek.html">B02 · Gerçek veri</a><a href="b03-gercek.html">B03 · Gerçek veri</a><a href="b04-benzetim.html">B04 · Benzetim</a><a href="b05-benzetim.html">B05 · Benzetim</a><a href="b06-gercek.html">B06 · Gerçek veri</a></div></section>'
     index=re.sub(r'<section class="wrap section" id="bolumler">.*?</section>',lambda m:catalog,index,flags=re.S)
     if 'assets/chapters.css' not in index:index=index.replace('</head>','<link rel="stylesheet" href="assets/chapters.css">\n</head>')
     (SITE/'index.html').write_text(index,encoding='utf-8')
     (SITE/'dogrulama').mkdir(exist_ok=True)
     shutil.copy2(ROOT/'dogrulama/python-r-2026-09-17.json',SITE/'dogrulama/python-r-2026-09-17.json')
+    shutil.copy2(ROOT/'dogrulama/spss-kullanici-kabulu.json',SITE/'dogrulama/spss-kullanici-kabulu.json')
     publication=SITE/'yayin-manifest.json'
     doc=json.loads(publication.read_text())
     doc['files']={p.relative_to(SITE).as_posix():hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(SITE.rglob('*')) if p.is_file() and p!=publication}

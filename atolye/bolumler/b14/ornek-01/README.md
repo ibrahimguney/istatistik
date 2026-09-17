@@ -1,4 +1,4 @@
-> **17 Eylül 2026 güncellemesi:** Python ve R çalıştırıldı; IBM SPSS çalışma kabulü bekliyor. [Güncel kayıt](../GUNCEL-DOGRULAMA.md). Aşağıdaki eski çalışma/yayın durumları tarihsel kayıttır.
+> **17 Eylül 2026 güncellemesi:** Python ve R çalıştırıldı; kullanıcının SPSS sayısal kontrolünde 17/17 eşleşme görüldü. [Güncel kayıt](../GUNCEL-DOGRULAMA.md). Aşağıdaki eski çalışma/yayın durumları tarihsel kayıttır.
 
 # Örnek 01 — Yöntemden rapora eşleştirilmiş değişim
 

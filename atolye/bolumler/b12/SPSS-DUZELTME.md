@@ -18,6 +18,6 @@ V2'nin ilk satırında `B12 disari aktarim v2` yazmalıdır.
 SPSS'te çalışma klasörünü ayarlayıp dosyanın tamamını yeniden çalıştırın.
 Ardından `py spss_karsilastir.py --surum 29 --rapor spss-sonuc.json` çalıştırın.
 
-V2 IBM SPSS'te bu ortamda çalıştırılmadı; kullanıcıdaki tekrar ve
-`GECTI: 32 kontrol` sonucu bekleniyor. Eski Python/R günlüğü o tarihteki
+V2 kullanıcının ortamında yeniden çalıştırıldı. Paylaşılan PowerShell ekranında
+`GECTI: 32 kontrol` sonucu görüldü. Ham JSON/CSV ve tam SPV günlüğü bu kayıt için ayrıca incelenmedi. Eski Python/R günlüğü o tarihteki
 kaynak hash'lerini içerir; V2 syntax için bir SPSS çalışma kanıtı değildir.

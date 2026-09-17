@@ -1,13 +1,13 @@
 {
   "algorithm": "SHA-256",
   "files": {
-    "DOGRULAMA.md": "5eb02e4d0644b6b9ed837a6d72a628005c805be5ef3c062f60104e49dc76a50d",
-    "GUNCEL-DOGRULAMA.md": "6fd0f1828629d2f51fb271d4f2c5b6dfd44f6542cbeb5271396e65a82f57b3f6",
-    "README.md": "cda708c6c48c1025bbe6ad3a4964e169e5e2f96aed75532f18ff9aa7fa8144b8",
-    "SPSS-KONTROL.md": "05a79646530a3f38aad2d59a17f55f5d42e50544b096efcddf2fd15bab6f6c6c",
+    "DOGRULAMA.md": "a81d0ba485c7a5a4c012a0dcf6cea0010e5111dce934745a3f57b35d19d87af5",
+    "GUNCEL-DOGRULAMA.md": "92879dd040bc1f27f894903e2e8e0fe0ac6e178ac3381a45a18bc36cd804c5c2",
+    "README.md": "3f06b12cd60827f62691ba9f3382a2caf65fd46c5e4d14b077a30cf2d1a0cb23",
+    "SPSS-KONTROL.md": "9b89c38fd87a4fe7ff3831ef6c1c39a335e754a7e03fa9ebec254d54fa368416",
     "alistirmalar.md": "1c79c1ec098a3b9f998b31d363290dbff055485783e4f31476bcafadac62d99e",
     "cozumler.md": "015f9b5bba7e053afeb33557f5f91f505858478ccc3cc85205572abb646b949a",
-    "ornek-01/README.md": "0025670fd1bbbe78d256f5909e8fc406829fc41a61a0e4d63d48f484b5507128",
+    "ornek-01/README.md": "a1ad68636f7593be5793dd46f01f16b2a8231b7c8dba9be3b1bbe9d793035fd9",
     "ornek-01/analiz.sps": "d458b1fea14ee5a5b1a0adae904e4d6b9ede1b31f785823f5d3cba83f184280e",
     "ornek-01/analiz.sps.txt": "d458b1fea14ee5a5b1a0adae904e4d6b9ede1b31f785823f5d3cba83f184280e",
     "ornek-01/beklenen-sonuclar.csv": "f5f797e8a3f6688b5a0989fa2611e0a2926361ebd87f2c42db9f5f0feb3d7812",

@@ -1,6 +1,6 @@
 # B12 — IBM SPSS 29 kontrolü
 
-V1 kullanıcı çalıştırmasında analiz sonuçları uyumlu, dışa aktarım başarısızdı. V2 için 32 değerlik kabul bekliyor. [Düzeltme kaydı](SPSS-DUZELTME.md). Kontrol için:
+Kullanıcının paylaştığı konsol görüntüsünde **GECTI: 32 kontrol** sonucu görüldü. Kanıt kapsamı güncel doğrulama kaydındadır. Yeniden çalıştırmak için:
 
 1. ZIP'i tamamen ayıklayın; açık SPSS çalışmalarınızı kaydedin.
 2. Syntax penceresinde gerçek klasörünüze göre `CD 'C:/.../b12/ornek-01'.` çalıştırın.

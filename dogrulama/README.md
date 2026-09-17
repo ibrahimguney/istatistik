@@ -2,16 +2,19 @@
 
 17 Eylül 2026: Python ve R 4.3.3 ile **214** referans sonucu doğrulandı.
 B07'nin 21 değeri de ayrıca doğrulandı ve eksik öğrenci sayfası eklendi.
+B08–B14 için 214 SPSS sayısal kontrolünün geçtiği kullanıcı konsol görüntülerinde görüldü.
+[SPSS kabul kaydı](spss-kullanici-kabulu.json). Ham JSON/CSV ve tam SPV dosyaları
+bu kayıt için teslim alınmadı; ekran görüntüsü kapsamı ile tam çıktı incelemesi ayrıdır.
 
 | Bölüm | Konu | Python/R eşleşen değer | IBM SPSS |
 |---|---|---:|---|
-| B08 | Güven aralıkları | 19 | Çalıştırma bekliyor |
-| B09 | Hipotez testleri | 20 | Çalıştırma bekliyor |
-| B10 | Hata, güç, tek örneklem t | 30 | Çalıştırma bekliyor |
-| B11 | Bağımsız ve eşleştirilmiş t | 34 | Çalıştırma bekliyor |
-| B12 | Kategorik veriler, ki-kare | 32 | Çalıştırma bekliyor |
-| B13 | Korelasyon, basit regresyon | 62 | Çalıştırma bekliyor |
-| B14 | Genel sınava hazırlık | 17 | Çalıştırma bekliyor |
+| B08 | Güven aralıkları | 19 | Kullanıcı ekranında geçti |
+| B09 | Hipotez testleri | 20 | Kullanıcı ekranında geçti |
+| B10 | Hata, güç, tek örneklem t | 30 | Kullanıcı ekranında geçti |
+| B11 | Bağımsız ve eşleştirilmiş t | 34 | Kullanıcı ekranında geçti |
+| B12 | Kategorik veriler, ki-kare | 32 | Kullanıcı ekranında geçti |
+| B13 | Korelasyon, basit regresyon | 62 | Kullanıcı ekranında geçti |
+| B14 | Genel sınava hazırlık | 17 | Kullanıcı ekranında geçti |
 
 ## Yeniden çalıştırma
 
@@ -31,7 +34,7 @@ standart çıktı/hata metinlerini ve iki yazılımın ayrı sonuç tabloların�
 GitHub Actions aynı denetimi yeniden çalıştırır; gerçek CI günlüğü iş akışının
 `python-r-dogrulama` çıktısında saklanır. CI, IBM SPSS çalıştırmaz.
 
-## IBM SPSS 29 ile kalan adım
+## IBM SPSS 29 — tamamlanan kontrolü yeniden çalıştırma
 
 1. Atölyeden bölüm ZIP'ini indirin ve tamamen ayıklayın.
 2. SPSS çalışma klasörünü paketin `b08/ornek-01` (veya ilgili bölüm) klasörü yapın.
