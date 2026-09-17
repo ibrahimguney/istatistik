@@ -68,8 +68,39 @@ def manifest(folder):
     (folder/'MANIFEST.json').write_text(json.dumps({'algorithm':'SHA-256','files':files},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 
 
+def b12_export(example):
+    """Dört hücreyi, ardından tek özet satırını aktif oldukları anda kaydet.
+
+    İç içe INSERT ve özet/hücre veri setlerini yeniden etkinleştirme yoktur.
+    Analiz hesapları mevcut analiz.sps kaynağından aynen alınır.
+    """
+    source = (example/'analiz.sps').read_text(encoding='utf-8')
+    cells, rest = source.split('DATASET COPY B12Ozet.\n', 1)
+    summary = rest.removeprefix('DATASET ACTIVATE B12Ozet.\n').split('DATASET ACTIVATE B12Hucreler.', 1)[0]
+    config = json.loads((example/'spss-esleme.json').read_text(encoding='utf-8'))
+
+    def export(filename):
+        mapping = [m for m in config['mappings'] if m['file'] == filename]
+        columns = sorted({m['column'] for m in mapping} | {k for m in mapping for k in m['where']})
+        numeric = [c for c in columns if c not in ('grup', 'sonuc')]
+        return ("\nWEIGHT OFF.\nFORMATS " + ' '.join(numeric) + " (E25.16).\nEXECUTE.\n"
+                + f"SAVE TRANSLATE OUTFILE='{filename}'\n"
+                + " /TYPE=CSV /ENCODING='UTF8' /REPLACE /FIELDNAMES /CELLS=VALUES\n"
+                + " /KEEP=" + ' '.join(columns) + ".\n")
+
+    syntax = ("* B12 disari aktarim v2 - hucreler ve ozet sirasiyla kaydedilir.\n"
+              "* Calisma klasoru b12/ornek-01 olmalidir.\nSET DECIMAL DOT.\n"
+              + cells + export('spss-satirlar.csv')
+              + "\n* Hucreler kaydedildi; simdi tek satirlik ozet hesaplanir.\n"
+              + summary + export('spss-ozet.csv'))
+    for name in ('spss-dogrula.sps', 'spss-dogrula.sps.txt'):
+        (example/name).write_text(syntax, encoding='utf-8')
+
+
 def chapter(n,d):
     code=f'b{n:02}'; package=ROOT/'bolumler'/code; example=package/'ornek-01'; prefix=f'bolumler/{code}/ornek-01'
+    if n == 12:
+        b12_export(example)
     current=f'''# {code.upper()} — güncel çalışma kaydı · 17 Eylül 2026
 
 Python ve gerçek R 4.3.3 yorumlayıcısında `{d['count']}` referans değeri karşılaştırıldı.
@@ -92,6 +123,9 @@ Güncel tam çalıştırma günlüğü depo kökündeki
 Kod, veri ve paket dosyalarının SHA-256 değerleri güncel MANIFEST.json içindedir.
 Ham veri/özet ayrımı, örnekleme varsayımları ve yorum sınırları devam eder.
 '''
+    if n == 12:
+        current = current.replace('**IBM SPSS çalıştırılmadı.** Kaynak incelemesi ve Python/R eşleşmesi SPSS kabulü değildir.',
+            '**Kullanıcının SPSS 29 tabloları incelendi:** Pearson ki-kare, p, Cramér V ve toplam beklenen değerlerle görüntü hassasiyetinde uyumlu. İlk dışa aktarımda FORMATS/alfa hatası oluştu; 32 değerlik otomatik kabul henüz geçmedi. V2 dışa aktarımı yeniden çalıştırılmalıdır. [Düzeltme kaydı](SPSS-DUZELTME.md).')
     (package/'GUNCEL-DOGRULAMA.md').write_text(current,encoding='utf-8')
     for path,link in [(package/'DOGRULAMA.md','GUNCEL-DOGRULAMA.md'),(package/'README.md','GUNCEL-DOGRULAMA.md'),(example/'README.md','../GUNCEL-DOGRULAMA.md')]:
         text=path.read_text(encoding='utf-8')
@@ -131,6 +165,11 @@ B12'de düzeltmesiz Pearson satırı esas alınır. B13'te REGRESSION yordamın�
 
 **Yorum:** {d['caution']}
 '''
+        if n == 12:
+            guide = guide.replace('Bu paket SPSS\'te henüz çalıştırılmadı. Kontrol için:',
+                'V1 kullanıcı çalıştırmasında analiz sonuçları uyumlu, dışa aktarım başarısızdı. V2 için 32 değerlik kabul bekliyor. [Düzeltme kaydı](SPSS-DUZELTME.md). Kontrol için:')
+            guide = guide.replace('`analiz.sps` içeri alınır;\n   veri ve plan girdileri aynı klasörden okunur.',
+                'V2 dosyası analizi ve dışa aktarımı tek akışta yürütür; önce dört hücreyi, sonra tek özet satırını kaydeder. `veri.csv` aynı klasörden okunur.')
         (package/'SPSS-KONTROL.md').write_text(guide,encoding='utf-8')
     manifest(package)
     target=SITE/'bolumler'/code

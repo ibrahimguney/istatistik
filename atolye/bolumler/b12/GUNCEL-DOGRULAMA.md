@@ -6,7 +6,7 @@ mutlak tolerans 1e-15). `--check --grafik` çalıştırıldı; grafik üretimi d
 Değiştirilmiş referans ve eksik veri iki yazılımda da hata verdi.
 Grafikler geçici çalışma klasöründe üretildi; dağıtımdaki özgün Python grafikleri korunur.
 
-**IBM SPSS çalıştırılmadı.** Kaynak incelemesi ve Python/R eşleşmesi SPSS kabulü değildir.
+**Kullanıcının SPSS 29 tabloları incelendi:** Pearson ki-kare, p, Cramér V ve toplam beklenen değerlerle görüntü hassasiyetinde uyumlu. İlk dışa aktarımda FORMATS/alfa hatası oluştu; 32 değerlik otomatik kabul henüz geçmedi. V2 dışa aktarımı yeniden çalıştırılmalıdır. [Düzeltme kaydı](SPSS-DUZELTME.md).
 `ornek-01/spss-dogrula.sps` SPSS sonuçlarını CSV olarak dışa aktarır.
 `ornek-01/spss_karsilastir.py` dışa aktarımları referanslarla karşılaştırır.
 Adımlar: [SPSS kontrol rehberi](SPSS-KONTROL.md).

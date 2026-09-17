@@ -1,12 +1,11 @@
 # B12 — IBM SPSS 29 kontrolü
 
-Bu paket SPSS'te henüz çalıştırılmadı. Kontrol için:
+V1 kullanıcı çalıştırmasında analiz sonuçları uyumlu, dışa aktarım başarısızdı. V2 için 32 değerlik kabul bekliyor. [Düzeltme kaydı](SPSS-DUZELTME.md). Kontrol için:
 
 1. ZIP'i tamamen ayıklayın; açık SPSS çalışmalarınızı kaydedin.
 2. Syntax penceresinde gerçek klasörünüze göre `CD 'C:/.../b12/ornek-01'.` çalıştırın.
    Syntax dosyasını açmak çalışma klasörünü otomatik değiştirmez.
-3. `spss-dogrula.sps` dosyasının tamamını çalıştırın. `analiz.sps` içeri alınır;
-   veri ve plan girdileri aynı klasörden okunur. Hata/uyarıları inceleyin.
+3. `spss-dogrula.sps` dosyasının tamamını çalıştırın. V2 dosyası analizi ve dışa aktarımı tek akışta yürütür; önce dört hücreyi, sonra tek özet satırını kaydeder. `veri.csv` aynı klasörden okunur. Hata/uyarıları inceleyin.
 4. `spss-ozet.csv` ve `spss-satirlar.csv` dosyası oluşur.
    Önceki dışa aktarımlar varsa üzerlerine yazılır; analiz kaynakları değişmez.
 5. Aynı `ornek-01` klasöründe terminal açıp çalıştırın:
