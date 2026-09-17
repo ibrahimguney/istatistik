@@ -1,0 +1,2969 @@
+{
+  "tarih_utc": "2026-09-17T05:09:10.328305+00:00",
+  "kapsam": "B08–B14 ve siteye eklenen B07; ortak CSV, Python/R, grafik üretimi ve negatif kontroller. IBM SPSS çalıştırılmadı.",
+  "python": "3.12.14",
+  "versions": {
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8"
+  },
+  "r_session": {
+    "exit_code": 0,
+    "stdout": "R version 4.3.3 (2024-02-29)\nPlatform: x86_64-pc-linux-gnu (64-bit)\nRunning under: Ubuntu 24.04.3 LTS\n\nMatrix products: default\nBLAS:   /usr/lib/x86_64-linux-gnu/blas/libblas.so.3.12.0 \nLAPACK: /usr/lib/x86_64-linux-gnu/lapack/liblapack.so.3.12.0\n\nlocale:\n [1] LC_CTYPE=C.UTF-8       LC_NUMERIC=C           LC_TIME=C.UTF-8       \n [4] LC_COLLATE=C.UTF-8     LC_MONETARY=C.UTF-8    LC_MESSAGES=C.UTF-8   \n [7] LC_PAPER=C.UTF-8       LC_NAME=C              LC_ADDRESS=C          \n[10] LC_TELEPHONE=C         LC_MEASUREMENT=C.UTF-8 LC_IDENTIFICATION=C   \n\ntime zone: /UTC\ntzcode source: system (glibc)\n\nattached base packages:\n[1] stats     graphics  grDevices utils     datasets  methods   base     \n\nloaded via a namespace (and not attached):\n[1] compiler_4.3.3\n",
+    "stderr": ""
+  },
+  "bolumler": [
+    {
+      "bolum": "b07",
+      "kontrol_sayisi": 21,
+      "spss": "calistirilmadi",
+      "source_sha256": {
+        "ornek-01/README.md": "591657bab7f49c8c531b1e8b60888d00ef056290894befa166977d2f4d6abb3a",
+        "ornek-01/analiz.sps": "237100ac862e6b70b6b1db14c3da907272406ffb775d0cd05edd7be583442424",
+        "ornek-01/analiz.sps.txt": "237100ac862e6b70b6b1db14c3da907272406ffb775d0cd05edd7be583442424",
+        "ornek-01/beklenen-sonuclar.csv": "02ba6b3761d2f7c0de2d4dcc87bb7fbce9651bbc66dd30dec57055a4f59a766b",
+        "ornek-01/benzetim.R": "daa4cc37d11bc831e1234c71ee690d435c8f8c4ca848ae945eb03abda6cfe807",
+        "ornek-01/benzetim.csv": "dd17d0282b2bf50be7da1a6b13429dd94503ac1b030c3682fa850188bd59f228",
+        "ornek-01/cozum.R": "f23a85dccb02226db48cb813d182320e236822aad46948cabd3997aa6cbcdf92",
+        "ornek-01/cozum.md": "623d6c6992d59a80df85910a4b0b29e4eafbe476721738e40b7dd3888db5408f",
+        "ornek-01/cozum.py": "d986d1b1d5a41ab217326fd3fcc8baf853bf38e0df65b9787fada15cec770434",
+        "ornek-01/grafik-aciklamasi.md": "98a46686557049216423ad2ea371e1953b2792b41e8a8ebf9c8846c278426654",
+        "ornek-01/uret.py": "09072bca834280a25447baa154fc9a04d026fbbab9ed937487759a901e57b0b6",
+        "ornek-01/uretim-kaydi.json": "54f4a8b2a109c1abd7dadb4412cec80f18d9d69eb5aa9ac4bc562b36aa8f83b8",
+        "ornek-01/veri-sozlugu.csv": "9acd6a100e6de9dc3d95c4d522e571510b51627c58560184964b41e6d40c4864",
+        "ornek-01/veri.csv": "f3189ab01e3039452778e791c2e4c39fe3a46099a49a9cb2f1fd5abf2553d6b9"
+      },
+      "manifest_gecti": true,
+      "python": {
+        "exit_code": 0,
+        "stdout": " degisken              olcu        deger\n   gozlem             hacim    10.000000\n   gozlem            olumlu     6.000000\n   gozlem           olumsuz     4.000000\n   gozlem              oran     0.600000\n   gozlem       yaklasik_se     0.154919\n   gozlem  yaklasik_varyans     0.024000\np_hat_060             se_25     0.097980\np_hat_060            se_400     0.024495\n benzetim     tekrar_sayisi 10000.000000\n benzetim    orneklem_hacmi    50.000000\n benzetim       gercek_oran     0.400000\n benzetim            merkez     0.398418\n benzetim          yanlilik    -0.001582\n benzetim         varyans_B     0.004846\n benzetim    varyans_Beksi1     0.004846\n benzetim        ampirik_se     0.069615\n benzetim               mse     0.004848\n benzetim      mse_ayrisimi     0.004848\n benzetim kuramsal_yanlilik     0.000000\n benzetim       kuramsal_se     0.069282\n benzetim      kuramsal_mse     0.004800\nDOGRULANDI: 21 kontrol degeri eslesiyor.\nGrafik: ciktilar/python/oran-tahmini.png\nPython 3.12.14, NumPy 2.3.5, pandas 2.2.3\n",
+        "stderr": "",
+        "gecti": true
+      },
+      "r": {
+        "exit_code": 0,
+        "stdout": "  degisken              olcu         deger\n    gozlem             hacim  1.000000e+01\n    gozlem            olumlu  6.000000e+00\n    gozlem           olumsuz  4.000000e+00\n    gozlem              oran  6.000000e-01\n    gozlem       yaklasik_se  1.549193e-01\n    gozlem  yaklasik_varyans  2.400000e-02\n p_hat_060             se_25  9.797959e-02\n p_hat_060            se_400  2.449490e-02\n  benzetim     tekrar_sayisi  1.000000e+04\n  benzetim    orneklem_hacmi  5.000000e+01\n  benzetim       gercek_oran  4.000000e-01\n  benzetim            merkez  3.984180e-01\n  benzetim          yanlilik -1.582000e-03\n  benzetim         varyans_B  4.845777e-03\n  benzetim    varyans_Beksi1  4.846262e-03\n  benzetim        ampirik_se  6.961510e-02\n  benzetim               mse  4.848280e-03\n  benzetim      mse_ayrisimi  4.848280e-03\n  benzetim kuramsal_yanlilik  0.000000e+00\n  benzetim       kuramsal_se  6.928203e-02\n  benzetim      kuramsal_mse  4.800000e-03\nDOGRULANDI: 21 kontrol degeri eslesiyor.\nGrafik: ciktilar/r/oran-tahmini.png\n",
+        "stderr": "",
+        "gecti": true
+      },
+      "python_export": {
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "python_r_eslesmesi": {
+        "gecti": true,
+        "farklar": [],
+        "rel_tol": 1e-09,
+        "abs_tol": 1e-15,
+        "python_sonuclari": [
+          {
+            "degisken": "gozlem",
+            "olcu": "hacim",
+            "deger": "10.0"
+          },
+          {
+            "degisken": "gozlem",
+            "olcu": "olumlu",
+            "deger": "6.0"
+          },
+          {
+            "degisken": "gozlem",
+            "olcu": "olumsuz",
+            "deger": "4.0"
+          },
+          {
+            "degisken": "gozlem",
+            "olcu": "oran",
+            "deger": "0.6"
+          },
+          {
+            "degisken": "gozlem",
+            "olcu": "yaklasik_se",
+            "deger": "0.15491933384829668"
+          },
+          {
+            "degisken": "gozlem",
+            "olcu": "yaklasik_varyans",
+            "deger": "0.024"
+          },
+          {
+            "degisken": "p_hat_060",
+            "olcu": "se_25",
+            "deger": "0.09797958971132711"
+          },
+          {
+            "degisken": "p_hat_060",
+            "olcu": "se_400",
+            "deger": "0.02449489742783178"
+          },
+          {
+            "degisken": "benzetim",
+            "olcu": "tekrar_sayisi",
+            "deger": "10000.0"
+          },
+          {
+            "degisken": "benzetim",
+            "olcu": "orneklem_hacmi",
+            "deger": "50.0"
+          },
+          {
+            "degisken": "benzetim",
+            "olcu": "gercek_oran",
+            "deger": "0.4"
+          },
+          {
+            "degisken": "benzetim",
+            "olcu": "merkez",
+            "deger": "0.39841799999999994"
+          },
+          {
+            "degisken": "benzetim",
+            "olcu": "yanlilik",
+            "deger": "-0.0015820000000000833"
+          },
+          {
+            "degisken": "benzetim",
+            "olcu": "varyans_B",
+            "deger": "0.004845777276"
+          },
+          {
+            "degisken": "benzetim",
+            "olcu": "varyans_Beksi1",
+            "deger": "0.0048462619021902185"
+          },
+          {
+            "degisken": "benzetim",
+            "olcu": "ampirik_se",
+            "deger": "0.06961509823443632"
+          },
+          {
+            "degisken": "benzetim",
+            "olcu": "mse",
+            "deger": "0.00484828"
+          },
+          {
+            "degisken": "benzetim",
+            "olcu": "mse_ayrisimi",
+            "deger": "0.00484828"
+          },
+          {
+            "degisken": "benzetim",
+            "olcu": "kuramsal_yanlilik",
+            "deger": "0.0"
+          },
+          {
+            "degisken": "benzetim",
+            "olcu": "kuramsal_se",
+            "deger": "0.06928203230275509"
+          },
+          {
+            "degisken": "benzetim",
+            "olcu": "kuramsal_mse",
+            "deger": "0.0048"
+          }
+        ],
+        "r_sonuclari": [
+          {
+            "degisken": "gozlem",
+            "olcu": "hacim",
+            "deger": "10"
+          },
+          {
+            "degisken": "gozlem",
+            "olcu": "olumlu",
+            "deger": "6"
+          },
+          {
+            "degisken": "gozlem",
+            "olcu": "olumsuz",
+            "deger": "4"
+          },
+          {
+            "degisken": "gozlem",
+            "olcu": "oran",
+            "deger": "0.6"
+          },
+          {
+            "degisken": "gozlem",
+            "olcu": "yaklasik_se",
+            "deger": "0.154919333848297"
+          },
+          {
+            "degisken": "gozlem",
+            "olcu": "yaklasik_varyans",
+            "deger": "0.024"
+          },
+          {
+            "degisken": "p_hat_060",
+            "olcu": "se_25",
+            "deger": "0.0979795897113271"
+          },
+          {
+            "degisken": "p_hat_060",
+            "olcu": "se_400",
+            "deger": "0.0244948974278318"
+          },
+          {
+            "degisken": "benzetim",
+            "olcu": "tekrar_sayisi",
+            "deger": "10000"
+          },
+          {
+            "degisken": "benzetim",
+            "olcu": "orneklem_hacmi",
+            "deger": "50"
+          },
+          {
+            "degisken": "benzetim",
+            "olcu": "gercek_oran",
+            "deger": "0.4"
+          },
+          {
+            "degisken": "benzetim",
+            "olcu": "merkez",
+            "deger": "0.398418"
+          },
+          {
+            "degisken": "benzetim",
+            "olcu": "yanlilik",
+            "deger": "-0.00158200000000003"
+          },
+          {
+            "degisken": "benzetim",
+            "olcu": "varyans_B",
+            "deger": "0.004845777276"
+          },
+          {
+            "degisken": "benzetim",
+            "olcu": "varyans_Beksi1",
+            "deger": "0.00484626190219022"
+          },
+          {
+            "degisken": "benzetim",
+            "olcu": "ampirik_se",
+            "deger": "0.0696150982344363"
+          },
+          {
+            "degisken": "benzetim",
+            "olcu": "mse",
+            "deger": "0.00484828"
+          },
+          {
+            "degisken": "benzetim",
+            "olcu": "mse_ayrisimi",
+            "deger": "0.00484828"
+          },
+          {
+            "degisken": "benzetim",
+            "olcu": "kuramsal_yanlilik",
+            "deger": "0"
+          },
+          {
+            "degisken": "benzetim",
+            "olcu": "kuramsal_se",
+            "deger": "0.0692820323027551"
+          },
+          {
+            "degisken": "benzetim",
+            "olcu": "kuramsal_mse",
+            "deger": "0.0048"
+          }
+        ]
+      },
+      "degistirilmis_referans": {
+        "python": {
+          "exit_code": 1,
+          "stdout": " degisken              olcu        deger\n   gozlem             hacim    10.000000\n   gozlem            olumlu     6.000000\n   gozlem           olumsuz     4.000000\n   gozlem              oran     0.600000\n   gozlem       yaklasik_se     0.154919\n   gozlem  yaklasik_varyans     0.024000\np_hat_060             se_25     0.097980\np_hat_060            se_400     0.024495\n benzetim     tekrar_sayisi 10000.000000\n benzetim    orneklem_hacmi    50.000000\n benzetim       gercek_oran     0.400000\n benzetim            merkez     0.398418\n benzetim          yanlilik    -0.001582\n benzetim         varyans_B     0.004846\n benzetim    varyans_Beksi1     0.004846\n benzetim        ampirik_se     0.069615\n benzetim               mse     0.004848\n benzetim      mse_ayrisimi     0.004848\n benzetim kuramsal_yanlilik     0.000000\n benzetim       kuramsal_se     0.069282\n benzetim      kuramsal_mse     0.004800\n",
+          "stderr": "Traceback (most recent call last):\n  File \"/tmp/b07-go0v0h9_/ornek-01/cozum.py\", line 126, in <module>\n    main()\n  File \"/tmp/b07-go0v0h9_/ornek-01/cozum.py\", line 119, in main\n    kontrol_et(sonuc, pd.read_csv(\"beklenen-sonuclar.csv\"))\n  File \"/tmp/b07-go0v0h9_/ornek-01/cozum.py\", line 80, in kontrol_et\n    raise ValueError(f\"Kontrol uyusmazligi: {gercek} != {hedef}\")\nValueError: Kontrol uyusmazligi: 10.0 != 11.0\n"
+        },
+        "r": {
+          "exit_code": 1,
+          "stdout": "  degisken              olcu         deger\n    gozlem             hacim  1.000000e+01\n    gozlem            olumlu  6.000000e+00\n    gozlem           olumsuz  4.000000e+00\n    gozlem              oran  6.000000e-01\n    gozlem       yaklasik_se  1.549193e-01\n    gozlem  yaklasik_varyans  2.400000e-02\n p_hat_060             se_25  9.797959e-02\n p_hat_060            se_400  2.449490e-02\n  benzetim     tekrar_sayisi  1.000000e+04\n  benzetim    orneklem_hacmi  5.000000e+01\n  benzetim       gercek_oran  4.000000e-01\n  benzetim            merkez  3.984180e-01\n  benzetim          yanlilik -1.582000e-03\n  benzetim         varyans_B  4.845777e-03\n  benzetim    varyans_Beksi1  4.846262e-03\n  benzetim        ampirik_se  6.961510e-02\n  benzetim               mse  4.848280e-03\n  benzetim      mse_ayrisimi  4.848280e-03\n  benzetim kuramsal_yanlilik  0.000000e+00\n  benzetim       kuramsal_se  6.928203e-02\n  benzetim      kuramsal_mse  4.800000e-03\n",
+          "stderr": "Error in kontrol_et(sonuc, read.csv(\"beklenen-sonuclar.csv\", stringsAsFactors = FALSE)) : \n  Kontrol uyusmazligi.\nCalls: source -> withVisible -> eval -> eval -> kontrol_et\nExecution halted\n"
+        }
+      },
+      "eksik_veri": {
+        "python": {
+          "exit_code": 1,
+          "stdout": "",
+          "stderr": "Traceback (most recent call last):\n  File \"/tmp/b07-go0v0h9_/ornek-01/cozum.py\", line 126, in <module>\n    main()\n  File \"/tmp/b07-go0v0h9_/ornek-01/cozum.py\", line 114, in main\n    veri = pd.read_csv(\"veri.csv\")\n           ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/pandas/io/parsers/readers.py\", line 1026, in read_csv\n    return _read(filepath_or_buffer, kwds)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/pandas/io/parsers/readers.py\", line 620, in _read\n    parser = TextFileReader(filepath_or_buffer, **kwds)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/pandas/io/parsers/readers.py\", line 1620, in __init__\n    self._engine = self._make_engine(f, self.engine)\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/pandas/io/parsers/readers.py\", line 1880, in _make_engine\n    self.handles = get_handle(\n                   ^^^^^^^^^^^\n  File \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/pandas/io/common.py\", line 873, in get_handle\n    handle = open(\n             ^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: 'veri.csv'\n"
+        },
+        "r": {
+          "exit_code": 1,
+          "stdout": "",
+          "stderr": "Error in file(file, \"rt\") : cannot open the connection\nCalls: source ... withVisible -> eval -> eval -> read.csv -> read.table -> file\nIn addition: Warning message:\nIn file(file, \"rt\") :\n  cannot open file 'veri.csv': No such file or directory\nExecution halted\n"
+        }
+      },
+      "gecti": true
+    },
+    {
+      "bolum": "b08",
+      "kontrol_sayisi": 19,
+      "spss": "calistirilmadi",
+      "source_sha256": {
+        "ornek-01/README.md": "659d0227125896ed9ffd3922f2ce951744bd09f2a359e6724fa11b7928c83af0",
+        "ornek-01/analiz.sps": "587c523b3e73c3a67be221ea12f28b18c3be3fcbd159f3e5e3f2da4f8e8f78fd",
+        "ornek-01/analiz.sps.txt": "587c523b3e73c3a67be221ea12f28b18c3be3fcbd159f3e5e3f2da4f8e8f78fd",
+        "ornek-01/beklenen-sonuclar.csv": "fb5b6d0f45a1f14503ca48aac5019aa84c5657566a0a08418a219b016175c598",
+        "ornek-01/cozum.R": "559519d8960e14033ffaa58dfa4dad8a2a92597756a1c627bd7726108389e975",
+        "ornek-01/cozum.md": "df8128341a380269dd95e4752a2708cd8bf95198210acb3d1ad814c753c882e5",
+        "ornek-01/cozum.py": "87536a3bd6dd651b822e9d00175e4100d04ff3dce502e54e255aca59463164a7",
+        "ornek-01/grafik-aciklamasi.md": "7c089961545df1820084d9782b810ff6de83f11ec5f07754f2f2b97de20220e5",
+        "ornek-01/kaynak-kaydi.json": "10c77526fda80b4b4f7b03fb765e8a5ccda213ee4626fb498461bee740f78054",
+        "ornek-01/spss-dogrula.sps": "068514c663166964f6471e4c82fd4d2eb34a093866f4d0fd5d3690be1d476b63",
+        "ornek-01/spss-dogrula.sps.txt": "068514c663166964f6471e4c82fd4d2eb34a093866f4d0fd5d3690be1d476b63",
+        "ornek-01/spss-esleme.json": "7ccb5047e7a1b9838c767645e9ad1578adb7aa5a3013462b000e7c51321902ce",
+        "ornek-01/spss_karsilastir.py": "b615f9b25e9682b03dfef3df4fae79cf7241c8f4518c3f5f6cd7dbfc0bfaef64",
+        "ornek-01/veri-sozlugu.csv": "689817815cef2999362f4291e1f20a999823a6734884804ed71fbafc8714e79a",
+        "ornek-01/veri.csv": "516589740616c9e9baff58c6cb35e3458c23e542f318d89b4485f57976fb50bf"
+      },
+      "manifest_gecti": true,
+      "python": {
+        "exit_code": 0,
+        "stdout": "degisken          olcu     deger\n    ozet         hacim 25.000000\n    ozet      ortalama 72.000000\n    ozet   orneklem_sd 10.000000\n    ozet standart_hata  2.000000\n    ozet    serbestlik 24.000000\n    GA95  guven_duzeyi  0.950000\n    GA95         alpha  0.050000\n    GA95      kritik_t  2.063899\n    GA95     hata_payi  4.127797\n    GA95     alt_sinir 67.872203\n    GA95     ust_sinir 76.127797\n    GA95      genislik  8.255594\n    GA99  guven_duzeyi  0.990000\n    GA99         alpha  0.010000\n    GA99      kritik_t  2.796940\n    GA99     hata_payi  5.593879\n    GA99     alt_sinir 66.406121\n    GA99     ust_sinir 77.593879\n    GA99      genislik 11.187758\nDOGRULANDI: 19 kontrol degeri eslesiyor.\nGrafik: ciktilar/python/guven-araliklari.png\nPython 3.12.14, NumPy 2.3.5, pandas 2.2.3, SciPy 1.17.0\n",
+        "stderr": "",
+        "gecti": true
+      },
+      "r": {
+        "exit_code": 0,
+        "stdout": " degisken          olcu     deger\n     ozet         hacim 25.000000\n     ozet      ortalama 72.000000\n     ozet   orneklem_sd 10.000000\n     ozet standart_hata  2.000000\n     ozet    serbestlik 24.000000\n     GA95  guven_duzeyi  0.950000\n     GA95         alpha  0.050000\n     GA95      kritik_t  2.063899\n     GA95     hata_payi  4.127797\n     GA95     alt_sinir 67.872203\n     GA95     ust_sinir 76.127797\n     GA95      genislik  8.255594\n     GA99  guven_duzeyi  0.990000\n     GA99         alpha  0.010000\n     GA99      kritik_t  2.796940\n     GA99     hata_payi  5.593879\n     GA99     alt_sinir 66.406121\n     GA99     ust_sinir 77.593879\n     GA99      genislik 11.187758\nDOGRULANDI: 19 kontrol degeri eslesiyor.\nGrafik: ciktilar/r/guven-araliklari.png\n",
+        "stderr": "",
+        "gecti": true
+      },
+      "python_export": {
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "python_r_eslesmesi": {
+        "gecti": true,
+        "farklar": [],
+        "rel_tol": 1e-09,
+        "abs_tol": 1e-15,
+        "python_sonuclari": [
+          {
+            "degisken": "ozet",
+            "olcu": "hacim",
+            "deger": "25.0"
+          },
+          {
+            "degisken": "ozet",
+            "olcu": "ortalama",
+            "deger": "72.0"
+          },
+          {
+            "degisken": "ozet",
+            "olcu": "orneklem_sd",
+            "deger": "10.0"
+          },
+          {
+            "degisken": "ozet",
+            "olcu": "standart_hata",
+            "deger": "2.0"
+          },
+          {
+            "degisken": "ozet",
+            "olcu": "serbestlik",
+            "deger": "24.0"
+          },
+          {
+            "degisken": "GA95",
+            "olcu": "guven_duzeyi",
+            "deger": "0.95"
+          },
+          {
+            "degisken": "GA95",
+            "olcu": "alpha",
+            "deger": "0.050000000000000044"
+          },
+          {
+            "degisken": "GA95",
+            "olcu": "kritik_t",
+            "deger": "2.0638985616280245"
+          },
+          {
+            "degisken": "GA95",
+            "olcu": "hata_payi",
+            "deger": "4.127797123256049"
+          },
+          {
+            "degisken": "GA95",
+            "olcu": "alt_sinir",
+            "deger": "67.87220287674396"
+          },
+          {
+            "degisken": "GA95",
+            "olcu": "ust_sinir",
+            "deger": "76.12779712325604"
+          },
+          {
+            "degisken": "GA95",
+            "olcu": "genislik",
+            "deger": "8.255594246512098"
+          },
+          {
+            "degisken": "GA99",
+            "olcu": "guven_duzeyi",
+            "deger": "0.99"
+          },
+          {
+            "degisken": "GA99",
+            "olcu": "alpha",
+            "deger": "0.010000000000000009"
+          },
+          {
+            "degisken": "GA99",
+            "olcu": "kritik_t",
+            "deger": "2.796939504774456"
+          },
+          {
+            "degisken": "GA99",
+            "olcu": "hata_payi",
+            "deger": "5.593879009548912"
+          },
+          {
+            "degisken": "GA99",
+            "olcu": "alt_sinir",
+            "deger": "66.40612099045109"
+          },
+          {
+            "degisken": "GA99",
+            "olcu": "ust_sinir",
+            "deger": "77.59387900954891"
+          },
+          {
+            "degisken": "GA99",
+            "olcu": "genislik",
+            "deger": "11.187758019097824"
+          }
+        ],
+        "r_sonuclari": [
+          {
+            "degisken": "ozet",
+            "olcu": "hacim",
+            "deger": "25"
+          },
+          {
+            "degisken": "ozet",
+            "olcu": "ortalama",
+            "deger": "72"
+          },
+          {
+            "degisken": "ozet",
+            "olcu": "orneklem_sd",
+            "deger": "10"
+          },
+          {
+            "degisken": "ozet",
+            "olcu": "standart_hata",
+            "deger": "2"
+          },
+          {
+            "degisken": "ozet",
+            "olcu": "serbestlik",
+            "deger": "24"
+          },
+          {
+            "degisken": "GA95",
+            "olcu": "guven_duzeyi",
+            "deger": "0.95"
+          },
+          {
+            "degisken": "GA95",
+            "olcu": "alpha",
+            "deger": "0.05"
+          },
+          {
+            "degisken": "GA95",
+            "olcu": "kritik_t",
+            "deger": "2.06389856162803"
+          },
+          {
+            "degisken": "GA95",
+            "olcu": "hata_payi",
+            "deger": "4.12779712325605"
+          },
+          {
+            "degisken": "GA95",
+            "olcu": "alt_sinir",
+            "deger": "67.872202876744"
+          },
+          {
+            "degisken": "GA95",
+            "olcu": "ust_sinir",
+            "deger": "76.127797123256"
+          },
+          {
+            "degisken": "GA95",
+            "olcu": "genislik",
+            "deger": "8.2555942465121"
+          },
+          {
+            "degisken": "GA99",
+            "olcu": "guven_duzeyi",
+            "deger": "0.99"
+          },
+          {
+            "degisken": "GA99",
+            "olcu": "alpha",
+            "deger": "0.01"
+          },
+          {
+            "degisken": "GA99",
+            "olcu": "kritik_t",
+            "deger": "2.79693950477446"
+          },
+          {
+            "degisken": "GA99",
+            "olcu": "hata_payi",
+            "deger": "5.59387900954891"
+          },
+          {
+            "degisken": "GA99",
+            "olcu": "alt_sinir",
+            "deger": "66.4061209904511"
+          },
+          {
+            "degisken": "GA99",
+            "olcu": "ust_sinir",
+            "deger": "77.5938790095489"
+          },
+          {
+            "degisken": "GA99",
+            "olcu": "genislik",
+            "deger": "11.1877580190978"
+          }
+        ]
+      },
+      "degistirilmis_referans": {
+        "python": {
+          "exit_code": 1,
+          "stdout": "degisken          olcu     deger\n    ozet         hacim 25.000000\n    ozet      ortalama 72.000000\n    ozet   orneklem_sd 10.000000\n    ozet standart_hata  2.000000\n    ozet    serbestlik 24.000000\n    GA95  guven_duzeyi  0.950000\n    GA95         alpha  0.050000\n    GA95      kritik_t  2.063899\n    GA95     hata_payi  4.127797\n    GA95     alt_sinir 67.872203\n    GA95     ust_sinir 76.127797\n    GA95      genislik  8.255594\n    GA99  guven_duzeyi  0.990000\n    GA99         alpha  0.010000\n    GA99      kritik_t  2.796940\n    GA99     hata_payi  5.593879\n    GA99     alt_sinir 66.406121\n    GA99     ust_sinir 77.593879\n    GA99      genislik 11.187758\n",
+          "stderr": "Traceback (most recent call last):\n  File \"/tmp/b08-b7c9m151/ornek-01/cozum.py\", line 120, in <module>\n    main()\n  File \"/tmp/b08-b7c9m151/ornek-01/cozum.py\", line 113, in main\n    kontrol_et(sonuc, pd.read_csv(\"beklenen-sonuclar.csv\"))\n  File \"/tmp/b08-b7c9m151/ornek-01/cozum.py\", line 71, in kontrol_et\n    raise ValueError(f\"Kontrol uyusmazligi: {gercek} != {hedef}\")\nValueError: Kontrol uyusmazligi: 25.0 != 26.0\n"
+        },
+        "r": {
+          "exit_code": 1,
+          "stdout": " degisken          olcu     deger\n     ozet         hacim 25.000000\n     ozet      ortalama 72.000000\n     ozet   orneklem_sd 10.000000\n     ozet standart_hata  2.000000\n     ozet    serbestlik 24.000000\n     GA95  guven_duzeyi  0.950000\n     GA95         alpha  0.050000\n     GA95      kritik_t  2.063899\n     GA95     hata_payi  4.127797\n     GA95     alt_sinir 67.872203\n     GA95     ust_sinir 76.127797\n     GA95      genislik  8.255594\n     GA99  guven_duzeyi  0.990000\n     GA99         alpha  0.010000\n     GA99      kritik_t  2.796940\n     GA99     hata_payi  5.593879\n     GA99     alt_sinir 66.406121\n     GA99     ust_sinir 77.593879\n     GA99      genislik 11.187758\n",
+          "stderr": "Error in kontrol_et(sonuc, read.csv(\"beklenen-sonuclar.csv\", stringsAsFactors = FALSE)) : \n  Kontrol uyusmazligi.\nCalls: source -> withVisible -> eval -> eval -> kontrol_et\nExecution halted\n"
+        }
+      },
+      "eksik_veri": {
+        "python": {
+          "exit_code": 1,
+          "stdout": "",
+          "stderr": "Traceback (most recent call last):\n  File \"/tmp/b08-b7c9m151/ornek-01/cozum.py\", line 120, in <module>\n    main()\n  File \"/tmp/b08-b7c9m151/ornek-01/cozum.py\", line 109, in main\n    veri = pd.read_csv(\"veri.csv\")\n           ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/pandas/io/parsers/readers.py\", line 1026, in read_csv\n    return _read(filepath_or_buffer, kwds)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/pandas/io/parsers/readers.py\", line 620, in _read\n    parser = TextFileReader(filepath_or_buffer, **kwds)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/pandas/io/parsers/readers.py\", line 1620, in __init__\n    self._engine = self._make_engine(f, self.engine)\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/pandas/io/parsers/readers.py\", line 1880, in _make_engine\n    self.handles = get_handle(\n                   ^^^^^^^^^^^\n  File \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/pandas/io/common.py\", line 873, in get_handle\n    handle = open(\n             ^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: 'veri.csv'\n"
+        },
+        "r": {
+          "exit_code": 1,
+          "stdout": "",
+          "stderr": "Error in file(file, \"rt\") : cannot open the connection\nCalls: source ... withVisible -> eval -> eval -> read.csv -> read.table -> file\nIn addition: Warning message:\nIn file(file, \"rt\") :\n  cannot open file 'veri.csv': No such file or directory\nExecution halted\n"
+        }
+      },
+      "gecti": true
+    },
+    {
+      "bolum": "b09",
+      "kontrol_sayisi": 20,
+      "spss": "calistirilmadi",
+      "source_sha256": {
+        "ornek-01/README.md": "f8e48f03ace3b0170666b94c4d8f1e1f71e0d6d2cb556033623685b84f53b260",
+        "ornek-01/analiz.sps": "f30467dbc81dc129c0e19fe3f18dbb78185449aa41b1bb8292e03d95cad47de1",
+        "ornek-01/analiz.sps.txt": "f30467dbc81dc129c0e19fe3f18dbb78185449aa41b1bb8292e03d95cad47de1",
+        "ornek-01/beklenen-sonuclar.csv": "baaec7db93e2ae9fc1a519551ba888244379ad94079beb08ab621a1a8724d1af",
+        "ornek-01/cozum.R": "ede5eadbe0267dd91cbc1c5fc95e4da0e9d2f054c3ca037e82c82606651996c4",
+        "ornek-01/cozum.md": "0d5040dec698ae469408a9fc2a26a2d4f22156b7365b08198ed53338101f81ec",
+        "ornek-01/cozum.py": "e4ee47528d891a8f0180f04b88608ca7755ec2eedaf7bf4144adb397f128e1f5",
+        "ornek-01/grafik-aciklamasi.md": "10a14b6e68fbb63d9f71f486703ae5b4a4a2360f6f0a745b73b6b1f01f28b2cb",
+        "ornek-01/kaynak-kaydi.json": "89e0a45bac6bcc563dda42662b241490b3012ea1aad169dfd3b6742cc0a31960",
+        "ornek-01/spss-dogrula.sps": "c3edcd4d567e6c8f0f0d400c0b41efba18376ac9f1ff00e1573cdcbb18653932",
+        "ornek-01/spss-dogrula.sps.txt": "c3edcd4d567e6c8f0f0d400c0b41efba18376ac9f1ff00e1573cdcbb18653932",
+        "ornek-01/spss-esleme.json": "50371973279e26fe9b1ce6c077ff972c5d9ac0de8e446f46516f00079cc5f273",
+        "ornek-01/spss_karsilastir.py": "b615f9b25e9682b03dfef3df4fae79cf7241c8f4518c3f5f6cd7dbfc0bfaef64",
+        "ornek-01/veri-sozlugu.csv": "df13f7514c465efef4cb39dbc832f5f5903971739815b078705191fce387fed3",
+        "ornek-01/veri.csv": "66afa14471c33079b26566b757e91458bdb71e1e1b45c12120889d2cf6f4ce27"
+      },
+      "manifest_gecti": true,
+      "python": {
+        "exit_code": 0,
+        "stdout": "degisken           olcu     deger\n   girdi           fark  2.100000\n   girdi  standart_hata  1.000000\n   girdi     serbestlik 49.000000\n   girdi    null_degeri  0.000000\n   girdi           alfa  0.050000\n    test              t  2.100000\n    test         p_cift  0.040900\n    test          p_ust  0.020450\n    test          p_alt  0.979550\n    test    reddet_cift  1.000000\n    test reddet_alfa001  0.000000\n    test     reddet_ust  1.000000\n    test     reddet_alt  0.000000\n  aralik   guven_duzeyi  0.950000\n  aralik       kritik_t  2.009575\n  aralik      hata_payi  2.009575\n  aralik      alt_sinir  0.090425\n  aralik      ust_sinir  4.109575\n  aralik       genislik  4.019150\n  aralik  null_aralikta  0.000000\nAna cift yonlu karar: H0 reddedilir\nDOGRULANDI: 20 kontrol degeri eslesiyor.\nGrafik: ciktilar/python/test-ve-aralik.png\nPython 3.12.14, NumPy 2.3.5, pandas 2.2.3, SciPy 1.17.0\n",
+        "stderr": "",
+        "gecti": true
+      },
+      "r": {
+        "exit_code": 0,
+        "stdout": " degisken           olcu       deger\n    girdi           fark  2.10000000\n    girdi  standart_hata  1.00000000\n    girdi     serbestlik 49.00000000\n    girdi    null_degeri  0.00000000\n    girdi           alfa  0.05000000\n     test              t  2.10000000\n     test         p_cift  0.04090009\n     test          p_ust  0.02045004\n     test          p_alt  0.97954996\n     test    reddet_cift  1.00000000\n     test reddet_alfa001  0.00000000\n     test     reddet_ust  1.00000000\n     test     reddet_alt  0.00000000\n   aralik   guven_duzeyi  0.95000000\n   aralik       kritik_t  2.00957524\n   aralik      hata_payi  2.00957524\n   aralik      alt_sinir  0.09042476\n   aralik      ust_sinir  4.10957524\n   aralik       genislik  4.01915047\n   aralik  null_aralikta  0.00000000\nAna cift yonlu karar: H0 reddedilir \nDOGRULANDI: 20 kontrol degeri eslesiyor.\nGrafik: ciktilar/r/test-ve-aralik.png\n",
+        "stderr": "",
+        "gecti": true
+      },
+      "python_export": {
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "python_r_eslesmesi": {
+        "gecti": true,
+        "farklar": [],
+        "rel_tol": 1e-09,
+        "abs_tol": 1e-15,
+        "python_sonuclari": [
+          {
+            "degisken": "girdi",
+            "olcu": "fark",
+            "deger": "2.1"
+          },
+          {
+            "degisken": "girdi",
+            "olcu": "standart_hata",
+            "deger": "1.0"
+          },
+          {
+            "degisken": "girdi",
+            "olcu": "serbestlik",
+            "deger": "49.0"
+          },
+          {
+            "degisken": "girdi",
+            "olcu": "null_degeri",
+            "deger": "0.0"
+          },
+          {
+            "degisken": "girdi",
+            "olcu": "alfa",
+            "deger": "0.05"
+          },
+          {
+            "degisken": "test",
+            "olcu": "t",
+            "deger": "2.1"
+          },
+          {
+            "degisken": "test",
+            "olcu": "p_cift",
+            "deger": "0.04090008899073017"
+          },
+          {
+            "degisken": "test",
+            "olcu": "p_ust",
+            "deger": "0.020450044495365086"
+          },
+          {
+            "degisken": "test",
+            "olcu": "p_alt",
+            "deger": "0.9795499555046349"
+          },
+          {
+            "degisken": "test",
+            "olcu": "reddet_cift",
+            "deger": "1.0"
+          },
+          {
+            "degisken": "test",
+            "olcu": "reddet_alfa001",
+            "deger": "0.0"
+          },
+          {
+            "degisken": "test",
+            "olcu": "reddet_ust",
+            "deger": "1.0"
+          },
+          {
+            "degisken": "test",
+            "olcu": "reddet_alt",
+            "deger": "0.0"
+          },
+          {
+            "degisken": "aralik",
+            "olcu": "guven_duzeyi",
+            "deger": "0.95"
+          },
+          {
+            "degisken": "aralik",
+            "olcu": "kritik_t",
+            "deger": "2.0095752371292392"
+          },
+          {
+            "degisken": "aralik",
+            "olcu": "hata_payi",
+            "deger": "2.0095752371292392"
+          },
+          {
+            "degisken": "aralik",
+            "olcu": "alt_sinir",
+            "deger": "0.09042476287076084"
+          },
+          {
+            "degisken": "aralik",
+            "olcu": "ust_sinir",
+            "deger": "4.109575237129239"
+          },
+          {
+            "degisken": "aralik",
+            "olcu": "genislik",
+            "deger": "4.0191504742584785"
+          },
+          {
+            "degisken": "aralik",
+            "olcu": "null_aralikta",
+            "deger": "0.0"
+          }
+        ],
+        "r_sonuclari": [
+          {
+            "degisken": "girdi",
+            "olcu": "fark",
+            "deger": "2.1"
+          },
+          {
+            "degisken": "girdi",
+            "olcu": "standart_hata",
+            "deger": "1"
+          },
+          {
+            "degisken": "girdi",
+            "olcu": "serbestlik",
+            "deger": "49"
+          },
+          {
+            "degisken": "girdi",
+            "olcu": "null_degeri",
+            "deger": "0"
+          },
+          {
+            "degisken": "girdi",
+            "olcu": "alfa",
+            "deger": "0.05"
+          },
+          {
+            "degisken": "test",
+            "olcu": "t",
+            "deger": "2.1"
+          },
+          {
+            "degisken": "test",
+            "olcu": "p_cift",
+            "deger": "0.0409000889907302"
+          },
+          {
+            "degisken": "test",
+            "olcu": "p_ust",
+            "deger": "0.0204500444953651"
+          },
+          {
+            "degisken": "test",
+            "olcu": "p_alt",
+            "deger": "0.979549955504635"
+          },
+          {
+            "degisken": "test",
+            "olcu": "reddet_cift",
+            "deger": "1"
+          },
+          {
+            "degisken": "test",
+            "olcu": "reddet_alfa001",
+            "deger": "0"
+          },
+          {
+            "degisken": "test",
+            "olcu": "reddet_ust",
+            "deger": "1"
+          },
+          {
+            "degisken": "test",
+            "olcu": "reddet_alt",
+            "deger": "0"
+          },
+          {
+            "degisken": "aralik",
+            "olcu": "guven_duzeyi",
+            "deger": "0.95"
+          },
+          {
+            "degisken": "aralik",
+            "olcu": "kritik_t",
+            "deger": "2.00957523712924"
+          },
+          {
+            "degisken": "aralik",
+            "olcu": "hata_payi",
+            "deger": "2.00957523712924"
+          },
+          {
+            "degisken": "aralik",
+            "olcu": "alt_sinir",
+            "deger": "0.0904247628707604"
+          },
+          {
+            "degisken": "aralik",
+            "olcu": "ust_sinir",
+            "deger": "4.10957523712924"
+          },
+          {
+            "degisken": "aralik",
+            "olcu": "genislik",
+            "deger": "4.01915047425848"
+          },
+          {
+            "degisken": "aralik",
+            "olcu": "null_aralikta",
+            "deger": "0"
+          }
+        ]
+      },
+      "degistirilmis_referans": {
+        "python": {
+          "exit_code": 1,
+          "stdout": "degisken           olcu     deger\n   girdi           fark  2.100000\n   girdi  standart_hata  1.000000\n   girdi     serbestlik 49.000000\n   girdi    null_degeri  0.000000\n   girdi           alfa  0.050000\n    test              t  2.100000\n    test         p_cift  0.040900\n    test          p_ust  0.020450\n    test          p_alt  0.979550\n    test    reddet_cift  1.000000\n    test reddet_alfa001  0.000000\n    test     reddet_ust  1.000000\n    test     reddet_alt  0.000000\n  aralik   guven_duzeyi  0.950000\n  aralik       kritik_t  2.009575\n  aralik      hata_payi  2.009575\n  aralik      alt_sinir  0.090425\n  aralik      ust_sinir  4.109575\n  aralik       genislik  4.019150\n  aralik  null_aralikta  0.000000\nAna cift yonlu karar: H0 reddedilir\n",
+          "stderr": "Traceback (most recent call last):\n  File \"/tmp/b09-x5bnsxr4/ornek-01/cozum.py\", line 130, in <module>\n    main()\n  File \"/tmp/b09-x5bnsxr4/ornek-01/cozum.py\", line 123, in main\n    kontrol_et(sonuc, pd.read_csv(\"beklenen-sonuclar.csv\"))\n  File \"/tmp/b09-x5bnsxr4/ornek-01/cozum.py\", line 72, in kontrol_et\n    raise ValueError(f\"Kontrol uyusmazligi: {gercek} != {hedef}\")\nValueError: Kontrol uyusmazligi: 2.1 != 3.1\n"
+        },
+        "r": {
+          "exit_code": 1,
+          "stdout": " degisken           olcu       deger\n    girdi           fark  2.10000000\n    girdi  standart_hata  1.00000000\n    girdi     serbestlik 49.00000000\n    girdi    null_degeri  0.00000000\n    girdi           alfa  0.05000000\n     test              t  2.10000000\n     test         p_cift  0.04090009\n     test          p_ust  0.02045004\n     test          p_alt  0.97954996\n     test    reddet_cift  1.00000000\n     test reddet_alfa001  0.00000000\n     test     reddet_ust  1.00000000\n     test     reddet_alt  0.00000000\n   aralik   guven_duzeyi  0.95000000\n   aralik       kritik_t  2.00957524\n   aralik      hata_payi  2.00957524\n   aralik      alt_sinir  0.09042476\n   aralik      ust_sinir  4.10957524\n   aralik       genislik  4.01915047\n   aralik  null_aralikta  0.00000000\nAna cift yonlu karar: H0 reddedilir \n",
+          "stderr": "Error in kontrol_et(sonuc, read.csv(\"beklenen-sonuclar.csv\", stringsAsFactors = FALSE)) : \n  Kontrol uyusmazligi.\nCalls: source -> withVisible -> eval -> eval -> kontrol_et\nExecution halted\n"
+        }
+      },
+      "eksik_veri": {
+        "python": {
+          "exit_code": 1,
+          "stdout": "",
+          "stderr": "Traceback (most recent call last):\n  File \"/tmp/b09-x5bnsxr4/ornek-01/cozum.py\", line 130, in <module>\n    main()\n  File \"/tmp/b09-x5bnsxr4/ornek-01/cozum.py\", line 117, in main\n    veri = pd.read_csv(\"veri.csv\")\n           ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/pandas/io/parsers/readers.py\", line 1026, in read_csv\n    return _read(filepath_or_buffer, kwds)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/pandas/io/parsers/readers.py\", line 620, in _read\n    parser = TextFileReader(filepath_or_buffer, **kwds)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/pandas/io/parsers/readers.py\", line 1620, in __init__\n    self._engine = self._make_engine(f, self.engine)\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/pandas/io/parsers/readers.py\", line 1880, in _make_engine\n    self.handles = get_handle(\n                   ^^^^^^^^^^^\n  File \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/pandas/io/common.py\", line 873, in get_handle\n    handle = open(\n             ^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: 'veri.csv'\n"
+        },
+        "r": {
+          "exit_code": 1,
+          "stdout": "",
+          "stderr": "Error in file(file, \"rt\") : cannot open the connection\nCalls: source ... withVisible -> eval -> eval -> read.csv -> read.table -> file\nIn addition: Warning message:\nIn file(file, \"rt\") :\n  cannot open file 'veri.csv': No such file or directory\nExecution halted\n"
+        }
+      },
+      "gecti": true
+    },
+    {
+      "bolum": "b10",
+      "kontrol_sayisi": 30,
+      "spss": "calistirilmadi",
+      "source_sha256": {
+        "ornek-01/README.md": "b7e5b1ed47bb60d446af8fa3719681037a9768c1da68050e7be4d0eccf67e9bf",
+        "ornek-01/analiz.sps": "e10e570f0f90a48f79579af7d275743be501594bf0e5485cc926c5d4d0a49859",
+        "ornek-01/analiz.sps.txt": "e10e570f0f90a48f79579af7d275743be501594bf0e5485cc926c5d4d0a49859",
+        "ornek-01/beklenen-sonuclar.csv": "5d79478a9fa9a6a101ab65023b1b1188c044725d87fcb98eae0f2326b7bc7b85",
+        "ornek-01/cozum.R": "e7630bd298d956d648c373976e541106bbb48642331e5dbce2430728c9bdb06c",
+        "ornek-01/cozum.md": "aa3d6ef0003a720764302457cc9b8d235582ca88427795f5ca2e87fbc5cd9b5e",
+        "ornek-01/cozum.py": "a74c1593e74e1415d6f3595c6e99d604f436c8e350ca41e54add1fdd0d196b4e",
+        "ornek-01/grafik-aciklamasi.md": "55c38e63f0dc8176d007cb65bd67a1ba7202bfa86992af0c8cede808fab5fe3e",
+        "ornek-01/kaynak-kaydi.json": "84dda2d1ba6af285d5ff546915096af1b029a29d8e2e1a45584fcd85b8a7063a",
+        "ornek-01/plan.csv": "a77da5caca5a7837a8e25696c0e98ecbdb709f4bf429e210adea45415ebe02c5",
+        "ornek-01/spss-dogrula.sps": "c279bdaa0594912926b26f5743be89ecfa286b683d0be3fa5cd0c6c32a43e1fe",
+        "ornek-01/spss-dogrula.sps.txt": "c279bdaa0594912926b26f5743be89ecfa286b683d0be3fa5cd0c6c32a43e1fe",
+        "ornek-01/spss-esleme.json": "731a8661ace0eeb633d2ac2d517039e50012a889e478d51c6e3712af67a4b094",
+        "ornek-01/spss_karsilastir.py": "b615f9b25e9682b03dfef3df4fae79cf7241c8f4518c3f5f6cd7dbfc0bfaef64",
+        "ornek-01/veri-sozlugu.csv": "96003f161afba0fdbdcdae208db1d672b195d5affded13401e3fe4ba14c2d35c",
+        "ornek-01/veri.csv": "c06d918caa8c54980cf436cedb690e178f7141b98cbe183f71978124f0912aaf"
+      },
+      "manifest_gecti": true,
+      "python": {
+        "exit_code": 0,
+        "stdout": "  degisken            olcu     deger\n     girdi           hacim 25.000000\n     girdi        ortalama 55.000000\n     girdi  standart_sapma 10.000000\n     girdi        referans 50.000000\n     girdi            alfa  0.050000\nplan_girdi           hacim 34.000000\nplan_girdi            fark  5.000000\nplan_girdi  standart_sapma 10.000000\nplan_girdi            alfa  0.050000\nplan_girdi       hedef_guc  0.800000\n      test      serbestlik 24.000000\n      test   standart_hata  2.000000\n      test               t  2.500000\n      test          p_cift  0.019654\n      test         cohen_d  0.500000\n      test        kritik_t  2.063899\n      test       alt_sinir 50.872203\n      test       ust_sinir 59.127797\n      test       hata_payi  4.127797\n      test        genislik  8.255594\n      test     reddet_cift  1.000000\n      plan          plan_d  0.500000\n      plan plan_serbestlik 33.000000\n      plan   plan_kritik_t  2.034515\n      plan   merkezdisilik  2.915476\n      plan             guc  0.807778\n      plan            beta  0.192222\n      plan   gereken_hacim 34.000000\n      plan      onceki_guc  0.795366\n      plan     gereken_guc  0.807778\nDOGRULANDI: 30 kontrol degeri eslesiyor.\nGrafik: ciktilar/python/guc-egrisi.png\nPython 3.12.14, NumPy 2.3.5, pandas 2.2.3, SciPy 1.17.0\n",
+        "stderr": "",
+        "gecti": true
+      },
+      "r": {
+        "exit_code": 0,
+        "stdout": "   degisken            olcu       deger\n      girdi           hacim 25.00000000\n      girdi        ortalama 55.00000000\n      girdi  standart_sapma 10.00000000\n      girdi        referans 50.00000000\n      girdi            alfa  0.05000000\n plan_girdi           hacim 34.00000000\n plan_girdi            fark  5.00000000\n plan_girdi  standart_sapma 10.00000000\n plan_girdi            alfa  0.05000000\n plan_girdi       hedef_guc  0.80000000\n       test      serbestlik 24.00000000\n       test   standart_hata  2.00000000\n       test               t  2.50000000\n       test          p_cift  0.01965418\n       test         cohen_d  0.50000000\n       test        kritik_t  2.06389856\n       test       alt_sinir 50.87220288\n       test       ust_sinir 59.12779712\n       test       hata_payi  4.12779712\n       test        genislik  8.25559425\n       test     reddet_cift  1.00000000\n       plan          plan_d  0.50000000\n       plan plan_serbestlik 33.00000000\n       plan   plan_kritik_t  2.03451530\n       plan   merkezdisilik  2.91547595\n       plan             guc  0.80777750\n       plan            beta  0.19222250\n       plan   gereken_hacim 34.00000000\n       plan      onceki_guc  0.79536584\n       plan     gereken_guc  0.80777750\nDOGRULANDI: 30 kontrol degeri eslesiyor.\nGrafik: ciktilar/r/guc-egrisi.png\n",
+        "stderr": "",
+        "gecti": true
+      },
+      "python_export": {
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "python_r_eslesmesi": {
+        "gecti": true,
+        "farklar": [],
+        "rel_tol": 1e-09,
+        "abs_tol": 1e-15,
+        "python_sonuclari": [
+          {
+            "degisken": "girdi",
+            "olcu": "hacim",
+            "deger": "25.0"
+          },
+          {
+            "degisken": "girdi",
+            "olcu": "ortalama",
+            "deger": "55.0"
+          },
+          {
+            "degisken": "girdi",
+            "olcu": "standart_sapma",
+            "deger": "10.0"
+          },
+          {
+            "degisken": "girdi",
+            "olcu": "referans",
+            "deger": "50.0"
+          },
+          {
+            "degisken": "girdi",
+            "olcu": "alfa",
+            "deger": "0.05"
+          },
+          {
+            "degisken": "plan_girdi",
+            "olcu": "hacim",
+            "deger": "34.0"
+          },
+          {
+            "degisken": "plan_girdi",
+            "olcu": "fark",
+            "deger": "5.0"
+          },
+          {
+            "degisken": "plan_girdi",
+            "olcu": "standart_sapma",
+            "deger": "10.0"
+          },
+          {
+            "degisken": "plan_girdi",
+            "olcu": "alfa",
+            "deger": "0.05"
+          },
+          {
+            "degisken": "plan_girdi",
+            "olcu": "hedef_guc",
+            "deger": "0.8"
+          },
+          {
+            "degisken": "test",
+            "olcu": "serbestlik",
+            "deger": "24.0"
+          },
+          {
+            "degisken": "test",
+            "olcu": "standart_hata",
+            "deger": "2.0"
+          },
+          {
+            "degisken": "test",
+            "olcu": "t",
+            "deger": "2.5"
+          },
+          {
+            "degisken": "test",
+            "olcu": "p_cift",
+            "deger": "0.019654175116578784"
+          },
+          {
+            "degisken": "test",
+            "olcu": "cohen_d",
+            "deger": "0.5"
+          },
+          {
+            "degisken": "test",
+            "olcu": "kritik_t",
+            "deger": "2.0638985616280245"
+          },
+          {
+            "degisken": "test",
+            "olcu": "alt_sinir",
+            "deger": "50.87220287674395"
+          },
+          {
+            "degisken": "test",
+            "olcu": "ust_sinir",
+            "deger": "59.12779712325605"
+          },
+          {
+            "degisken": "test",
+            "olcu": "hata_payi",
+            "deger": "4.127797123256049"
+          },
+          {
+            "degisken": "test",
+            "olcu": "genislik",
+            "deger": "8.255594246512098"
+          },
+          {
+            "degisken": "test",
+            "olcu": "reddet_cift",
+            "deger": "1.0"
+          },
+          {
+            "degisken": "plan",
+            "olcu": "plan_d",
+            "deger": "0.5"
+          },
+          {
+            "degisken": "plan",
+            "olcu": "plan_serbestlik",
+            "deger": "33.0"
+          },
+          {
+            "degisken": "plan",
+            "olcu": "plan_kritik_t",
+            "deger": "2.0345152974493383"
+          },
+          {
+            "degisken": "plan",
+            "olcu": "merkezdisilik",
+            "deger": "2.9154759474226504"
+          },
+          {
+            "degisken": "plan",
+            "olcu": "guc",
+            "deger": "0.8077775012792738"
+          },
+          {
+            "degisken": "plan",
+            "olcu": "beta",
+            "deger": "0.19222249872072616"
+          },
+          {
+            "degisken": "plan",
+            "olcu": "gereken_hacim",
+            "deger": "34.0"
+          },
+          {
+            "degisken": "plan",
+            "olcu": "onceki_guc",
+            "deger": "0.7953658414875041"
+          },
+          {
+            "degisken": "plan",
+            "olcu": "gereken_guc",
+            "deger": "0.8077775012792738"
+          }
+        ],
+        "r_sonuclari": [
+          {
+            "degisken": "girdi",
+            "olcu": "hacim",
+            "deger": "25"
+          },
+          {
+            "degisken": "girdi",
+            "olcu": "ortalama",
+            "deger": "55"
+          },
+          {
+            "degisken": "girdi",
+            "olcu": "standart_sapma",
+            "deger": "10"
+          },
+          {
+            "degisken": "girdi",
+            "olcu": "referans",
+            "deger": "50"
+          },
+          {
+            "degisken": "girdi",
+            "olcu": "alfa",
+            "deger": "0.05"
+          },
+          {
+            "degisken": "plan_girdi",
+            "olcu": "hacim",
+            "deger": "34"
+          },
+          {
+            "degisken": "plan_girdi",
+            "olcu": "fark",
+            "deger": "5"
+          },
+          {
+            "degisken": "plan_girdi",
+            "olcu": "standart_sapma",
+            "deger": "10"
+          },
+          {
+            "degisken": "plan_girdi",
+            "olcu": "alfa",
+            "deger": "0.05"
+          },
+          {
+            "degisken": "plan_girdi",
+            "olcu": "hedef_guc",
+            "deger": "0.8"
+          },
+          {
+            "degisken": "test",
+            "olcu": "serbestlik",
+            "deger": "24"
+          },
+          {
+            "degisken": "test",
+            "olcu": "standart_hata",
+            "deger": "2"
+          },
+          {
+            "degisken": "test",
+            "olcu": "t",
+            "deger": "2.5"
+          },
+          {
+            "degisken": "test",
+            "olcu": "p_cift",
+            "deger": "0.0196541751165788"
+          },
+          {
+            "degisken": "test",
+            "olcu": "cohen_d",
+            "deger": "0.5"
+          },
+          {
+            "degisken": "test",
+            "olcu": "kritik_t",
+            "deger": "2.06389856162803"
+          },
+          {
+            "degisken": "test",
+            "olcu": "alt_sinir",
+            "deger": "50.8722028767439"
+          },
+          {
+            "degisken": "test",
+            "olcu": "ust_sinir",
+            "deger": "59.1277971232561"
+          },
+          {
+            "degisken": "test",
+            "olcu": "hata_payi",
+            "deger": "4.12779712325605"
+          },
+          {
+            "degisken": "test",
+            "olcu": "genislik",
+            "deger": "8.2555942465121"
+          },
+          {
+            "degisken": "test",
+            "olcu": "reddet_cift",
+            "deger": "1"
+          },
+          {
+            "degisken": "plan",
+            "olcu": "plan_d",
+            "deger": "0.5"
+          },
+          {
+            "degisken": "plan",
+            "olcu": "plan_serbestlik",
+            "deger": "33"
+          },
+          {
+            "degisken": "plan",
+            "olcu": "plan_kritik_t",
+            "deger": "2.03451529744934"
+          },
+          {
+            "degisken": "plan",
+            "olcu": "merkezdisilik",
+            "deger": "2.91547594742265"
+          },
+          {
+            "degisken": "plan",
+            "olcu": "guc",
+            "deger": "0.80777750127944"
+          },
+          {
+            "degisken": "plan",
+            "olcu": "beta",
+            "deger": "0.19222249872056"
+          },
+          {
+            "degisken": "plan",
+            "olcu": "gereken_hacim",
+            "deger": "34"
+          },
+          {
+            "degisken": "plan",
+            "olcu": "onceki_guc",
+            "deger": "0.795365841487633"
+          },
+          {
+            "degisken": "plan",
+            "olcu": "gereken_guc",
+            "deger": "0.80777750127944"
+          }
+        ]
+      },
+      "degistirilmis_referans": {
+        "python": {
+          "exit_code": 1,
+          "stdout": "  degisken            olcu     deger\n     girdi           hacim 25.000000\n     girdi        ortalama 55.000000\n     girdi  standart_sapma 10.000000\n     girdi        referans 50.000000\n     girdi            alfa  0.050000\nplan_girdi           hacim 34.000000\nplan_girdi            fark  5.000000\nplan_girdi  standart_sapma 10.000000\nplan_girdi            alfa  0.050000\nplan_girdi       hedef_guc  0.800000\n      test      serbestlik 24.000000\n      test   standart_hata  2.000000\n      test               t  2.500000\n      test          p_cift  0.019654\n      test         cohen_d  0.500000\n      test        kritik_t  2.063899\n      test       alt_sinir 50.872203\n      test       ust_sinir 59.127797\n      test       hata_payi  4.127797\n      test        genislik  8.255594\n      test     reddet_cift  1.000000\n      plan          plan_d  0.500000\n      plan plan_serbestlik 33.000000\n      plan   plan_kritik_t  2.034515\n      plan   merkezdisilik  2.915476\n      plan             guc  0.807778\n      plan            beta  0.192222\n      plan   gereken_hacim 34.000000\n      plan      onceki_guc  0.795366\n      plan     gereken_guc  0.807778\n",
+          "stderr": "Traceback (most recent call last):\n  File \"/tmp/b10-whzijj9a/ornek-01/cozum.py\", line 164, in <module>\n    main()\n  File \"/tmp/b10-whzijj9a/ornek-01/cozum.py\", line 157, in main\n    kontrol_et(sonuc, pd.read_csv(\"beklenen-sonuclar.csv\"))\n  File \"/tmp/b10-whzijj9a/ornek-01/cozum.py\", line 114, in kontrol_et\n    raise ValueError(\"Kontrol degerleri uyusmuyor.\")\nValueError: Kontrol degerleri uyusmuyor.\n"
+        },
+        "r": {
+          "exit_code": 1,
+          "stdout": "   degisken            olcu       deger\n      girdi           hacim 25.00000000\n      girdi        ortalama 55.00000000\n      girdi  standart_sapma 10.00000000\n      girdi        referans 50.00000000\n      girdi            alfa  0.05000000\n plan_girdi           hacim 34.00000000\n plan_girdi            fark  5.00000000\n plan_girdi  standart_sapma 10.00000000\n plan_girdi            alfa  0.05000000\n plan_girdi       hedef_guc  0.80000000\n       test      serbestlik 24.00000000\n       test   standart_hata  2.00000000\n       test               t  2.50000000\n       test          p_cift  0.01965418\n       test         cohen_d  0.50000000\n       test        kritik_t  2.06389856\n       test       alt_sinir 50.87220288\n       test       ust_sinir 59.12779712\n       test       hata_payi  4.12779712\n       test        genislik  8.25559425\n       test     reddet_cift  1.00000000\n       plan          plan_d  0.50000000\n       plan plan_serbestlik 33.00000000\n       plan   plan_kritik_t  2.03451530\n       plan   merkezdisilik  2.91547595\n       plan             guc  0.80777750\n       plan            beta  0.19222250\n       plan   gereken_hacim 34.00000000\n       plan      onceki_guc  0.79536584\n       plan     gereken_guc  0.80777750\n",
+          "stderr": "Error in kontrol_et(sonuc, read.csv(\"beklenen-sonuclar.csv\", stringsAsFactors = FALSE)) : \n  Kontrol degerleri uyusmuyor.\nCalls: source -> withVisible -> eval -> eval -> kontrol_et\nExecution halted\n"
+        }
+      },
+      "eksik_veri": {
+        "python": {
+          "exit_code": 1,
+          "stdout": "",
+          "stderr": "Traceback (most recent call last):\n  File \"/tmp/b10-whzijj9a/ornek-01/cozum.py\", line 164, in <module>\n    main()\n  File \"/tmp/b10-whzijj9a/ornek-01/cozum.py\", line 153, in main\n    veri, plan = pd.read_csv(\"veri.csv\"), pd.read_csv(\"plan.csv\")\n                 ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/pandas/io/parsers/readers.py\", line 1026, in read_csv\n    return _read(filepath_or_buffer, kwds)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/pandas/io/parsers/readers.py\", line 620, in _read\n    parser = TextFileReader(filepath_or_buffer, **kwds)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/pandas/io/parsers/readers.py\", line 1620, in __init__\n    self._engine = self._make_engine(f, self.engine)\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/pandas/io/parsers/readers.py\", line 1880, in _make_engine\n    self.handles = get_handle(\n                   ^^^^^^^^^^^\n  File \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/pandas/io/common.py\", line 873, in get_handle\n    handle = open(\n             ^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: 'veri.csv'\n"
+        },
+        "r": {
+          "exit_code": 1,
+          "stdout": "",
+          "stderr": "Error in file(file, \"rt\") : cannot open the connection\nCalls: source ... withVisible -> eval -> eval -> read.csv -> read.table -> file\nIn addition: Warning message:\nIn file(file, \"rt\") :\n  cannot open file 'veri.csv': No such file or directory\nExecution halted\n"
+        }
+      },
+      "gecti": true
+    },
+    {
+      "bolum": "b11",
+      "kontrol_sayisi": 34,
+      "spss": "calistirilmadi",
+      "source_sha256": {
+        "ornek-01/README.md": "0025670fd1bbbe78d256f5909e8fc406829fc41a61a0e4d63d48f484b5507128",
+        "ornek-01/analiz.sps": "d458b1fea14ee5a5b1a0adae904e4d6b9ede1b31f785823f5d3cba83f184280e",
+        "ornek-01/analiz.sps.txt": "d458b1fea14ee5a5b1a0adae904e4d6b9ede1b31f785823f5d3cba83f184280e",
+        "ornek-01/beklenen-sonuclar.csv": "f5f797e8a3f6688b5a0989fa2611e0a2926361ebd87f2c42db9f5f0feb3d7812",
+        "ornek-01/cozum.R": "f3b81a05024c2010f89b2f72914af4f778bb74a71e0a55931e103fb54327e5aa",
+        "ornek-01/cozum.md": "dbb579ae74b0212bf3f69d7ab71eec92152889c6c19bb591f8a4a828cac2c1b4",
+        "ornek-01/cozum.py": "7df8f9fc92b16814213a10a9219ce0b02461d8d5f01be330a6b65c56a39fcd17",
+        "ornek-01/grafik-aciklamasi.md": "c5b52fd4baaa152b2ffc3a425ab2ba2de4a8a929cccff5ee6594c970c5afea8e",
+        "ornek-01/kaynak-kaydi.json": "b95b7417aca2059c37f67eecf9125b8d704ac6ad80c9dcb1ac0cb4214943f91b",
+        "ornek-01/spss-dogrula.sps": "411027992c4a51f6056fa20a4cf0e469593a5669637f0bd76a0e82033ec116a8",
+        "ornek-01/spss-dogrula.sps.txt": "411027992c4a51f6056fa20a4cf0e469593a5669637f0bd76a0e82033ec116a8",
+        "ornek-01/spss-esleme.json": "4e634f763e9f05392fbbd9307b2884e5901ab702067281a4bf80369f00b547b3",
+        "ornek-01/spss_karsilastir.py": "b615f9b25e9682b03dfef3df4fae79cf7241c8f4518c3f5f6cd7dbfc0bfaef64",
+        "ornek-01/veri-sozlugu.csv": "792bc02e9e0f16bbf4fba19dc10d608443f4156d5c75eac891feacc70d384adb",
+        "ornek-01/veri.csv": "a4d69cbf8d968f4b204c740020ae39750916642e1c788f501dee7f85c1307785"
+      },
+      "manifest_gecti": true,
+      "python": {
+        "exit_code": 0,
+        "stdout": "degisken             olcu     deger\n   girdi          hacim_1 30.000000\n   girdi       ortalama_1 78.000000\n   girdi standart_sapma_1  8.000000\n   girdi          hacim_2 28.000000\n   girdi       ortalama_2 72.000000\n   girdi standart_sapma_2 10.000000\n   girdi      cift_sayisi 20.000000\n   girdi    ortalama_fark  4.200000\n   girdi     fark_sapmasi  5.000000\n   girdi             alfa  0.050000\n   welch          katki_1  2.133333\n   welch          katki_2  3.571429\n   welch             fark  6.000000\n   welch    standart_hata  2.388464\n   welch       serbestlik 51.711309\n   welch                t  2.512074\n   welch           p_cift  0.015163\n   welch         kritik_t  2.006913\n   welch        hata_payi  4.793441\n   welch        alt_sinir  1.206559\n   welch        ust_sinir 10.793441\n   welch         genislik  9.586883\n   welch      reddet_cift  1.000000\neslesmis    standart_hata  1.118034\neslesmis       serbestlik 19.000000\neslesmis                t  3.756594\neslesmis           p_cift  0.001336\neslesmis         kritik_t  2.093024\neslesmis        hata_payi  2.340072\neslesmis        alt_sinir  1.859928\neslesmis        ust_sinir  6.540072\neslesmis         genislik  4.680144\neslesmis      reddet_cift  1.000000\neslesmis               dz  0.840000\nDOGRULANDI: 34 kontrol degeri eslesiyor.\nGrafik: ciktilar/python/fark-araliklari.png\nPython 3.12.14, NumPy 2.3.5, pandas 2.2.3, SciPy 1.17.0\n",
+        "stderr": "",
+        "gecti": true
+      },
+      "r": {
+        "exit_code": 0,
+        "stdout": " degisken             olcu        deger\n    girdi          hacim_1 30.000000000\n    girdi       ortalama_1 78.000000000\n    girdi standart_sapma_1  8.000000000\n    girdi          hacim_2 28.000000000\n    girdi       ortalama_2 72.000000000\n    girdi standart_sapma_2 10.000000000\n    girdi      cift_sayisi 20.000000000\n    girdi    ortalama_fark  4.200000000\n    girdi     fark_sapmasi  5.000000000\n    girdi             alfa  0.050000000\n    welch          katki_1  2.133333333\n    welch          katki_2  3.571428571\n    welch             fark  6.000000000\n    welch    standart_hata  2.388464340\n    welch       serbestlik 51.711309312\n    welch                t  2.512074348\n    welch           p_cift  0.015162869\n    welch         kritik_t  2.006913491\n    welch        hata_payi  4.793441308\n    welch        alt_sinir  1.206558692\n    welch        ust_sinir 10.793441308\n    welch         genislik  9.586882616\n    welch      reddet_cift  1.000000000\n eslesmis    standart_hata  1.118033989\n eslesmis       serbestlik 19.000000000\n eslesmis                t  3.756594202\n eslesmis           p_cift  0.001335733\n eslesmis         kritik_t  2.093024054\n eslesmis        hata_payi  2.340072032\n eslesmis        alt_sinir  1.859927968\n eslesmis        ust_sinir  6.540072032\n eslesmis         genislik  4.680144064\n eslesmis      reddet_cift  1.000000000\n eslesmis               dz  0.840000000\nDOGRULANDI: 34 kontrol degeri eslesiyor.\nGrafik: ciktilar/r/fark-araliklari.png\n",
+        "stderr": "",
+        "gecti": true
+      },
+      "python_export": {
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "python_r_eslesmesi": {
+        "gecti": true,
+        "farklar": [],
+        "rel_tol": 1e-09,
+        "abs_tol": 1e-15,
+        "python_sonuclari": [
+          {
+            "degisken": "girdi",
+            "olcu": "hacim_1",
+            "deger": "30.0"
+          },
+          {
+            "degisken": "girdi",
+            "olcu": "ortalama_1",
+            "deger": "78.0"
+          },
+          {
+            "degisken": "girdi",
+            "olcu": "standart_sapma_1",
+            "deger": "8.0"
+          },
+          {
+            "degisken": "girdi",
+            "olcu": "hacim_2",
+            "deger": "28.0"
+          },
+          {
+            "degisken": "girdi",
+            "olcu": "ortalama_2",
+            "deger": "72.0"
+          },
+          {
+            "degisken": "girdi",
+            "olcu": "standart_sapma_2",
+            "deger": "10.0"
+          },
+          {
+            "degisken": "girdi",
+            "olcu": "cift_sayisi",
+            "deger": "20.0"
+          },
+          {
+            "degisken": "girdi",
+            "olcu": "ortalama_fark",
+            "deger": "4.2"
+          },
+          {
+            "degisken": "girdi",
+            "olcu": "fark_sapmasi",
+            "deger": "5.0"
+          },
+          {
+            "degisken": "girdi",
+            "olcu": "alfa",
+            "deger": "0.05"
+          },
+          {
+            "degisken": "welch",
+            "olcu": "katki_1",
+            "deger": "2.1333333333333333"
+          },
+          {
+            "degisken": "welch",
+            "olcu": "katki_2",
+            "deger": "3.5714285714285716"
+          },
+          {
+            "degisken": "welch",
+            "olcu": "fark",
+            "deger": "6.0"
+          },
+          {
+            "degisken": "welch",
+            "olcu": "standart_hata",
+            "deger": "2.3884643402742913"
+          },
+          {
+            "degisken": "welch",
+            "olcu": "serbestlik",
+            "deger": "51.711309311806616"
+          },
+          {
+            "degisken": "welch",
+            "olcu": "t",
+            "deger": "2.512074347867785"
+          },
+          {
+            "degisken": "welch",
+            "olcu": "p_cift",
+            "deger": "0.015162868553514803"
+          },
+          {
+            "degisken": "welch",
+            "olcu": "kritik_t",
+            "deger": "2.0069134913257725"
+          },
+          {
+            "degisken": "welch",
+            "olcu": "hata_payi",
+            "deger": "4.793441308046986"
+          },
+          {
+            "degisken": "welch",
+            "olcu": "alt_sinir",
+            "deger": "1.2065586919530142"
+          },
+          {
+            "degisken": "welch",
+            "olcu": "ust_sinir",
+            "deger": "10.793441308046987"
+          },
+          {
+            "degisken": "welch",
+            "olcu": "genislik",
+            "deger": "9.586882616093972"
+          },
+          {
+            "degisken": "welch",
+            "olcu": "reddet_cift",
+            "deger": "1.0"
+          },
+          {
+            "degisken": "eslesmis",
+            "olcu": "standart_hata",
+            "deger": "1.118033988749895"
+          },
+          {
+            "degisken": "eslesmis",
+            "olcu": "serbestlik",
+            "deger": "19.0"
+          },
+          {
+            "degisken": "eslesmis",
+            "olcu": "t",
+            "deger": "3.7565942021996466"
+          },
+          {
+            "degisken": "eslesmis",
+            "olcu": "p_cift",
+            "deger": "0.0013357332618325615"
+          },
+          {
+            "degisken": "eslesmis",
+            "olcu": "kritik_t",
+            "deger": "2.0930240544083087"
+          },
+          {
+            "degisken": "eslesmis",
+            "olcu": "hata_payi",
+            "deger": "2.3400720320995987"
+          },
+          {
+            "degisken": "eslesmis",
+            "olcu": "alt_sinir",
+            "deger": "1.8599279679004015"
+          },
+          {
+            "degisken": "eslesmis",
+            "olcu": "ust_sinir",
+            "deger": "6.540072032099599"
+          },
+          {
+            "degisken": "eslesmis",
+            "olcu": "genislik",
+            "deger": "4.680144064199197"
+          },
+          {
+            "degisken": "eslesmis",
+            "olcu": "reddet_cift",
+            "deger": "1.0"
+          },
+          {
+            "degisken": "eslesmis",
+            "olcu": "dz",
+            "deger": "0.8400000000000001"
+          }
+        ],
+        "r_sonuclari": [
+          {
+            "degisken": "girdi",
+            "olcu": "hacim_1",
+            "deger": "30"
+          },
+          {
+            "degisken": "girdi",
+            "olcu": "ortalama_1",
+            "deger": "78"
+          },
+          {
+            "degisken": "girdi",
+            "olcu": "standart_sapma_1",
+            "deger": "8"
+          },
+          {
+            "degisken": "girdi",
+            "olcu": "hacim_2",
+            "deger": "28"
+          },
+          {
+            "degisken": "girdi",
+            "olcu": "ortalama_2",
+            "deger": "72"
+          },
+          {
+            "degisken": "girdi",
+            "olcu": "standart_sapma_2",
+            "deger": "10"
+          },
+          {
+            "degisken": "girdi",
+            "olcu": "cift_sayisi",
+            "deger": "20"
+          },
+          {
+            "degisken": "girdi",
+            "olcu": "ortalama_fark",
+            "deger": "4.2"
+          },
+          {
+            "degisken": "girdi",
+            "olcu": "fark_sapmasi",
+            "deger": "5"
+          },
+          {
+            "degisken": "girdi",
+            "olcu": "alfa",
+            "deger": "0.05"
+          },
+          {
+            "degisken": "welch",
+            "olcu": "katki_1",
+            "deger": "2.13333333333333"
+          },
+          {
+            "degisken": "welch",
+            "olcu": "katki_2",
+            "deger": "3.57142857142857"
+          },
+          {
+            "degisken": "welch",
+            "olcu": "fark",
+            "deger": "6"
+          },
+          {
+            "degisken": "welch",
+            "olcu": "standart_hata",
+            "deger": "2.38846434027429"
+          },
+          {
+            "degisken": "welch",
+            "olcu": "serbestlik",
+            "deger": "51.7113093118066"
+          },
+          {
+            "degisken": "welch",
+            "olcu": "t",
+            "deger": "2.51207434786778"
+          },
+          {
+            "degisken": "welch",
+            "olcu": "p_cift",
+            "deger": "0.0151628685535148"
+          },
+          {
+            "degisken": "welch",
+            "olcu": "kritik_t",
+            "deger": "2.00691349132577"
+          },
+          {
+            "degisken": "welch",
+            "olcu": "hata_payi",
+            "deger": "4.79344130804699"
+          },
+          {
+            "degisken": "welch",
+            "olcu": "alt_sinir",
+            "deger": "1.20655869195301"
+          },
+          {
+            "degisken": "welch",
+            "olcu": "ust_sinir",
+            "deger": "10.793441308047"
+          },
+          {
+            "degisken": "welch",
+            "olcu": "genislik",
+            "deger": "9.58688261609397"
+          },
+          {
+            "degisken": "welch",
+            "olcu": "reddet_cift",
+            "deger": "1"
+          },
+          {
+            "degisken": "eslesmis",
+            "olcu": "standart_hata",
+            "deger": "1.11803398874989"
+          },
+          {
+            "degisken": "eslesmis",
+            "olcu": "serbestlik",
+            "deger": "19"
+          },
+          {
+            "degisken": "eslesmis",
+            "olcu": "t",
+            "deger": "3.75659420219965"
+          },
+          {
+            "degisken": "eslesmis",
+            "olcu": "p_cift",
+            "deger": "0.00133573326183256"
+          },
+          {
+            "degisken": "eslesmis",
+            "olcu": "kritik_t",
+            "deger": "2.09302405440831"
+          },
+          {
+            "degisken": "eslesmis",
+            "olcu": "hata_payi",
+            "deger": "2.3400720320996"
+          },
+          {
+            "degisken": "eslesmis",
+            "olcu": "alt_sinir",
+            "deger": "1.8599279679004"
+          },
+          {
+            "degisken": "eslesmis",
+            "olcu": "ust_sinir",
+            "deger": "6.5400720320996"
+          },
+          {
+            "degisken": "eslesmis",
+            "olcu": "genislik",
+            "deger": "4.6801440641992"
+          },
+          {
+            "degisken": "eslesmis",
+            "olcu": "reddet_cift",
+            "deger": "1"
+          },
+          {
+            "degisken": "eslesmis",
+            "olcu": "dz",
+            "deger": "0.84"
+          }
+        ]
+      },
+      "degistirilmis_referans": {
+        "python": {
+          "exit_code": 1,
+          "stdout": "degisken             olcu     deger\n   girdi          hacim_1 30.000000\n   girdi       ortalama_1 78.000000\n   girdi standart_sapma_1  8.000000\n   girdi          hacim_2 28.000000\n   girdi       ortalama_2 72.000000\n   girdi standart_sapma_2 10.000000\n   girdi      cift_sayisi 20.000000\n   girdi    ortalama_fark  4.200000\n   girdi     fark_sapmasi  5.000000\n   girdi             alfa  0.050000\n   welch          katki_1  2.133333\n   welch          katki_2  3.571429\n   welch             fark  6.000000\n   welch    standart_hata  2.388464\n   welch       serbestlik 51.711309\n   welch                t  2.512074\n   welch           p_cift  0.015163\n   welch         kritik_t  2.006913\n   welch        hata_payi  4.793441\n   welch        alt_sinir  1.206559\n   welch        ust_sinir 10.793441\n   welch         genislik  9.586883\n   welch      reddet_cift  1.000000\neslesmis    standart_hata  1.118034\neslesmis       serbestlik 19.000000\neslesmis                t  3.756594\neslesmis           p_cift  0.001336\neslesmis         kritik_t  2.093024\neslesmis        hata_payi  2.340072\neslesmis        alt_sinir  1.859928\neslesmis        ust_sinir  6.540072\neslesmis         genislik  4.680144\neslesmis      reddet_cift  1.000000\neslesmis               dz  0.840000\n",
+          "stderr": "Traceback (most recent call last):\n  File \"/tmp/b11-koq0hv1y/ornek-01/cozum.py\", line 135, in <module>\n    main()\n  File \"/tmp/b11-koq0hv1y/ornek-01/cozum.py\", line 128, in main\n    kontrol_et(sonuc, pd.read_csv(\"beklenen-sonuclar.csv\"))\n  File \"/tmp/b11-koq0hv1y/ornek-01/cozum.py\", line 85, in kontrol_et\n    raise ValueError(\"Kontrol degerleri uyusmuyor.\")\nValueError: Kontrol degerleri uyusmuyor.\n"
+        },
+        "r": {
+          "exit_code": 1,
+          "stdout": " degisken             olcu        deger\n    girdi          hacim_1 30.000000000\n    girdi       ortalama_1 78.000000000\n    girdi standart_sapma_1  8.000000000\n    girdi          hacim_2 28.000000000\n    girdi       ortalama_2 72.000000000\n    girdi standart_sapma_2 10.000000000\n    girdi      cift_sayisi 20.000000000\n    girdi    ortalama_fark  4.200000000\n    girdi     fark_sapmasi  5.000000000\n    girdi             alfa  0.050000000\n    welch          katki_1  2.133333333\n    welch          katki_2  3.571428571\n    welch             fark  6.000000000\n    welch    standart_hata  2.388464340\n    welch       serbestlik 51.711309312\n    welch                t  2.512074348\n    welch           p_cift  0.015162869\n    welch         kritik_t  2.006913491\n    welch        hata_payi  4.793441308\n    welch        alt_sinir  1.206558692\n    welch        ust_sinir 10.793441308\n    welch         genislik  9.586882616\n    welch      reddet_cift  1.000000000\n eslesmis    standart_hata  1.118033989\n eslesmis       serbestlik 19.000000000\n eslesmis                t  3.756594202\n eslesmis           p_cift  0.001335733\n eslesmis         kritik_t  2.093024054\n eslesmis        hata_payi  2.340072032\n eslesmis        alt_sinir  1.859927968\n eslesmis        ust_sinir  6.540072032\n eslesmis         genislik  4.680144064\n eslesmis      reddet_cift  1.000000000\n eslesmis               dz  0.840000000\n",
+          "stderr": "Error in kontrol_et(sonuc, read.csv(\"beklenen-sonuclar.csv\", stringsAsFactors = FALSE)) : \n  Kontrol degerleri uyusmuyor.\nCalls: source -> withVisible -> eval -> eval -> kontrol_et\nExecution halted\n"
+        }
+      },
+      "eksik_veri": {
+        "python": {
+          "exit_code": 1,
+          "stdout": "",
+          "stderr": "Traceback (most recent call last):\n  File \"/tmp/b11-koq0hv1y/ornek-01/cozum.py\", line 135, in <module>\n    main()\n  File \"/tmp/b11-koq0hv1y/ornek-01/cozum.py\", line 124, in main\n    veri = pd.read_csv(\"veri.csv\")\n           ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/pandas/io/parsers/readers.py\", line 1026, in read_csv\n    return _read(filepath_or_buffer, kwds)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/pandas/io/parsers/readers.py\", line 620, in _read\n    parser = TextFileReader(filepath_or_buffer, **kwds)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/pandas/io/parsers/readers.py\", line 1620, in __init__\n    self._engine = self._make_engine(f, self.engine)\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/pandas/io/parsers/readers.py\", line 1880, in _make_engine\n    self.handles = get_handle(\n                   ^^^^^^^^^^^\n  File \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/pandas/io/common.py\", line 873, in get_handle\n    handle = open(\n             ^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: 'veri.csv'\n"
+        },
+        "r": {
+          "exit_code": 1,
+          "stdout": "",
+          "stderr": "Error in file(file, \"rt\") : cannot open the connection\nCalls: source ... withVisible -> eval -> eval -> read.csv -> read.table -> file\nIn addition: Warning message:\nIn file(file, \"rt\") :\n  cannot open file 'veri.csv': No such file or directory\nExecution halted\n"
+        }
+      },
+      "gecti": true
+    },
+    {
+      "bolum": "b12",
+      "kontrol_sayisi": 32,
+      "spss": "calistirilmadi",
+      "source_sha256": {
+        "ornek-01/README.md": "995d3e5d211c48ddf010ca0839b12ff677fbb7191688fd7cd637228886995070",
+        "ornek-01/analiz.sps": "5cbd1cf69c3ea33ebbc5e53831fead2f77737fdc1a59f3de39671681255e25b8",
+        "ornek-01/analiz.sps.txt": "5cbd1cf69c3ea33ebbc5e53831fead2f77737fdc1a59f3de39671681255e25b8",
+        "ornek-01/beklenen-sonuclar.csv": "e24d443f58bffaedbad271153293aa2dbdb08107701007a039cd40f6a67edbcb",
+        "ornek-01/cozum.R": "c1dee4b943cf647ea21094c7ed6482cc3427bdb5a5d55fb13b21ef4850d0c48a",
+        "ornek-01/cozum.md": "f01d48e9260ddeaca1842ac68c992d71d65672f01142539ccffdc837b11b7486",
+        "ornek-01/cozum.py": "60635e2f7fcb2c882f7502d01afffe35eb086c73a717e81fafbd1074858695c3",
+        "ornek-01/grafik-aciklamasi.md": "a6cecd8e99a691186c02e901c1e60759dd201ecf98860e04204ef7e0f1858efe",
+        "ornek-01/kaynak-kaydi.json": "d023bd9207c382deaf80e3229b119c0acce25fb25c5df28ec0ee5ca169bd4de3",
+        "ornek-01/spss-dogrula.sps": "c4b4d8e697180c5e8f66b7292780aa90079bb472d2d33c1cd43700dd5261aecd",
+        "ornek-01/spss-dogrula.sps.txt": "c4b4d8e697180c5e8f66b7292780aa90079bb472d2d33c1cd43700dd5261aecd",
+        "ornek-01/spss-esleme.json": "32647b94100d870262061fcef8c9f5be820e5cbd6df0063491181b38e98225ef",
+        "ornek-01/spss_karsilastir.py": "b615f9b25e9682b03dfef3df4fae79cf7241c8f4518c3f5f6cd7dbfc0bfaef64",
+        "ornek-01/veri-sozlugu.csv": "5d17d80d302b4efe9ab435a339614e649ee6f964738e0bd543ddcb35cf4aa7b3",
+        "ornek-01/veri.csv": "10a13d969233a008bd891f23d5b7fcb69dfa3ec79050bbd13e9a56c1e90badf9"
+      },
+      "manifest_gecti": true,
+      "python": {
+        "exit_code": 0,
+        "stdout": "     degisken              olcu     deger\n     gozlenen  Birinci_Basarili 30.000000\n     gozlenen Birinci_Basarisiz 10.000000\n     gozlenen   Ikinci_Basarili 20.000000\n     gozlenen  Ikinci_Basarisiz 20.000000\n     beklenen  Birinci_Basarili 25.000000\n     beklenen Birinci_Basarisiz 15.000000\n     beklenen   Ikinci_Basarili 25.000000\n     beklenen  Ikinci_Basarisiz 15.000000\n        katki  Birinci_Basarili  1.000000\n        katki Birinci_Basarisiz  1.666667\n        katki   Ikinci_Basarili  1.000000\n        katki  Ikinci_Basarisiz  1.666667\npearson_artik  Birinci_Basarili  1.000000\npearson_artik Birinci_Basarisiz -1.290994\npearson_artik   Ikinci_Basarili -1.000000\npearson_artik  Ikinci_Basarisiz  1.290994\n  satir_orani  Birinci_Basarili  0.750000\n  satir_orani Birinci_Basarisiz  0.250000\n  satir_orani   Ikinci_Basarili  0.500000\n  satir_orani  Ikinci_Basarisiz  0.500000\n    toplamlar            toplam 80.000000\n    toplamlar     satir_Birinci 40.000000\n    toplamlar      satir_Ikinci 40.000000\n    toplamlar    sutun_Basarili 50.000000\n    toplamlar   sutun_Basarisiz 30.000000\n         test           ki_kare  5.333333\n         test        serbestlik  1.000000\n         test                 p  0.020921\n         test          cramer_v  0.258199\n         test      min_beklenen 15.000000\n         test              alfa  0.050000\n         test            reddet  1.000000\nDOGRULANDI: 32 kontrol degeri eslesiyor.\nGrafik: ciktilar/python/oranlar-artiklar.png\nPython 3.12.14, NumPy 2.3.5, pandas 2.2.3, SciPy 1.17.0\n",
+        "stderr": "",
+        "gecti": true
+      },
+      "r": {
+        "exit_code": 0,
+        "stdout": "      degisken              olcu       deger\n      gozlenen  Birinci_Basarili 30.00000000\n      gozlenen Birinci_Basarisiz 10.00000000\n      gozlenen   Ikinci_Basarili 20.00000000\n      gozlenen  Ikinci_Basarisiz 20.00000000\n      beklenen  Birinci_Basarili 25.00000000\n      beklenen Birinci_Basarisiz 15.00000000\n      beklenen   Ikinci_Basarili 25.00000000\n      beklenen  Ikinci_Basarisiz 15.00000000\n         katki  Birinci_Basarili  1.00000000\n         katki Birinci_Basarisiz  1.66666667\n         katki   Ikinci_Basarili  1.00000000\n         katki  Ikinci_Basarisiz  1.66666667\n pearson_artik  Birinci_Basarili  1.00000000\n pearson_artik Birinci_Basarisiz -1.29099445\n pearson_artik   Ikinci_Basarili -1.00000000\n pearson_artik  Ikinci_Basarisiz  1.29099445\n   satir_orani  Birinci_Basarili  0.75000000\n   satir_orani Birinci_Basarisiz  0.25000000\n   satir_orani   Ikinci_Basarili  0.50000000\n   satir_orani  Ikinci_Basarisiz  0.50000000\n     toplamlar            toplam 80.00000000\n     toplamlar     satir_Birinci 40.00000000\n     toplamlar      satir_Ikinci 40.00000000\n     toplamlar    sutun_Basarili 50.00000000\n     toplamlar   sutun_Basarisiz 30.00000000\n          test           ki_kare  5.33333333\n          test        serbestlik  1.00000000\n          test                 p  0.02092134\n          test          cramer_v  0.25819889\n          test      min_beklenen 15.00000000\n          test              alfa  0.05000000\n          test            reddet  1.00000000\nDOGRULANDI: 32 kontrol degeri eslesiyor.\nGrafik: ciktilar/r/oranlar-artiklar.png\n",
+        "stderr": "",
+        "gecti": true
+      },
+      "python_export": {
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "python_r_eslesmesi": {
+        "gecti": true,
+        "farklar": [],
+        "rel_tol": 1e-09,
+        "abs_tol": 1e-15,
+        "python_sonuclari": [
+          {
+            "degisken": "gozlenen",
+            "olcu": "Birinci_Basarili",
+            "deger": "30.0"
+          },
+          {
+            "degisken": "gozlenen",
+            "olcu": "Birinci_Basarisiz",
+            "deger": "10.0"
+          },
+          {
+            "degisken": "gozlenen",
+            "olcu": "Ikinci_Basarili",
+            "deger": "20.0"
+          },
+          {
+            "degisken": "gozlenen",
+            "olcu": "Ikinci_Basarisiz",
+            "deger": "20.0"
+          },
+          {
+            "degisken": "beklenen",
+            "olcu": "Birinci_Basarili",
+            "deger": "25.0"
+          },
+          {
+            "degisken": "beklenen",
+            "olcu": "Birinci_Basarisiz",
+            "deger": "15.0"
+          },
+          {
+            "degisken": "beklenen",
+            "olcu": "Ikinci_Basarili",
+            "deger": "25.0"
+          },
+          {
+            "degisken": "beklenen",
+            "olcu": "Ikinci_Basarisiz",
+            "deger": "15.0"
+          },
+          {
+            "degisken": "katki",
+            "olcu": "Birinci_Basarili",
+            "deger": "1.0"
+          },
+          {
+            "degisken": "katki",
+            "olcu": "Birinci_Basarisiz",
+            "deger": "1.6666666666666667"
+          },
+          {
+            "degisken": "katki",
+            "olcu": "Ikinci_Basarili",
+            "deger": "1.0"
+          },
+          {
+            "degisken": "katki",
+            "olcu": "Ikinci_Basarisiz",
+            "deger": "1.6666666666666667"
+          },
+          {
+            "degisken": "pearson_artik",
+            "olcu": "Birinci_Basarili",
+            "deger": "1.0"
+          },
+          {
+            "degisken": "pearson_artik",
+            "olcu": "Birinci_Basarisiz",
+            "deger": "-1.2909944487358056"
+          },
+          {
+            "degisken": "pearson_artik",
+            "olcu": "Ikinci_Basarili",
+            "deger": "-1.0"
+          },
+          {
+            "degisken": "pearson_artik",
+            "olcu": "Ikinci_Basarisiz",
+            "deger": "1.2909944487358056"
+          },
+          {
+            "degisken": "satir_orani",
+            "olcu": "Birinci_Basarili",
+            "deger": "0.75"
+          },
+          {
+            "degisken": "satir_orani",
+            "olcu": "Birinci_Basarisiz",
+            "deger": "0.25"
+          },
+          {
+            "degisken": "satir_orani",
+            "olcu": "Ikinci_Basarili",
+            "deger": "0.5"
+          },
+          {
+            "degisken": "satir_orani",
+            "olcu": "Ikinci_Basarisiz",
+            "deger": "0.5"
+          },
+          {
+            "degisken": "toplamlar",
+            "olcu": "toplam",
+            "deger": "80.0"
+          },
+          {
+            "degisken": "toplamlar",
+            "olcu": "satir_Birinci",
+            "deger": "40.0"
+          },
+          {
+            "degisken": "toplamlar",
+            "olcu": "satir_Ikinci",
+            "deger": "40.0"
+          },
+          {
+            "degisken": "toplamlar",
+            "olcu": "sutun_Basarili",
+            "deger": "50.0"
+          },
+          {
+            "degisken": "toplamlar",
+            "olcu": "sutun_Basarisiz",
+            "deger": "30.0"
+          },
+          {
+            "degisken": "test",
+            "olcu": "ki_kare",
+            "deger": "5.333333333333334"
+          },
+          {
+            "degisken": "test",
+            "olcu": "serbestlik",
+            "deger": "1.0"
+          },
+          {
+            "degisken": "test",
+            "olcu": "p",
+            "deger": "0.020921335337794004"
+          },
+          {
+            "degisken": "test",
+            "olcu": "cramer_v",
+            "deger": "0.25819888974716115"
+          },
+          {
+            "degisken": "test",
+            "olcu": "min_beklenen",
+            "deger": "15.0"
+          },
+          {
+            "degisken": "test",
+            "olcu": "alfa",
+            "deger": "0.05"
+          },
+          {
+            "degisken": "test",
+            "olcu": "reddet",
+            "deger": "1.0"
+          }
+        ],
+        "r_sonuclari": [
+          {
+            "degisken": "gozlenen",
+            "olcu": "Birinci_Basarili",
+            "deger": "30"
+          },
+          {
+            "degisken": "gozlenen",
+            "olcu": "Birinci_Basarisiz",
+            "deger": "10"
+          },
+          {
+            "degisken": "gozlenen",
+            "olcu": "Ikinci_Basarili",
+            "deger": "20"
+          },
+          {
+            "degisken": "gozlenen",
+            "olcu": "Ikinci_Basarisiz",
+            "deger": "20"
+          },
+          {
+            "degisken": "beklenen",
+            "olcu": "Birinci_Basarili",
+            "deger": "25"
+          },
+          {
+            "degisken": "beklenen",
+            "olcu": "Birinci_Basarisiz",
+            "deger": "15"
+          },
+          {
+            "degisken": "beklenen",
+            "olcu": "Ikinci_Basarili",
+            "deger": "25"
+          },
+          {
+            "degisken": "beklenen",
+            "olcu": "Ikinci_Basarisiz",
+            "deger": "15"
+          },
+          {
+            "degisken": "katki",
+            "olcu": "Birinci_Basarili",
+            "deger": "1"
+          },
+          {
+            "degisken": "katki",
+            "olcu": "Birinci_Basarisiz",
+            "deger": "1.66666666666667"
+          },
+          {
+            "degisken": "katki",
+            "olcu": "Ikinci_Basarili",
+            "deger": "1"
+          },
+          {
+            "degisken": "katki",
+            "olcu": "Ikinci_Basarisiz",
+            "deger": "1.66666666666667"
+          },
+          {
+            "degisken": "pearson_artik",
+            "olcu": "Birinci_Basarili",
+            "deger": "1"
+          },
+          {
+            "degisken": "pearson_artik",
+            "olcu": "Birinci_Basarisiz",
+            "deger": "-1.29099444873581"
+          },
+          {
+            "degisken": "pearson_artik",
+            "olcu": "Ikinci_Basarili",
+            "deger": "-1"
+          },
+          {
+            "degisken": "pearson_artik",
+            "olcu": "Ikinci_Basarisiz",
+            "deger": "1.29099444873581"
+          },
+          {
+            "degisken": "satir_orani",
+            "olcu": "Birinci_Basarili",
+            "deger": "0.75"
+          },
+          {
+            "degisken": "satir_orani",
+            "olcu": "Birinci_Basarisiz",
+            "deger": "0.25"
+          },
+          {
+            "degisken": "satir_orani",
+            "olcu": "Ikinci_Basarili",
+            "deger": "0.5"
+          },
+          {
+            "degisken": "satir_orani",
+            "olcu": "Ikinci_Basarisiz",
+            "deger": "0.5"
+          },
+          {
+            "degisken": "toplamlar",
+            "olcu": "toplam",
+            "deger": "80"
+          },
+          {
+            "degisken": "toplamlar",
+            "olcu": "satir_Birinci",
+            "deger": "40"
+          },
+          {
+            "degisken": "toplamlar",
+            "olcu": "satir_Ikinci",
+            "deger": "40"
+          },
+          {
+            "degisken": "toplamlar",
+            "olcu": "sutun_Basarili",
+            "deger": "50"
+          },
+          {
+            "degisken": "toplamlar",
+            "olcu": "sutun_Basarisiz",
+            "deger": "30"
+          },
+          {
+            "degisken": "test",
+            "olcu": "ki_kare",
+            "deger": "5.33333333333333"
+          },
+          {
+            "degisken": "test",
+            "olcu": "serbestlik",
+            "deger": "1"
+          },
+          {
+            "degisken": "test",
+            "olcu": "p",
+            "deger": "0.020921335337794"
+          },
+          {
+            "degisken": "test",
+            "olcu": "cramer_v",
+            "deger": "0.258198889747161"
+          },
+          {
+            "degisken": "test",
+            "olcu": "min_beklenen",
+            "deger": "15"
+          },
+          {
+            "degisken": "test",
+            "olcu": "alfa",
+            "deger": "0.05"
+          },
+          {
+            "degisken": "test",
+            "olcu": "reddet",
+            "deger": "1"
+          }
+        ]
+      },
+      "degistirilmis_referans": {
+        "python": {
+          "exit_code": 1,
+          "stdout": "     degisken              olcu     deger\n     gozlenen  Birinci_Basarili 30.000000\n     gozlenen Birinci_Basarisiz 10.000000\n     gozlenen   Ikinci_Basarili 20.000000\n     gozlenen  Ikinci_Basarisiz 20.000000\n     beklenen  Birinci_Basarili 25.000000\n     beklenen Birinci_Basarisiz 15.000000\n     beklenen   Ikinci_Basarili 25.000000\n     beklenen  Ikinci_Basarisiz 15.000000\n        katki  Birinci_Basarili  1.000000\n        katki Birinci_Basarisiz  1.666667\n        katki   Ikinci_Basarili  1.000000\n        katki  Ikinci_Basarisiz  1.666667\npearson_artik  Birinci_Basarili  1.000000\npearson_artik Birinci_Basarisiz -1.290994\npearson_artik   Ikinci_Basarili -1.000000\npearson_artik  Ikinci_Basarisiz  1.290994\n  satir_orani  Birinci_Basarili  0.750000\n  satir_orani Birinci_Basarisiz  0.250000\n  satir_orani   Ikinci_Basarili  0.500000\n  satir_orani  Ikinci_Basarisiz  0.500000\n    toplamlar            toplam 80.000000\n    toplamlar     satir_Birinci 40.000000\n    toplamlar      satir_Ikinci 40.000000\n    toplamlar    sutun_Basarili 50.000000\n    toplamlar   sutun_Basarisiz 30.000000\n         test           ki_kare  5.333333\n         test        serbestlik  1.000000\n         test                 p  0.020921\n         test          cramer_v  0.258199\n         test      min_beklenen 15.000000\n         test              alfa  0.050000\n         test            reddet  1.000000\n",
+          "stderr": "Traceback (most recent call last):\n  File \"/tmp/b12-cis0wab4/ornek-01/cozum.py\", line 133, in <module>\n    main()\n  File \"/tmp/b12-cis0wab4/ornek-01/cozum.py\", line 126, in main\n    kontrol_et(sonuc, pd.read_csv(\"beklenen-sonuclar.csv\"))\n  File \"/tmp/b12-cis0wab4/ornek-01/cozum.py\", line 81, in kontrol_et\n    raise ValueError(\"Kontrol degerleri uyusmuyor.\")\nValueError: Kontrol degerleri uyusmuyor.\n"
+        },
+        "r": {
+          "exit_code": 1,
+          "stdout": "      degisken              olcu       deger\n      gozlenen  Birinci_Basarili 30.00000000\n      gozlenen Birinci_Basarisiz 10.00000000\n      gozlenen   Ikinci_Basarili 20.00000000\n      gozlenen  Ikinci_Basarisiz 20.00000000\n      beklenen  Birinci_Basarili 25.00000000\n      beklenen Birinci_Basarisiz 15.00000000\n      beklenen   Ikinci_Basarili 25.00000000\n      beklenen  Ikinci_Basarisiz 15.00000000\n         katki  Birinci_Basarili  1.00000000\n         katki Birinci_Basarisiz  1.66666667\n         katki   Ikinci_Basarili  1.00000000\n         katki  Ikinci_Basarisiz  1.66666667\n pearson_artik  Birinci_Basarili  1.00000000\n pearson_artik Birinci_Basarisiz -1.29099445\n pearson_artik   Ikinci_Basarili -1.00000000\n pearson_artik  Ikinci_Basarisiz  1.29099445\n   satir_orani  Birinci_Basarili  0.75000000\n   satir_orani Birinci_Basarisiz  0.25000000\n   satir_orani   Ikinci_Basarili  0.50000000\n   satir_orani  Ikinci_Basarisiz  0.50000000\n     toplamlar            toplam 80.00000000\n     toplamlar     satir_Birinci 40.00000000\n     toplamlar      satir_Ikinci 40.00000000\n     toplamlar    sutun_Basarili 50.00000000\n     toplamlar   sutun_Basarisiz 30.00000000\n          test           ki_kare  5.33333333\n          test        serbestlik  1.00000000\n          test                 p  0.02092134\n          test          cramer_v  0.25819889\n          test      min_beklenen 15.00000000\n          test              alfa  0.05000000\n          test            reddet  1.00000000\n",
+          "stderr": "Error in kontrol_et(sonuc, read.csv(\"beklenen-sonuclar.csv\", stringsAsFactors = FALSE)) : \n  Kontrol degerleri uyusmuyor.\nCalls: source -> withVisible -> eval -> eval -> kontrol_et\nExecution halted\n"
+        }
+      },
+      "eksik_veri": {
+        "python": {
+          "exit_code": 1,
+          "stdout": "",
+          "stderr": "Traceback (most recent call last):\n  File \"/tmp/b12-cis0wab4/ornek-01/cozum.py\", line 133, in <module>\n    main()\n  File \"/tmp/b12-cis0wab4/ornek-01/cozum.py\", line 122, in main\n    veri = pd.read_csv(\"veri.csv\")\n           ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/pandas/io/parsers/readers.py\", line 1026, in read_csv\n    return _read(filepath_or_buffer, kwds)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/pandas/io/parsers/readers.py\", line 620, in _read\n    parser = TextFileReader(filepath_or_buffer, **kwds)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/pandas/io/parsers/readers.py\", line 1620, in __init__\n    self._engine = self._make_engine(f, self.engine)\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/pandas/io/parsers/readers.py\", line 1880, in _make_engine\n    self.handles = get_handle(\n                   ^^^^^^^^^^^\n  File \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/pandas/io/common.py\", line 873, in get_handle\n    handle = open(\n             ^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: 'veri.csv'\n"
+        },
+        "r": {
+          "exit_code": 1,
+          "stdout": "",
+          "stderr": "Error in file(file, \"rt\") : cannot open the connection\nCalls: source ... withVisible -> eval -> eval -> read.csv -> read.table -> file\nIn addition: Warning message:\nIn file(file, \"rt\") :\n  cannot open file 'veri.csv': No such file or directory\nExecution halted\n"
+        }
+      },
+      "gecti": true
+    },
+    {
+      "bolum": "b13",
+      "kontrol_sayisi": 62,
+      "spss": "calistirilmadi",
+      "source_sha256": {
+        "ornek-01/README.md": "5e4101c1a22b024dcf8e2cd786a134f755dad93b6596d1568579e5623503b80d",
+        "ornek-01/analiz.sps": "0fb166ef26d70d2562573c8c5b49f565588aae6b248ffc3b5a24e62ee34d396c",
+        "ornek-01/analiz.sps.txt": "0fb166ef26d70d2562573c8c5b49f565588aae6b248ffc3b5a24e62ee34d396c",
+        "ornek-01/beklenen-sonuclar.csv": "ce3c66f1e1a6381762fb61f3253c02a03aeedf214e0a64d4f55a3b515f6b0089",
+        "ornek-01/cozum.R": "d5390a52b900aa5f9d952e855377c7ff9becfc0a502cdf403ef6055252fa11f6",
+        "ornek-01/cozum.md": "846946d1d54900c789cd5a99da69e7247205bdd569bc1069bfbb7400878ba7ce",
+        "ornek-01/cozum.py": "58fdcb31772e13ffd30a2c9ba142fd06f1f2346c06c30f4376aae423754fbac8",
+        "ornek-01/grafik-aciklamasi.md": "5af6b4a5fab34e4719efd7726d6d0160849ba41a1d368ccdcb6337c87bca5a97",
+        "ornek-01/kaynak-kaydi.json": "7802e21fd873824bdeccc0528a904bf7f062250f687066680fddb6896c7cdbcd",
+        "ornek-01/spss-dogrula.sps": "a39c81bc2c6ef42a5c77ed69027eafacd5a5a7d21dbbeb861b854cefc30f37ba",
+        "ornek-01/spss-dogrula.sps.txt": "a39c81bc2c6ef42a5c77ed69027eafacd5a5a7d21dbbeb861b854cefc30f37ba",
+        "ornek-01/spss-esleme.json": "8f00ae6abaa058e9d5a9c48e44f4f781fbb0681295846971d86c00404c7dd03e",
+        "ornek-01/spss_karsilastir.py": "b615f9b25e9682b03dfef3df4fae79cf7241c8f4518c3f5f6cd7dbfc0bfaef64",
+        "ornek-01/veri-sozlugu.csv": "27b5aeeab982b39d65d3a8c50eb45d0407cb79b1b61ece0c52072d6248a99b95",
+        "ornek-01/veri.csv": "0ccad982ba1ce76a65b39bdf3d07b3efb6d1c7115eaf454e45e12b083ebce8b4"
+      },
+      "manifest_gecti": true,
+      "python": {
+        "exit_code": 0,
+        "stdout": " degisken         olcu         deger\n     ozet        hacim  1.600000e+01\n     ozet     saat_ort  4.750000e+00\n     ozet     puan_ort  5.950000e+01\n     ozet          sxx  5.100000e+01\n     ozet          syy  5.220000e+02\n     ozet          sxy  1.600000e+02\n     ozet          sse  2.003922e+01\n     ozet          mse  1.431373e+00\n     ozet   serbestlik  1.400000e+01\n     ozet   korelasyon  9.806175e-01\n     ozet       r_kare  9.616107e-01\n     ozet         egim  3.137255e+00\n     ozet        sabit  4.459804e+01\n     ozet      se_egim  1.675295e-01\n     ozet     se_sabit  8.501193e-01\n     ozet       t_egim  1.872658e+01\n     ozet       p_egim  2.618312e-11\n     ozet     kritik_t  2.144787e+00\n     ozet     egim_alt  2.777940e+00\n     ozet     egim_ust  3.496570e+00\n     ozet    sabit_alt  4.277471e+01\n     ozet    sabit_ust  4.642136e+01\n     ozet    yeni_saat  6.000000e+00\n     ozet       ongoru  6.342157e+01\n     ozet  se_ortalama  3.651220e-01\n     ozet     se_birey  1.250874e+00\n     ozet ortalama_alt  6.263846e+01\n     ozet ortalama_ust  6.420468e+01\n     ozet    birey_alt  6.073871e+01\n     ozet    birey_ust  6.610443e+01\nuydurulan     satir_01  6.028431e+01\nuydurulan     satir_02  5.400980e+01\nuydurulan     satir_03  6.655882e+01\nuydurulan     satir_04  6.342157e+01\nuydurulan     satir_05  6.342157e+01\nuydurulan     satir_06  5.087255e+01\nuydurulan     satir_07  6.969608e+01\nuydurulan     satir_08  5.714706e+01\nuydurulan     satir_09  5.714706e+01\nuydurulan     satir_10  6.028431e+01\nuydurulan     satir_11  5.400980e+01\nuydurulan     satir_12  6.655882e+01\nuydurulan     satir_13  5.400980e+01\nuydurulan     satir_14  6.028431e+01\nuydurulan     satir_15  5.087255e+01\nuydurulan     satir_16  6.342157e+01\n    artik     satir_01 -2.843137e-01\n    artik     satir_02 -9.803922e-03\n    artik     satir_03  1.441176e+00\n    artik     satir_04 -4.215686e-01\n    artik     satir_05  1.578431e+00\n    artik     satir_06  1.127451e+00\n    artik     satir_07  3.039216e-01\n    artik     satir_08  8.529412e-01\n    artik     satir_09 -1.470588e-01\n    artik     satir_10  7.156863e-01\n    artik     satir_11 -2.009804e+00\n    artik     satir_12 -2.558824e+00\n    artik     satir_13  9.901961e-01\n    artik     satir_14 -2.843137e-01\n    artik     satir_15 -8.725490e-01\n    artik     satir_16 -4.215686e-01\nDOGRULANDI: 62 kontrol degeri eslesiyor.\nGrafik: ciktilar/python/regresyon-tani.png\nPython 3.12.14, NumPy 2.3.5, pandas 2.2.3, SciPy 1.17.0\n",
+        "stderr": "",
+        "gecti": true
+      },
+      "r": {
+        "exit_code": 0,
+        "stdout": "  degisken         olcu            deger\n      ozet        hacim  1.600000000e+01\n      ozet     saat_ort  4.750000000e+00\n      ozet     puan_ort  5.950000000e+01\n      ozet          sxx  5.100000000e+01\n      ozet          syy  5.220000000e+02\n      ozet          sxy  1.600000000e+02\n      ozet          sse  2.003921569e+01\n      ozet          mse  1.431372549e+00\n      ozet   serbestlik  1.400000000e+01\n      ozet   korelasyon  9.806175085e-01\n      ozet       r_kare  9.616106979e-01\n      ozet         egim  3.137254902e+00\n      ozet        sabit  4.459803922e+01\n      ozet      se_egim  1.675294852e-01\n      ozet     se_sabit  8.501192896e-01\n      ozet       t_egim  1.872658355e+01\n      ozet       p_egim  2.618312027e-11\n      ozet     kritik_t  2.144786688e+00\n      ozet     egim_alt  2.777939892e+00\n      ozet     egim_ust  3.496569912e+00\n      ozet    sabit_alt  4.277471468e+01\n      ozet    sabit_ust  4.642136375e+01\n      ozet    yeni_saat  6.000000000e+00\n      ozet       ongoru  6.342156863e+01\n      ozet  se_ortalama  3.651220480e-01\n      ozet     se_birey  1.250874358e+00\n      ozet ortalama_alt  6.263845972e+01\n      ozet ortalama_ust  6.420467754e+01\n      ozet    birey_alt  6.073870996e+01\n      ozet    birey_ust  6.610442730e+01\n uydurulan     satir_01  6.028431373e+01\n uydurulan     satir_02  5.400980392e+01\n uydurulan     satir_03  6.655882353e+01\n uydurulan     satir_04  6.342156863e+01\n uydurulan     satir_05  6.342156863e+01\n uydurulan     satir_06  5.087254902e+01\n uydurulan     satir_07  6.969607843e+01\n uydurulan     satir_08  5.714705882e+01\n uydurulan     satir_09  5.714705882e+01\n uydurulan     satir_10  6.028431373e+01\n uydurulan     satir_11  5.400980392e+01\n uydurulan     satir_12  6.655882353e+01\n uydurulan     satir_13  5.400980392e+01\n uydurulan     satir_14  6.028431373e+01\n uydurulan     satir_15  5.087254902e+01\n uydurulan     satir_16  6.342156863e+01\n     artik     satir_01 -2.843137255e-01\n     artik     satir_02 -9.803921569e-03\n     artik     satir_03  1.441176471e+00\n     artik     satir_04 -4.215686275e-01\n     artik     satir_05  1.578431373e+00\n     artik     satir_06  1.127450980e+00\n     artik     satir_07  3.039215686e-01\n     artik     satir_08  8.529411765e-01\n     artik     satir_09 -1.470588235e-01\n     artik     satir_10  7.156862745e-01\n     artik     satir_11 -2.009803922e+00\n     artik     satir_12 -2.558823529e+00\n     artik     satir_13  9.901960784e-01\n     artik     satir_14 -2.843137255e-01\n     artik     satir_15 -8.725490196e-01\n     artik     satir_16 -4.215686275e-01\nDOGRULANDI: 62 kontrol degeri eslesiyor.\nGrafik: ciktilar/r/regresyon-tani.png\n",
+        "stderr": "",
+        "gecti": true
+      },
+      "python_export": {
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "python_r_eslesmesi": {
+        "gecti": true,
+        "farklar": [],
+        "rel_tol": 1e-09,
+        "abs_tol": 1e-15,
+        "python_sonuclari": [
+          {
+            "degisken": "ozet",
+            "olcu": "hacim",
+            "deger": "16.0"
+          },
+          {
+            "degisken": "ozet",
+            "olcu": "saat_ort",
+            "deger": "4.75"
+          },
+          {
+            "degisken": "ozet",
+            "olcu": "puan_ort",
+            "deger": "59.5"
+          },
+          {
+            "degisken": "ozet",
+            "olcu": "sxx",
+            "deger": "51.0"
+          },
+          {
+            "degisken": "ozet",
+            "olcu": "syy",
+            "deger": "522.0"
+          },
+          {
+            "degisken": "ozet",
+            "olcu": "sxy",
+            "deger": "160.0"
+          },
+          {
+            "degisken": "ozet",
+            "olcu": "sse",
+            "deger": "20.03921568627453"
+          },
+          {
+            "degisken": "ozet",
+            "olcu": "mse",
+            "deger": "1.4313725490196094"
+          },
+          {
+            "degisken": "ozet",
+            "olcu": "serbestlik",
+            "deger": "14.0"
+          },
+          {
+            "degisken": "ozet",
+            "olcu": "korelasyon",
+            "deger": "0.9806175084705627"
+          },
+          {
+            "degisken": "ozet",
+            "olcu": "r_kare",
+            "deger": "0.9616106979190143"
+          },
+          {
+            "degisken": "ozet",
+            "olcu": "egim",
+            "deger": "3.1372549019607843"
+          },
+          {
+            "degisken": "ozet",
+            "olcu": "sabit",
+            "deger": "44.59803921568627"
+          },
+          {
+            "degisken": "ozet",
+            "olcu": "se_egim",
+            "deger": "0.16752948520230462"
+          },
+          {
+            "degisken": "ozet",
+            "olcu": "se_sabit",
+            "deger": "0.8501192896369556"
+          },
+          {
+            "degisken": "ozet",
+            "olcu": "t_egim",
+            "deger": "18.72658355138088"
+          },
+          {
+            "degisken": "ozet",
+            "olcu": "p_egim",
+            "deger": "2.6183120270977032e-11"
+          },
+          {
+            "degisken": "ozet",
+            "olcu": "kritik_t",
+            "deger": "2.144786687917804"
+          },
+          {
+            "degisken": "ozet",
+            "olcu": "egim_alt",
+            "deger": "2.7779398922651586"
+          },
+          {
+            "degisken": "ozet",
+            "olcu": "egim_ust",
+            "deger": "3.49656991165641"
+          },
+          {
+            "degisken": "ozet",
+            "olcu": "sabit_alt",
+            "deger": "42.774714680130785"
+          },
+          {
+            "degisken": "ozet",
+            "olcu": "sabit_ust",
+            "deger": "46.421363751241756"
+          },
+          {
+            "degisken": "ozet",
+            "olcu": "yeni_saat",
+            "deger": "6.0"
+          },
+          {
+            "degisken": "ozet",
+            "olcu": "ongoru",
+            "deger": "63.42156862745098"
+          },
+          {
+            "degisken": "ozet",
+            "olcu": "se_ortalama",
+            "deger": "0.3651220480301193"
+          },
+          {
+            "degisken": "ozet",
+            "olcu": "se_birey",
+            "deger": "1.250874357790309"
+          },
+          {
+            "degisken": "ozet",
+            "olcu": "ortalama_alt",
+            "deger": "62.638459719370694"
+          },
+          {
+            "degisken": "ozet",
+            "olcu": "ortalama_ust",
+            "deger": "64.20467753553126"
+          },
+          {
+            "degisken": "ozet",
+            "olcu": "birey_alt",
+            "deger": "60.738709956604595"
+          },
+          {
+            "degisken": "ozet",
+            "olcu": "birey_ust",
+            "deger": "66.10442729829737"
+          },
+          {
+            "degisken": "uydurulan",
+            "olcu": "satir_01",
+            "deger": "60.28431372549019"
+          },
+          {
+            "degisken": "uydurulan",
+            "olcu": "satir_02",
+            "deger": "54.009803921568626"
+          },
+          {
+            "degisken": "uydurulan",
+            "olcu": "satir_03",
+            "deger": "66.55882352941177"
+          },
+          {
+            "degisken": "uydurulan",
+            "olcu": "satir_04",
+            "deger": "63.42156862745098"
+          },
+          {
+            "degisken": "uydurulan",
+            "olcu": "satir_05",
+            "deger": "63.42156862745098"
+          },
+          {
+            "degisken": "uydurulan",
+            "olcu": "satir_06",
+            "deger": "50.87254901960784"
+          },
+          {
+            "degisken": "uydurulan",
+            "olcu": "satir_07",
+            "deger": "69.69607843137254"
+          },
+          {
+            "degisken": "uydurulan",
+            "olcu": "satir_08",
+            "deger": "57.147058823529406"
+          },
+          {
+            "degisken": "uydurulan",
+            "olcu": "satir_09",
+            "deger": "57.147058823529406"
+          },
+          {
+            "degisken": "uydurulan",
+            "olcu": "satir_10",
+            "deger": "60.28431372549019"
+          },
+          {
+            "degisken": "uydurulan",
+            "olcu": "satir_11",
+            "deger": "54.009803921568626"
+          },
+          {
+            "degisken": "uydurulan",
+            "olcu": "satir_12",
+            "deger": "66.55882352941177"
+          },
+          {
+            "degisken": "uydurulan",
+            "olcu": "satir_13",
+            "deger": "54.009803921568626"
+          },
+          {
+            "degisken": "uydurulan",
+            "olcu": "satir_14",
+            "deger": "60.28431372549019"
+          },
+          {
+            "degisken": "uydurulan",
+            "olcu": "satir_15",
+            "deger": "50.87254901960784"
+          },
+          {
+            "degisken": "uydurulan",
+            "olcu": "satir_16",
+            "deger": "63.42156862745098"
+          },
+          {
+            "degisken": "artik",
+            "olcu": "satir_01",
+            "deger": "-0.2843137254901933"
+          },
+          {
+            "degisken": "artik",
+            "olcu": "satir_02",
+            "deger": "-0.00980392156862564"
+          },
+          {
+            "degisken": "artik",
+            "olcu": "satir_03",
+            "deger": "1.441176470588232"
+          },
+          {
+            "degisken": "artik",
+            "olcu": "satir_04",
+            "deger": "-0.42156862745098067"
+          },
+          {
+            "degisken": "artik",
+            "olcu": "satir_05",
+            "deger": "1.5784313725490193"
+          },
+          {
+            "degisken": "artik",
+            "olcu": "satir_06",
+            "deger": "1.1274509803921617"
+          },
+          {
+            "degisken": "artik",
+            "olcu": "satir_07",
+            "deger": "0.3039215686274588"
+          },
+          {
+            "degisken": "artik",
+            "olcu": "satir_08",
+            "deger": "0.8529411764705941"
+          },
+          {
+            "degisken": "artik",
+            "olcu": "satir_09",
+            "deger": "-0.1470588235294059"
+          },
+          {
+            "degisken": "artik",
+            "olcu": "satir_10",
+            "deger": "0.7156862745098067"
+          },
+          {
+            "degisken": "artik",
+            "olcu": "satir_11",
+            "deger": "-2.0098039215686256"
+          },
+          {
+            "degisken": "artik",
+            "olcu": "satir_12",
+            "deger": "-2.558823529411768"
+          },
+          {
+            "degisken": "artik",
+            "olcu": "satir_13",
+            "deger": "0.9901960784313744"
+          },
+          {
+            "degisken": "artik",
+            "olcu": "satir_14",
+            "deger": "-0.2843137254901933"
+          },
+          {
+            "degisken": "artik",
+            "olcu": "satir_15",
+            "deger": "-0.8725490196078383"
+          },
+          {
+            "degisken": "artik",
+            "olcu": "satir_16",
+            "deger": "-0.42156862745098067"
+          }
+        ],
+        "r_sonuclari": [
+          {
+            "degisken": "ozet",
+            "olcu": "hacim",
+            "deger": "16"
+          },
+          {
+            "degisken": "ozet",
+            "olcu": "saat_ort",
+            "deger": "4.75"
+          },
+          {
+            "degisken": "ozet",
+            "olcu": "puan_ort",
+            "deger": "59.5"
+          },
+          {
+            "degisken": "ozet",
+            "olcu": "sxx",
+            "deger": "51"
+          },
+          {
+            "degisken": "ozet",
+            "olcu": "syy",
+            "deger": "522"
+          },
+          {
+            "degisken": "ozet",
+            "olcu": "sxy",
+            "deger": "160"
+          },
+          {
+            "degisken": "ozet",
+            "olcu": "sse",
+            "deger": "20.0392156862745"
+          },
+          {
+            "degisken": "ozet",
+            "olcu": "mse",
+            "deger": "1.43137254901961"
+          },
+          {
+            "degisken": "ozet",
+            "olcu": "serbestlik",
+            "deger": "14"
+          },
+          {
+            "degisken": "ozet",
+            "olcu": "korelasyon",
+            "deger": "0.980617508470563"
+          },
+          {
+            "degisken": "ozet",
+            "olcu": "r_kare",
+            "deger": "0.961610697919014"
+          },
+          {
+            "degisken": "ozet",
+            "olcu": "egim",
+            "deger": "3.13725490196078"
+          },
+          {
+            "degisken": "ozet",
+            "olcu": "sabit",
+            "deger": "44.5980392156863"
+          },
+          {
+            "degisken": "ozet",
+            "olcu": "se_egim",
+            "deger": "0.167529485202305"
+          },
+          {
+            "degisken": "ozet",
+            "olcu": "se_sabit",
+            "deger": "0.850119289636955"
+          },
+          {
+            "degisken": "ozet",
+            "olcu": "t_egim",
+            "deger": "18.7265835513809"
+          },
+          {
+            "degisken": "ozet",
+            "olcu": "p_egim",
+            "deger": "2.61831202709769e-11"
+          },
+          {
+            "degisken": "ozet",
+            "olcu": "kritik_t",
+            "deger": "2.1447866879178"
+          },
+          {
+            "degisken": "ozet",
+            "olcu": "egim_alt",
+            "deger": "2.77793989226516"
+          },
+          {
+            "degisken": "ozet",
+            "olcu": "egim_ust",
+            "deger": "3.49656991165641"
+          },
+          {
+            "degisken": "ozet",
+            "olcu": "sabit_alt",
+            "deger": "42.7747146801308"
+          },
+          {
+            "degisken": "ozet",
+            "olcu": "sabit_ust",
+            "deger": "46.4213637512418"
+          },
+          {
+            "degisken": "ozet",
+            "olcu": "yeni_saat",
+            "deger": "6"
+          },
+          {
+            "degisken": "ozet",
+            "olcu": "ongoru",
+            "deger": "63.421568627451"
+          },
+          {
+            "degisken": "ozet",
+            "olcu": "se_ortalama",
+            "deger": "0.365122048030119"
+          },
+          {
+            "degisken": "ozet",
+            "olcu": "se_birey",
+            "deger": "1.25087435779031"
+          },
+          {
+            "degisken": "ozet",
+            "olcu": "ortalama_alt",
+            "deger": "62.6384597193707"
+          },
+          {
+            "degisken": "ozet",
+            "olcu": "ortalama_ust",
+            "deger": "64.2046775355313"
+          },
+          {
+            "degisken": "ozet",
+            "olcu": "birey_alt",
+            "deger": "60.7387099566046"
+          },
+          {
+            "degisken": "ozet",
+            "olcu": "birey_ust",
+            "deger": "66.1044272982974"
+          },
+          {
+            "degisken": "uydurulan",
+            "olcu": "satir_01",
+            "deger": "60.2843137254902"
+          },
+          {
+            "degisken": "uydurulan",
+            "olcu": "satir_02",
+            "deger": "54.0098039215686"
+          },
+          {
+            "degisken": "uydurulan",
+            "olcu": "satir_03",
+            "deger": "66.5588235294118"
+          },
+          {
+            "degisken": "uydurulan",
+            "olcu": "satir_04",
+            "deger": "63.421568627451"
+          },
+          {
+            "degisken": "uydurulan",
+            "olcu": "satir_05",
+            "deger": "63.421568627451"
+          },
+          {
+            "degisken": "uydurulan",
+            "olcu": "satir_06",
+            "deger": "50.8725490196078"
+          },
+          {
+            "degisken": "uydurulan",
+            "olcu": "satir_07",
+            "deger": "69.6960784313726"
+          },
+          {
+            "degisken": "uydurulan",
+            "olcu": "satir_08",
+            "deger": "57.1470588235294"
+          },
+          {
+            "degisken": "uydurulan",
+            "olcu": "satir_09",
+            "deger": "57.1470588235294"
+          },
+          {
+            "degisken": "uydurulan",
+            "olcu": "satir_10",
+            "deger": "60.2843137254902"
+          },
+          {
+            "degisken": "uydurulan",
+            "olcu": "satir_11",
+            "deger": "54.0098039215686"
+          },
+          {
+            "degisken": "uydurulan",
+            "olcu": "satir_12",
+            "deger": "66.5588235294118"
+          },
+          {
+            "degisken": "uydurulan",
+            "olcu": "satir_13",
+            "deger": "54.0098039215686"
+          },
+          {
+            "degisken": "uydurulan",
+            "olcu": "satir_14",
+            "deger": "60.2843137254902"
+          },
+          {
+            "degisken": "uydurulan",
+            "olcu": "satir_15",
+            "deger": "50.8725490196078"
+          },
+          {
+            "degisken": "uydurulan",
+            "olcu": "satir_16",
+            "deger": "63.421568627451"
+          },
+          {
+            "degisken": "artik",
+            "olcu": "satir_01",
+            "deger": "-0.28431372549019"
+          },
+          {
+            "degisken": "artik",
+            "olcu": "satir_02",
+            "deger": "-0.00980392156862121"
+          },
+          {
+            "degisken": "artik",
+            "olcu": "satir_03",
+            "deger": "1.44117647058824"
+          },
+          {
+            "degisken": "artik",
+            "olcu": "satir_04",
+            "deger": "-0.421568627450981"
+          },
+          {
+            "degisken": "artik",
+            "olcu": "satir_05",
+            "deger": "1.57843137254902"
+          },
+          {
+            "degisken": "artik",
+            "olcu": "satir_06",
+            "deger": "1.12745098039215"
+          },
+          {
+            "degisken": "artik",
+            "olcu": "satir_07",
+            "deger": "0.30392156862745"
+          },
+          {
+            "degisken": "artik",
+            "olcu": "satir_08",
+            "deger": "0.852941176470587"
+          },
+          {
+            "degisken": "artik",
+            "olcu": "satir_09",
+            "deger": "-0.147058823529413"
+          },
+          {
+            "degisken": "artik",
+            "olcu": "satir_10",
+            "deger": "0.715686274509803"
+          },
+          {
+            "degisken": "artik",
+            "olcu": "satir_11",
+            "deger": "-2.00980392156863"
+          },
+          {
+            "degisken": "artik",
+            "olcu": "satir_12",
+            "deger": "-2.55882352941176"
+          },
+          {
+            "degisken": "artik",
+            "olcu": "satir_13",
+            "deger": "0.990196078431371"
+          },
+          {
+            "degisken": "artik",
+            "olcu": "satir_14",
+            "deger": "-0.284313725490197"
+          },
+          {
+            "degisken": "artik",
+            "olcu": "satir_15",
+            "deger": "-0.872549019607845"
+          },
+          {
+            "degisken": "artik",
+            "olcu": "satir_16",
+            "deger": "-0.421568627450981"
+          }
+        ]
+      },
+      "degistirilmis_referans": {
+        "python": {
+          "exit_code": 1,
+          "stdout": " degisken         olcu         deger\n     ozet        hacim  1.600000e+01\n     ozet     saat_ort  4.750000e+00\n     ozet     puan_ort  5.950000e+01\n     ozet          sxx  5.100000e+01\n     ozet          syy  5.220000e+02\n     ozet          sxy  1.600000e+02\n     ozet          sse  2.003922e+01\n     ozet          mse  1.431373e+00\n     ozet   serbestlik  1.400000e+01\n     ozet   korelasyon  9.806175e-01\n     ozet       r_kare  9.616107e-01\n     ozet         egim  3.137255e+00\n     ozet        sabit  4.459804e+01\n     ozet      se_egim  1.675295e-01\n     ozet     se_sabit  8.501193e-01\n     ozet       t_egim  1.872658e+01\n     ozet       p_egim  2.618312e-11\n     ozet     kritik_t  2.144787e+00\n     ozet     egim_alt  2.777940e+00\n     ozet     egim_ust  3.496570e+00\n     ozet    sabit_alt  4.277471e+01\n     ozet    sabit_ust  4.642136e+01\n     ozet    yeni_saat  6.000000e+00\n     ozet       ongoru  6.342157e+01\n     ozet  se_ortalama  3.651220e-01\n     ozet     se_birey  1.250874e+00\n     ozet ortalama_alt  6.263846e+01\n     ozet ortalama_ust  6.420468e+01\n     ozet    birey_alt  6.073871e+01\n     ozet    birey_ust  6.610443e+01\nuydurulan     satir_01  6.028431e+01\nuydurulan     satir_02  5.400980e+01\nuydurulan     satir_03  6.655882e+01\nuydurulan     satir_04  6.342157e+01\nuydurulan     satir_05  6.342157e+01\nuydurulan     satir_06  5.087255e+01\nuydurulan     satir_07  6.969608e+01\nuydurulan     satir_08  5.714706e+01\nuydurulan     satir_09  5.714706e+01\nuydurulan     satir_10  6.028431e+01\nuydurulan     satir_11  5.400980e+01\nuydurulan     satir_12  6.655882e+01\nuydurulan     satir_13  5.400980e+01\nuydurulan     satir_14  6.028431e+01\nuydurulan     satir_15  5.087255e+01\nuydurulan     satir_16  6.342157e+01\n    artik     satir_01 -2.843137e-01\n    artik     satir_02 -9.803922e-03\n    artik     satir_03  1.441176e+00\n    artik     satir_04 -4.215686e-01\n    artik     satir_05  1.578431e+00\n    artik     satir_06  1.127451e+00\n    artik     satir_07  3.039216e-01\n    artik     satir_08  8.529412e-01\n    artik     satir_09 -1.470588e-01\n    artik     satir_10  7.156863e-01\n    artik     satir_11 -2.009804e+00\n    artik     satir_12 -2.558824e+00\n    artik     satir_13  9.901961e-01\n    artik     satir_14 -2.843137e-01\n    artik     satir_15 -8.725490e-01\n    artik     satir_16 -4.215686e-01\n",
+          "stderr": "Traceback (most recent call last):\n  File \"/tmp/b13-zhxi_en6/ornek-01/cozum.py\", line 154, in <module>\n    main()\n  File \"/tmp/b13-zhxi_en6/ornek-01/cozum.py\", line 147, in main\n    kontrol_et(sonuc, pd.read_csv(\"beklenen-sonuclar.csv\"))\n  File \"/tmp/b13-zhxi_en6/ornek-01/cozum.py\", line 93, in kontrol_et\n    raise ValueError(f\"Kontrol uyusmazligi: {olcu}\")\nValueError: Kontrol uyusmazligi: hacim\n"
+        },
+        "r": {
+          "exit_code": 1,
+          "stdout": "  degisken         olcu            deger\n      ozet        hacim  1.600000000e+01\n      ozet     saat_ort  4.750000000e+00\n      ozet     puan_ort  5.950000000e+01\n      ozet          sxx  5.100000000e+01\n      ozet          syy  5.220000000e+02\n      ozet          sxy  1.600000000e+02\n      ozet          sse  2.003921569e+01\n      ozet          mse  1.431372549e+00\n      ozet   serbestlik  1.400000000e+01\n      ozet   korelasyon  9.806175085e-01\n      ozet       r_kare  9.616106979e-01\n      ozet         egim  3.137254902e+00\n      ozet        sabit  4.459803922e+01\n      ozet      se_egim  1.675294852e-01\n      ozet     se_sabit  8.501192896e-01\n      ozet       t_egim  1.872658355e+01\n      ozet       p_egim  2.618312027e-11\n      ozet     kritik_t  2.144786688e+00\n      ozet     egim_alt  2.777939892e+00\n      ozet     egim_ust  3.496569912e+00\n      ozet    sabit_alt  4.277471468e+01\n      ozet    sabit_ust  4.642136375e+01\n      ozet    yeni_saat  6.000000000e+00\n      ozet       ongoru  6.342156863e+01\n      ozet  se_ortalama  3.651220480e-01\n      ozet     se_birey  1.250874358e+00\n      ozet ortalama_alt  6.263845972e+01\n      ozet ortalama_ust  6.420467754e+01\n      ozet    birey_alt  6.073870996e+01\n      ozet    birey_ust  6.610442730e+01\n uydurulan     satir_01  6.028431373e+01\n uydurulan     satir_02  5.400980392e+01\n uydurulan     satir_03  6.655882353e+01\n uydurulan     satir_04  6.342156863e+01\n uydurulan     satir_05  6.342156863e+01\n uydurulan     satir_06  5.087254902e+01\n uydurulan     satir_07  6.969607843e+01\n uydurulan     satir_08  5.714705882e+01\n uydurulan     satir_09  5.714705882e+01\n uydurulan     satir_10  6.028431373e+01\n uydurulan     satir_11  5.400980392e+01\n uydurulan     satir_12  6.655882353e+01\n uydurulan     satir_13  5.400980392e+01\n uydurulan     satir_14  6.028431373e+01\n uydurulan     satir_15  5.087254902e+01\n uydurulan     satir_16  6.342156863e+01\n     artik     satir_01 -2.843137255e-01\n     artik     satir_02 -9.803921569e-03\n     artik     satir_03  1.441176471e+00\n     artik     satir_04 -4.215686275e-01\n     artik     satir_05  1.578431373e+00\n     artik     satir_06  1.127450980e+00\n     artik     satir_07  3.039215686e-01\n     artik     satir_08  8.529411765e-01\n     artik     satir_09 -1.470588235e-01\n     artik     satir_10  7.156862745e-01\n     artik     satir_11 -2.009803922e+00\n     artik     satir_12 -2.558823529e+00\n     artik     satir_13  9.901960784e-01\n     artik     satir_14 -2.843137255e-01\n     artik     satir_15 -8.725490196e-01\n     artik     satir_16 -4.215686275e-01\n",
+          "stderr": "Error in kontrol_et(sonuc, read.csv(\"beklenen-sonuclar.csv\", stringsAsFactors = FALSE)) : \n  Kontrol degerleri uyusmuyor.\nCalls: source -> withVisible -> eval -> eval -> kontrol_et\nExecution halted\n"
+        }
+      },
+      "eksik_veri": {
+        "python": {
+          "exit_code": 1,
+          "stdout": "",
+          "stderr": "Traceback (most recent call last):\n  File \"/tmp/b13-zhxi_en6/ornek-01/cozum.py\", line 154, in <module>\n    main()\n  File \"/tmp/b13-zhxi_en6/ornek-01/cozum.py\", line 143, in main\n    veri = pd.read_csv(\"veri.csv\")\n           ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/pandas/io/parsers/readers.py\", line 1026, in read_csv\n    return _read(filepath_or_buffer, kwds)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/pandas/io/parsers/readers.py\", line 620, in _read\n    parser = TextFileReader(filepath_or_buffer, **kwds)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/pandas/io/parsers/readers.py\", line 1620, in __init__\n    self._engine = self._make_engine(f, self.engine)\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/pandas/io/parsers/readers.py\", line 1880, in _make_engine\n    self.handles = get_handle(\n                   ^^^^^^^^^^^\n  File \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/pandas/io/common.py\", line 873, in get_handle\n    handle = open(\n             ^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: 'veri.csv'\n"
+        },
+        "r": {
+          "exit_code": 1,
+          "stdout": "",
+          "stderr": "Error in file(file, \"rt\") : cannot open the connection\nCalls: source ... withVisible -> eval -> eval -> read.csv -> read.table -> file\nIn addition: Warning message:\nIn file(file, \"rt\") :\n  cannot open file 'veri.csv': No such file or directory\nExecution halted\n"
+        }
+      },
+      "gecti": true
+    },
+    {
+      "bolum": "b14",
+      "kontrol_sayisi": 17,
+      "spss": "calistirilmadi",
+      "source_sha256": {
+        "ornek-01/README.md": "7f9388d6e5a2117c3a11432c7ce871dab598d291a13e674d9b6eb23ca342a582",
+        "ornek-01/analiz.sps": "998326e3f7f2616252fdd8c41e3b652cd43773f541b62629aa1c9cd9842b6319",
+        "ornek-01/analiz.sps.txt": "998326e3f7f2616252fdd8c41e3b652cd43773f541b62629aa1c9cd9842b6319",
+        "ornek-01/beklenen-sonuclar.csv": "0c9fdca5c2fd4b9829fd4592554d968336f971cd8390ee457efd83839b984507",
+        "ornek-01/cozum.R": "a95718909c51521a450d763878ea95967c215e21591e490e7825f4f42972ea09",
+        "ornek-01/cozum.md": "d218f133e5aa73bf29e2e9ce30576adbea3bd18b65f7f030146642933d3bcfa1",
+        "ornek-01/cozum.py": "7a27f992c4480e567a95e27404757569efc598e1ad9c90522dddd9708381b783",
+        "ornek-01/grafik-aciklamasi.md": "64e54920604b257a9b41589667cbc3b9b2cde77feb910a4cda73cfdb23d1d83b",
+        "ornek-01/kaynak-kaydi.json": "b611e131f6894c4de517a0ebeeb712f6db2f58878f2cb237e1a30dff0662639f",
+        "ornek-01/spss-dogrula.sps": "4359fdee4f32948a79a66195a37166f34688fd60031025a6da409208162b3282",
+        "ornek-01/spss-dogrula.sps.txt": "4359fdee4f32948a79a66195a37166f34688fd60031025a6da409208162b3282",
+        "ornek-01/spss-esleme.json": "abd8f32067b822b23a36788fed13af9f8abb0c1bf445ce919c718848936367a2",
+        "ornek-01/spss_karsilastir.py": "b615f9b25e9682b03dfef3df4fae79cf7241c8f4518c3f5f6cd7dbfc0bfaef64",
+        "ornek-01/veri-sozlugu.csv": "85bbb33facc4f6f21c2d11ca460879aa008adea7041975ce452055e75b9ae43f",
+        "ornek-01/veri.csv": "6e2bf925b1ce47ad0c9cd4d3234ce85662ad26448554e54665b8029808c33a47"
+      },
+      "manifest_gecti": true,
+      "python": {
+        "exit_code": 0,
+        "stdout": "degisken           olcu     deger\n   girdi    cift_sayisi 24.000000\n   girdi  ortalama_fark -3.200000\n   girdi   fark_sapmasi  6.000000\n   girdi           alfa  0.050000\n    test  standart_hata  1.224745\n    test     serbestlik 23.000000\n    test              t -2.612789\n    test         p_cift  0.015558\n    test             dz -0.533333\n    test       kritik_t  2.068658\n    test      hata_payi  2.533578\n    test      alt_sinir -5.733578\n    test      ust_sinir -0.666422\n    test       genislik  5.067156\n    test         reddet  1.000000\n    test sifir_aralikta  0.000000\n    test   guven_duzeyi  0.950000\nH0 reddedilir\nDOGRULANDI: 17 kontrol degeri eslesiyor.\nGrafik: ciktilar/python/son-on-araligi.png\nPython 3.12.14, NumPy 2.3.5, pandas 2.2.3, SciPy 1.17.0\n",
+        "stderr": "",
+        "gecti": true
+      },
+      "r": {
+        "exit_code": 0,
+        "stdout": " degisken           olcu       deger\n    girdi    cift_sayisi 24.00000000\n    girdi  ortalama_fark -3.20000000\n    girdi   fark_sapmasi  6.00000000\n    girdi           alfa  0.05000000\n     test  standart_hata  1.22474487\n     test     serbestlik 23.00000000\n     test              t -2.61278906\n     test         p_cift  0.01555763\n     test             dz -0.53333333\n     test       kritik_t  2.06865761\n     test      hata_payi  2.53357780\n     test      alt_sinir -5.73357780\n     test      ust_sinir -0.66642220\n     test       genislik  5.06715560\n     test         reddet  1.00000000\n     test sifir_aralikta  0.00000000\n     test   guven_duzeyi  0.95000000\nH0 reddedilir \nDOGRULANDI: 17 kontrol degeri eslesiyor.\nGrafik: ciktilar/r/son-on-araligi.png\n",
+        "stderr": "",
+        "gecti": true
+      },
+      "python_export": {
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "python_r_eslesmesi": {
+        "gecti": true,
+        "farklar": [],
+        "rel_tol": 1e-09,
+        "abs_tol": 1e-15,
+        "python_sonuclari": [
+          {
+            "degisken": "girdi",
+            "olcu": "cift_sayisi",
+            "deger": "24.0"
+          },
+          {
+            "degisken": "girdi",
+            "olcu": "ortalama_fark",
+            "deger": "-3.2"
+          },
+          {
+            "degisken": "girdi",
+            "olcu": "fark_sapmasi",
+            "deger": "6.0"
+          },
+          {
+            "degisken": "girdi",
+            "olcu": "alfa",
+            "deger": "0.05"
+          },
+          {
+            "degisken": "test",
+            "olcu": "standart_hata",
+            "deger": "1.2247448713915892"
+          },
+          {
+            "degisken": "test",
+            "olcu": "serbestlik",
+            "deger": "23.0"
+          },
+          {
+            "degisken": "test",
+            "olcu": "t",
+            "deger": "-2.612789058968723"
+          },
+          {
+            "degisken": "test",
+            "olcu": "p_cift",
+            "deger": "0.015557631226912963"
+          },
+          {
+            "degisken": "test",
+            "olcu": "dz",
+            "deger": "-0.5333333333333333"
+          },
+          {
+            "degisken": "test",
+            "olcu": "kritik_t",
+            "deger": "2.0686576104190486"
+          },
+          {
+            "degisken": "test",
+            "olcu": "hata_payi",
+            "deger": "2.5335777990259096"
+          },
+          {
+            "degisken": "test",
+            "olcu": "alt_sinir",
+            "deger": "-5.73357779902591"
+          },
+          {
+            "degisken": "test",
+            "olcu": "ust_sinir",
+            "deger": "-0.6664222009740906"
+          },
+          {
+            "degisken": "test",
+            "olcu": "genislik",
+            "deger": "5.067155598051819"
+          },
+          {
+            "degisken": "test",
+            "olcu": "reddet",
+            "deger": "1.0"
+          },
+          {
+            "degisken": "test",
+            "olcu": "sifir_aralikta",
+            "deger": "0.0"
+          },
+          {
+            "degisken": "test",
+            "olcu": "guven_duzeyi",
+            "deger": "0.95"
+          }
+        ],
+        "r_sonuclari": [
+          {
+            "degisken": "girdi",
+            "olcu": "cift_sayisi",
+            "deger": "24"
+          },
+          {
+            "degisken": "girdi",
+            "olcu": "ortalama_fark",
+            "deger": "-3.2"
+          },
+          {
+            "degisken": "girdi",
+            "olcu": "fark_sapmasi",
+            "deger": "6"
+          },
+          {
+            "degisken": "girdi",
+            "olcu": "alfa",
+            "deger": "0.05"
+          },
+          {
+            "degisken": "test",
+            "olcu": "standart_hata",
+            "deger": "1.22474487139159"
+          },
+          {
+            "degisken": "test",
+            "olcu": "serbestlik",
+            "deger": "23"
+          },
+          {
+            "degisken": "test",
+            "olcu": "t",
+            "deger": "-2.61278905896872"
+          },
+          {
+            "degisken": "test",
+            "olcu": "p_cift",
+            "deger": "0.015557631226913"
+          },
+          {
+            "degisken": "test",
+            "olcu": "dz",
+            "deger": "-0.533333333333333"
+          },
+          {
+            "degisken": "test",
+            "olcu": "kritik_t",
+            "deger": "2.06865761041905"
+          },
+          {
+            "degisken": "test",
+            "olcu": "hata_payi",
+            "deger": "2.53357779902591"
+          },
+          {
+            "degisken": "test",
+            "olcu": "alt_sinir",
+            "deger": "-5.73357779902591"
+          },
+          {
+            "degisken": "test",
+            "olcu": "ust_sinir",
+            "deger": "-0.666422200974091"
+          },
+          {
+            "degisken": "test",
+            "olcu": "genislik",
+            "deger": "5.06715559805182"
+          },
+          {
+            "degisken": "test",
+            "olcu": "reddet",
+            "deger": "1"
+          },
+          {
+            "degisken": "test",
+            "olcu": "sifir_aralikta",
+            "deger": "0"
+          },
+          {
+            "degisken": "test",
+            "olcu": "guven_duzeyi",
+            "deger": "0.95"
+          }
+        ]
+      },
+      "degistirilmis_referans": {
+        "python": {
+          "exit_code": 1,
+          "stdout": "degisken           olcu     deger\n   girdi    cift_sayisi 24.000000\n   girdi  ortalama_fark -3.200000\n   girdi   fark_sapmasi  6.000000\n   girdi           alfa  0.050000\n    test  standart_hata  1.224745\n    test     serbestlik 23.000000\n    test              t -2.612789\n    test         p_cift  0.015558\n    test             dz -0.533333\n    test       kritik_t  2.068658\n    test      hata_payi  2.533578\n    test      alt_sinir -5.733578\n    test      ust_sinir -0.666422\n    test       genislik  5.067156\n    test         reddet  1.000000\n    test sifir_aralikta  0.000000\n    test   guven_duzeyi  0.950000\nH0 reddedilir\n",
+          "stderr": "Traceback (most recent call last):\n  File \"/tmp/b14-bkkel83j/ornek-01/cozum.py\", line 116, in <module>\n    main()\n  File \"/tmp/b14-bkkel83j/ornek-01/cozum.py\", line 109, in main\n    kontrol_et(sonuc, pd.read_csv(\"beklenen-sonuclar.csv\"))\n  File \"/tmp/b14-bkkel83j/ornek-01/cozum.py\", line 69, in kontrol_et\n    raise ValueError(\"Kontrol degerleri uyusmuyor.\")\nValueError: Kontrol degerleri uyusmuyor.\n"
+        },
+        "r": {
+          "exit_code": 1,
+          "stdout": " degisken           olcu       deger\n    girdi    cift_sayisi 24.00000000\n    girdi  ortalama_fark -3.20000000\n    girdi   fark_sapmasi  6.00000000\n    girdi           alfa  0.05000000\n     test  standart_hata  1.22474487\n     test     serbestlik 23.00000000\n     test              t -2.61278906\n     test         p_cift  0.01555763\n     test             dz -0.53333333\n     test       kritik_t  2.06865761\n     test      hata_payi  2.53357780\n     test      alt_sinir -5.73357780\n     test      ust_sinir -0.66642220\n     test       genislik  5.06715560\n     test         reddet  1.00000000\n     test sifir_aralikta  0.00000000\n     test   guven_duzeyi  0.95000000\nH0 reddedilir \n",
+          "stderr": "Error in kontrol_et(sonuc, read.csv(\"beklenen-sonuclar.csv\", stringsAsFactors = FALSE)) : \n  Kontrol degerleri uyusmuyor.\nCalls: source -> withVisible -> eval -> eval -> kontrol_et\nExecution halted\n"
+        }
+      },
+      "eksik_veri": {
+        "python": {
+          "exit_code": 1,
+          "stdout": "",
+          "stderr": "Traceback (most recent call last):\n  File \"/tmp/b14-bkkel83j/ornek-01/cozum.py\", line 116, in <module>\n    main()\n  File \"/tmp/b14-bkkel83j/ornek-01/cozum.py\", line 104, in main\n    veri = pd.read_csv(\"veri.csv\")\n           ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/pandas/io/parsers/readers.py\", line 1026, in read_csv\n    return _read(filepath_or_buffer, kwds)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/pandas/io/parsers/readers.py\", line 620, in _read\n    parser = TextFileReader(filepath_or_buffer, **kwds)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/pandas/io/parsers/readers.py\", line 1620, in __init__\n    self._engine = self._make_engine(f, self.engine)\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/pandas/io/parsers/readers.py\", line 1880, in _make_engine\n    self.handles = get_handle(\n                   ^^^^^^^^^^^\n  File \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/pandas/io/common.py\", line 873, in get_handle\n    handle = open(\n             ^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: 'veri.csv'\n"
+        },
+        "r": {
+          "exit_code": 1,
+          "stdout": "",
+          "stderr": "Error in file(file, \"rt\") : cannot open the connection\nCalls: source ... withVisible -> eval -> eval -> read.csv -> read.table -> file\nIn addition: Warning message:\nIn file(file, \"rt\") :\n  cannot open file 'veri.csv': No such file or directory\nExecution halted\n"
+        }
+      },
+      "gecti": true
+    }
+  ],
+  "gecti": true
+}

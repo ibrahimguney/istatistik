@@ -1,3 +1,9 @@
 /atolye/bolumler/b05/** -text
 /atolye/bolumler/b06/** -text
 /atolye/gercek/b06/** -text
+
+# Sayısal paket manifestleri satır sonları dahil baytları doğrular.
+/bolumler/b0[7-9]/** -text
+/bolumler/b1[0-4]/** -text
+/atolye/bolumler/b0[7-9]/** -text
+/atolye/bolumler/b1[0-4]/** -text

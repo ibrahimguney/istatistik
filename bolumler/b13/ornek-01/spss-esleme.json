@@ -1,0 +1,506 @@
+{
+  "expected_rows": {
+    "spss-ozet.csv": 1,
+    "spss-satirlar.csv": 16
+  },
+  "mappings": [
+    {
+      "degisken": "ozet",
+      "olcu": "hacim",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "hacim"
+    },
+    {
+      "degisken": "ozet",
+      "olcu": "saat_ort",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "saat_ort"
+    },
+    {
+      "degisken": "ozet",
+      "olcu": "puan_ort",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "puan_ort"
+    },
+    {
+      "degisken": "ozet",
+      "olcu": "sxx",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "sxx"
+    },
+    {
+      "degisken": "ozet",
+      "olcu": "syy",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "syy"
+    },
+    {
+      "degisken": "ozet",
+      "olcu": "sxy",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "sxy"
+    },
+    {
+      "degisken": "ozet",
+      "olcu": "sse",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "sse"
+    },
+    {
+      "degisken": "ozet",
+      "olcu": "mse",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "mse"
+    },
+    {
+      "degisken": "ozet",
+      "olcu": "serbestlik",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "serbestlik"
+    },
+    {
+      "degisken": "ozet",
+      "olcu": "korelasyon",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "korelasyon"
+    },
+    {
+      "degisken": "ozet",
+      "olcu": "r_kare",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "r_kare"
+    },
+    {
+      "degisken": "ozet",
+      "olcu": "egim",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "egim"
+    },
+    {
+      "degisken": "ozet",
+      "olcu": "sabit",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "sabit"
+    },
+    {
+      "degisken": "ozet",
+      "olcu": "se_egim",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "se_egim"
+    },
+    {
+      "degisken": "ozet",
+      "olcu": "se_sabit",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "se_sabit"
+    },
+    {
+      "degisken": "ozet",
+      "olcu": "t_egim",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "t_egim"
+    },
+    {
+      "degisken": "ozet",
+      "olcu": "p_egim",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "p_egim"
+    },
+    {
+      "degisken": "ozet",
+      "olcu": "kritik_t",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "kritik_t"
+    },
+    {
+      "degisken": "ozet",
+      "olcu": "egim_alt",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "egim_alt"
+    },
+    {
+      "degisken": "ozet",
+      "olcu": "egim_ust",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "egim_ust"
+    },
+    {
+      "degisken": "ozet",
+      "olcu": "sabit_alt",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "sabit_alt"
+    },
+    {
+      "degisken": "ozet",
+      "olcu": "sabit_ust",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "sabit_ust"
+    },
+    {
+      "degisken": "ozet",
+      "olcu": "yeni_saat",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "yeni_saat"
+    },
+    {
+      "degisken": "ozet",
+      "olcu": "ongoru",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "ongoru"
+    },
+    {
+      "degisken": "ozet",
+      "olcu": "se_ortalama",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "se_ortalama"
+    },
+    {
+      "degisken": "ozet",
+      "olcu": "se_birey",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "se_birey"
+    },
+    {
+      "degisken": "ozet",
+      "olcu": "ortalama_alt",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "ortalama_alt"
+    },
+    {
+      "degisken": "ozet",
+      "olcu": "ortalama_ust",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "ortalama_ust"
+    },
+    {
+      "degisken": "ozet",
+      "olcu": "birey_alt",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "birey_alt"
+    },
+    {
+      "degisken": "ozet",
+      "olcu": "birey_ust",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "birey_ust"
+    },
+    {
+      "degisken": "uydurulan",
+      "olcu": "satir_01",
+      "file": "spss-satirlar.csv",
+      "where": {
+        "satir": "1"
+      },
+      "column": "uydurulan"
+    },
+    {
+      "degisken": "uydurulan",
+      "olcu": "satir_02",
+      "file": "spss-satirlar.csv",
+      "where": {
+        "satir": "2"
+      },
+      "column": "uydurulan"
+    },
+    {
+      "degisken": "uydurulan",
+      "olcu": "satir_03",
+      "file": "spss-satirlar.csv",
+      "where": {
+        "satir": "3"
+      },
+      "column": "uydurulan"
+    },
+    {
+      "degisken": "uydurulan",
+      "olcu": "satir_04",
+      "file": "spss-satirlar.csv",
+      "where": {
+        "satir": "4"
+      },
+      "column": "uydurulan"
+    },
+    {
+      "degisken": "uydurulan",
+      "olcu": "satir_05",
+      "file": "spss-satirlar.csv",
+      "where": {
+        "satir": "5"
+      },
+      "column": "uydurulan"
+    },
+    {
+      "degisken": "uydurulan",
+      "olcu": "satir_06",
+      "file": "spss-satirlar.csv",
+      "where": {
+        "satir": "6"
+      },
+      "column": "uydurulan"
+    },
+    {
+      "degisken": "uydurulan",
+      "olcu": "satir_07",
+      "file": "spss-satirlar.csv",
+      "where": {
+        "satir": "7"
+      },
+      "column": "uydurulan"
+    },
+    {
+      "degisken": "uydurulan",
+      "olcu": "satir_08",
+      "file": "spss-satirlar.csv",
+      "where": {
+        "satir": "8"
+      },
+      "column": "uydurulan"
+    },
+    {
+      "degisken": "uydurulan",
+      "olcu": "satir_09",
+      "file": "spss-satirlar.csv",
+      "where": {
+        "satir": "9"
+      },
+      "column": "uydurulan"
+    },
+    {
+      "degisken": "uydurulan",
+      "olcu": "satir_10",
+      "file": "spss-satirlar.csv",
+      "where": {
+        "satir": "10"
+      },
+      "column": "uydurulan"
+    },
+    {
+      "degisken": "uydurulan",
+      "olcu": "satir_11",
+      "file": "spss-satirlar.csv",
+      "where": {
+        "satir": "11"
+      },
+      "column": "uydurulan"
+    },
+    {
+      "degisken": "uydurulan",
+      "olcu": "satir_12",
+      "file": "spss-satirlar.csv",
+      "where": {
+        "satir": "12"
+      },
+      "column": "uydurulan"
+    },
+    {
+      "degisken": "uydurulan",
+      "olcu": "satir_13",
+      "file": "spss-satirlar.csv",
+      "where": {
+        "satir": "13"
+      },
+      "column": "uydurulan"
+    },
+    {
+      "degisken": "uydurulan",
+      "olcu": "satir_14",
+      "file": "spss-satirlar.csv",
+      "where": {
+        "satir": "14"
+      },
+      "column": "uydurulan"
+    },
+    {
+      "degisken": "uydurulan",
+      "olcu": "satir_15",
+      "file": "spss-satirlar.csv",
+      "where": {
+        "satir": "15"
+      },
+      "column": "uydurulan"
+    },
+    {
+      "degisken": "uydurulan",
+      "olcu": "satir_16",
+      "file": "spss-satirlar.csv",
+      "where": {
+        "satir": "16"
+      },
+      "column": "uydurulan"
+    },
+    {
+      "degisken": "artik",
+      "olcu": "satir_01",
+      "file": "spss-satirlar.csv",
+      "where": {
+        "satir": "1"
+      },
+      "column": "artik"
+    },
+    {
+      "degisken": "artik",
+      "olcu": "satir_02",
+      "file": "spss-satirlar.csv",
+      "where": {
+        "satir": "2"
+      },
+      "column": "artik"
+    },
+    {
+      "degisken": "artik",
+      "olcu": "satir_03",
+      "file": "spss-satirlar.csv",
+      "where": {
+        "satir": "3"
+      },
+      "column": "artik"
+    },
+    {
+      "degisken": "artik",
+      "olcu": "satir_04",
+      "file": "spss-satirlar.csv",
+      "where": {
+        "satir": "4"
+      },
+      "column": "artik"
+    },
+    {
+      "degisken": "artik",
+      "olcu": "satir_05",
+      "file": "spss-satirlar.csv",
+      "where": {
+        "satir": "5"
+      },
+      "column": "artik"
+    },
+    {
+      "degisken": "artik",
+      "olcu": "satir_06",
+      "file": "spss-satirlar.csv",
+      "where": {
+        "satir": "6"
+      },
+      "column": "artik"
+    },
+    {
+      "degisken": "artik",
+      "olcu": "satir_07",
+      "file": "spss-satirlar.csv",
+      "where": {
+        "satir": "7"
+      },
+      "column": "artik"
+    },
+    {
+      "degisken": "artik",
+      "olcu": "satir_08",
+      "file": "spss-satirlar.csv",
+      "where": {
+        "satir": "8"
+      },
+      "column": "artik"
+    },
+    {
+      "degisken": "artik",
+      "olcu": "satir_09",
+      "file": "spss-satirlar.csv",
+      "where": {
+        "satir": "9"
+      },
+      "column": "artik"
+    },
+    {
+      "degisken": "artik",
+      "olcu": "satir_10",
+      "file": "spss-satirlar.csv",
+      "where": {
+        "satir": "10"
+      },
+      "column": "artik"
+    },
+    {
+      "degisken": "artik",
+      "olcu": "satir_11",
+      "file": "spss-satirlar.csv",
+      "where": {
+        "satir": "11"
+      },
+      "column": "artik"
+    },
+    {
+      "degisken": "artik",
+      "olcu": "satir_12",
+      "file": "spss-satirlar.csv",
+      "where": {
+        "satir": "12"
+      },
+      "column": "artik"
+    },
+    {
+      "degisken": "artik",
+      "olcu": "satir_13",
+      "file": "spss-satirlar.csv",
+      "where": {
+        "satir": "13"
+      },
+      "column": "artik"
+    },
+    {
+      "degisken": "artik",
+      "olcu": "satir_14",
+      "file": "spss-satirlar.csv",
+      "where": {
+        "satir": "14"
+      },
+      "column": "artik"
+    },
+    {
+      "degisken": "artik",
+      "olcu": "satir_15",
+      "file": "spss-satirlar.csv",
+      "where": {
+        "satir": "15"
+      },
+      "column": "artik"
+    },
+    {
+      "degisken": "artik",
+      "olcu": "satir_16",
+      "file": "spss-satirlar.csv",
+      "where": {
+        "satir": "16"
+      },
+      "column": "artik"
+    }
+  ]
+}

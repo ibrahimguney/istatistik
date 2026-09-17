@@ -1,0 +1,126 @@
+{
+  "expected_rows": {
+    "spss-ozet.csv": 1
+  },
+  "mappings": [
+    {
+      "degisken": "girdi",
+      "olcu": "cift_sayisi",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "cift_sayisi"
+    },
+    {
+      "degisken": "girdi",
+      "olcu": "ortalama_fark",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "ortalama_fark"
+    },
+    {
+      "degisken": "girdi",
+      "olcu": "fark_sapmasi",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "fark_sapmasi"
+    },
+    {
+      "degisken": "girdi",
+      "olcu": "alfa",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "alfa"
+    },
+    {
+      "degisken": "test",
+      "olcu": "standart_hata",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "standart_hata"
+    },
+    {
+      "degisken": "test",
+      "olcu": "serbestlik",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "serbestlik"
+    },
+    {
+      "degisken": "test",
+      "olcu": "t",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "t_degeri"
+    },
+    {
+      "degisken": "test",
+      "olcu": "p_cift",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "p_cift"
+    },
+    {
+      "degisken": "test",
+      "olcu": "dz",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "dz"
+    },
+    {
+      "degisken": "test",
+      "olcu": "kritik_t",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "kritik_t"
+    },
+    {
+      "degisken": "test",
+      "olcu": "hata_payi",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "hata_payi"
+    },
+    {
+      "degisken": "test",
+      "olcu": "alt_sinir",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "alt_sinir"
+    },
+    {
+      "degisken": "test",
+      "olcu": "ust_sinir",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "ust_sinir"
+    },
+    {
+      "degisken": "test",
+      "olcu": "genislik",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "genislik"
+    },
+    {
+      "degisken": "test",
+      "olcu": "reddet",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "reddet"
+    },
+    {
+      "degisken": "test",
+      "olcu": "sifir_aralikta",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "sifir_aralikta"
+    },
+    {
+      "degisken": "test",
+      "olcu": "guven_duzeyi",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "guven_duzeyi"
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "expected_rows": {
+    "spss-ozet.csv": 1
+  },
+  "mappings": [
+    {
+      "degisken": "ozet",
+      "olcu": "hacim",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "n"
+    },
+    {
+      "degisken": "ozet",
+      "olcu": "ortalama",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "ortalama"
+    },
+    {
+      "degisken": "ozet",
+      "olcu": "orneklem_sd",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "s"
+    },
+    {
+      "degisken": "ozet",
+      "olcu": "standart_hata",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "standart_hata"
+    },
+    {
+      "degisken": "ozet",
+      "olcu": "serbestlik",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "serbestlik"
+    },
+    {
+      "degisken": "GA95",
+      "olcu": "guven_duzeyi",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "duzey95"
+    },
+    {
+      "degisken": "GA95",
+      "olcu": "alpha",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "alpha95"
+    },
+    {
+      "degisken": "GA95",
+      "olcu": "kritik_t",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "kritik95"
+    },
+    {
+      "degisken": "GA95",
+      "olcu": "hata_payi",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "hata95"
+    },
+    {
+      "degisken": "GA95",
+      "olcu": "alt_sinir",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "alt95"
+    },
+    {
+      "degisken": "GA95",
+      "olcu": "ust_sinir",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "ust95"
+    },
+    {
+      "degisken": "GA95",
+      "olcu": "genislik",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "genislik95"
+    },
+    {
+      "degisken": "GA99",
+      "olcu": "guven_duzeyi",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "duzey99"
+    },
+    {
+      "degisken": "GA99",
+      "olcu": "alpha",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "alpha99"
+    },
+    {
+      "degisken": "GA99",
+      "olcu": "kritik_t",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "kritik99"
+    },
+    {
+      "degisken": "GA99",
+      "olcu": "hata_payi",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "hata99"
+    },
+    {
+      "degisken": "GA99",
+      "olcu": "alt_sinir",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "alt99"
+    },
+    {
+      "degisken": "GA99",
+      "olcu": "ust_sinir",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "ust99"
+    },
+    {
+      "degisken": "GA99",
+      "olcu": "genislik",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "genislik99"
+    }
+  ]
+}

@@ -1,0 +1,304 @@
+{
+  "expected_rows": {
+    "spss-ozet.csv": 1,
+    "spss-satirlar.csv": 4
+  },
+  "mappings": [
+    {
+      "degisken": "gozlenen",
+      "olcu": "Birinci_Basarili",
+      "file": "spss-satirlar.csv",
+      "where": {
+        "grup": "Birinci",
+        "sonuc": "Basarili"
+      },
+      "column": "frekans"
+    },
+    {
+      "degisken": "gozlenen",
+      "olcu": "Birinci_Basarisiz",
+      "file": "spss-satirlar.csv",
+      "where": {
+        "grup": "Birinci",
+        "sonuc": "Basarisiz"
+      },
+      "column": "frekans"
+    },
+    {
+      "degisken": "gozlenen",
+      "olcu": "Ikinci_Basarili",
+      "file": "spss-satirlar.csv",
+      "where": {
+        "grup": "Ikinci",
+        "sonuc": "Basarili"
+      },
+      "column": "frekans"
+    },
+    {
+      "degisken": "gozlenen",
+      "olcu": "Ikinci_Basarisiz",
+      "file": "spss-satirlar.csv",
+      "where": {
+        "grup": "Ikinci",
+        "sonuc": "Basarisiz"
+      },
+      "column": "frekans"
+    },
+    {
+      "degisken": "beklenen",
+      "olcu": "Birinci_Basarili",
+      "file": "spss-satirlar.csv",
+      "where": {
+        "grup": "Birinci",
+        "sonuc": "Basarili"
+      },
+      "column": "beklenen"
+    },
+    {
+      "degisken": "beklenen",
+      "olcu": "Birinci_Basarisiz",
+      "file": "spss-satirlar.csv",
+      "where": {
+        "grup": "Birinci",
+        "sonuc": "Basarisiz"
+      },
+      "column": "beklenen"
+    },
+    {
+      "degisken": "beklenen",
+      "olcu": "Ikinci_Basarili",
+      "file": "spss-satirlar.csv",
+      "where": {
+        "grup": "Ikinci",
+        "sonuc": "Basarili"
+      },
+      "column": "beklenen"
+    },
+    {
+      "degisken": "beklenen",
+      "olcu": "Ikinci_Basarisiz",
+      "file": "spss-satirlar.csv",
+      "where": {
+        "grup": "Ikinci",
+        "sonuc": "Basarisiz"
+      },
+      "column": "beklenen"
+    },
+    {
+      "degisken": "katki",
+      "olcu": "Birinci_Basarili",
+      "file": "spss-satirlar.csv",
+      "where": {
+        "grup": "Birinci",
+        "sonuc": "Basarili"
+      },
+      "column": "katki"
+    },
+    {
+      "degisken": "katki",
+      "olcu": "Birinci_Basarisiz",
+      "file": "spss-satirlar.csv",
+      "where": {
+        "grup": "Birinci",
+        "sonuc": "Basarisiz"
+      },
+      "column": "katki"
+    },
+    {
+      "degisken": "katki",
+      "olcu": "Ikinci_Basarili",
+      "file": "spss-satirlar.csv",
+      "where": {
+        "grup": "Ikinci",
+        "sonuc": "Basarili"
+      },
+      "column": "katki"
+    },
+    {
+      "degisken": "katki",
+      "olcu": "Ikinci_Basarisiz",
+      "file": "spss-satirlar.csv",
+      "where": {
+        "grup": "Ikinci",
+        "sonuc": "Basarisiz"
+      },
+      "column": "katki"
+    },
+    {
+      "degisken": "pearson_artik",
+      "olcu": "Birinci_Basarili",
+      "file": "spss-satirlar.csv",
+      "where": {
+        "grup": "Birinci",
+        "sonuc": "Basarili"
+      },
+      "column": "pearson_artik"
+    },
+    {
+      "degisken": "pearson_artik",
+      "olcu": "Birinci_Basarisiz",
+      "file": "spss-satirlar.csv",
+      "where": {
+        "grup": "Birinci",
+        "sonuc": "Basarisiz"
+      },
+      "column": "pearson_artik"
+    },
+    {
+      "degisken": "pearson_artik",
+      "olcu": "Ikinci_Basarili",
+      "file": "spss-satirlar.csv",
+      "where": {
+        "grup": "Ikinci",
+        "sonuc": "Basarili"
+      },
+      "column": "pearson_artik"
+    },
+    {
+      "degisken": "pearson_artik",
+      "olcu": "Ikinci_Basarisiz",
+      "file": "spss-satirlar.csv",
+      "where": {
+        "grup": "Ikinci",
+        "sonuc": "Basarisiz"
+      },
+      "column": "pearson_artik"
+    },
+    {
+      "degisken": "satir_orani",
+      "olcu": "Birinci_Basarili",
+      "file": "spss-satirlar.csv",
+      "where": {
+        "grup": "Birinci",
+        "sonuc": "Basarili"
+      },
+      "column": "satir_orani"
+    },
+    {
+      "degisken": "satir_orani",
+      "olcu": "Birinci_Basarisiz",
+      "file": "spss-satirlar.csv",
+      "where": {
+        "grup": "Birinci",
+        "sonuc": "Basarisiz"
+      },
+      "column": "satir_orani"
+    },
+    {
+      "degisken": "satir_orani",
+      "olcu": "Ikinci_Basarili",
+      "file": "spss-satirlar.csv",
+      "where": {
+        "grup": "Ikinci",
+        "sonuc": "Basarili"
+      },
+      "column": "satir_orani"
+    },
+    {
+      "degisken": "satir_orani",
+      "olcu": "Ikinci_Basarisiz",
+      "file": "spss-satirlar.csv",
+      "where": {
+        "grup": "Ikinci",
+        "sonuc": "Basarisiz"
+      },
+      "column": "satir_orani"
+    },
+    {
+      "degisken": "toplamlar",
+      "olcu": "toplam",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "toplam"
+    },
+    {
+      "degisken": "toplamlar",
+      "olcu": "satir_Birinci",
+      "file": "spss-satirlar.csv",
+      "where": {
+        "grup": "Birinci",
+        "sonuc": "Basarili"
+      },
+      "column": "satir_toplam"
+    },
+    {
+      "degisken": "toplamlar",
+      "olcu": "satir_Ikinci",
+      "file": "spss-satirlar.csv",
+      "where": {
+        "grup": "Ikinci",
+        "sonuc": "Basarili"
+      },
+      "column": "satir_toplam"
+    },
+    {
+      "degisken": "toplamlar",
+      "olcu": "sutun_Basarili",
+      "file": "spss-satirlar.csv",
+      "where": {
+        "grup": "Birinci",
+        "sonuc": "Basarili"
+      },
+      "column": "sutun_toplam"
+    },
+    {
+      "degisken": "toplamlar",
+      "olcu": "sutun_Basarisiz",
+      "file": "spss-satirlar.csv",
+      "where": {
+        "grup": "Birinci",
+        "sonuc": "Basarisiz"
+      },
+      "column": "sutun_toplam"
+    },
+    {
+      "degisken": "test",
+      "olcu": "ki_kare",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "ki_kare"
+    },
+    {
+      "degisken": "test",
+      "olcu": "serbestlik",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "serbestlik"
+    },
+    {
+      "degisken": "test",
+      "olcu": "p",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "p"
+    },
+    {
+      "degisken": "test",
+      "olcu": "cramer_v",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "cramer_v"
+    },
+    {
+      "degisken": "test",
+      "olcu": "min_beklenen",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "min_beklenen"
+    },
+    {
+      "degisken": "test",
+      "olcu": "alfa",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "alfa"
+    },
+    {
+      "degisken": "test",
+      "olcu": "reddet",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "reddet"
+    }
+  ]
+}

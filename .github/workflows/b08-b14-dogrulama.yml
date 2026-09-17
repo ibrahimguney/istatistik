@@ -1,0 +1,49 @@
+name: B08-B14 Python R dogrulama
+
+on:
+  push:
+    paths:
+      - 'bolumler/b*/**'
+      - 'atolye/**'
+      - 'code/*b08_b14.py'
+      - 'code/atolye_kontrol.py'
+      - 'code/spss_karsilastir.py'
+      - '.github/workflows/b08-b14-dogrulama.yml'
+  pull_request:
+    paths:
+      - 'bolumler/b*/**'
+      - 'atolye/**'
+      - 'code/**'
+      - '.github/workflows/b08-b14-dogrulama.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.13'
+      - name: Install numerical tools
+        run: |
+          python -m pip install numpy==2.4.1 pandas==2.3.3 scipy==1.17.0 matplotlib==3.10.8
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends r-base-core
+      - name: Run Python and R, compare values, reject corrupted inputs
+        run: python code/dogrula_b08_b14.py --rapor dogrulama/ci-sonuc.json
+      - name: Check publication, archives and links
+        run: python code/atolye_kontrol.py
+      - name: Save actual execution evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: python-r-dogrulama
+          path: dogrulama/ci-sonuc.json
+          if-no-files-found: warn

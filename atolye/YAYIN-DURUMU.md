@@ -1,3 +1,14 @@
+# B07–B14 — 17 Eylül 2026 güncellemesi
+
+14 bölümün çalışma sayfaları ve indirme paketleri katalogda yer alır.
+B08–B14 için 214, B07 için 21 referans Python ve gerçek R ile karşılaştırıldı.
+SPSS çalışma kabulü henüz yapılmadı; B08–B14 için dışa aktarım ve karşılaştırma araçları hazır.
+[Güncel günlük](dogrulama/python-r-2026-09-17.json).
+
+Aşağıdaki belgeler önceki yayın aşamalarının tarihsel kayıtlarıdır.
+
+---
+
 # B04 V1 — ek yayın kapsamı (15 Eylül 2026)
 
 B01–B03 korunarak iki B04 sayfası ve iki B04 indirmesi eklenir.

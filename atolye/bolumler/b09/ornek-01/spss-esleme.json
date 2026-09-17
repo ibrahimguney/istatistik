@@ -1,0 +1,147 @@
+{
+  "expected_rows": {
+    "spss-ozet.csv": 1
+  },
+  "mappings": [
+    {
+      "degisken": "girdi",
+      "olcu": "fark",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "fark"
+    },
+    {
+      "degisken": "girdi",
+      "olcu": "standart_hata",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "standart_hata"
+    },
+    {
+      "degisken": "girdi",
+      "olcu": "serbestlik",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "serbestlik"
+    },
+    {
+      "degisken": "girdi",
+      "olcu": "null_degeri",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "null_degeri"
+    },
+    {
+      "degisken": "girdi",
+      "olcu": "alfa",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "alfa"
+    },
+    {
+      "degisken": "test",
+      "olcu": "t",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "t_degeri"
+    },
+    {
+      "degisken": "test",
+      "olcu": "p_cift",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "p_cift"
+    },
+    {
+      "degisken": "test",
+      "olcu": "p_ust",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "p_ust"
+    },
+    {
+      "degisken": "test",
+      "olcu": "p_alt",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "p_alt"
+    },
+    {
+      "degisken": "test",
+      "olcu": "reddet_cift",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "reddet_cift"
+    },
+    {
+      "degisken": "test",
+      "olcu": "reddet_alfa001",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "reddet_alfa001"
+    },
+    {
+      "degisken": "test",
+      "olcu": "reddet_ust",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "reddet_ust"
+    },
+    {
+      "degisken": "test",
+      "olcu": "reddet_alt",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "reddet_alt"
+    },
+    {
+      "degisken": "aralik",
+      "olcu": "guven_duzeyi",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "guven_duzeyi"
+    },
+    {
+      "degisken": "aralik",
+      "olcu": "kritik_t",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "kritik_t"
+    },
+    {
+      "degisken": "aralik",
+      "olcu": "hata_payi",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "hata_payi"
+    },
+    {
+      "degisken": "aralik",
+      "olcu": "alt_sinir",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "alt_sinir"
+    },
+    {
+      "degisken": "aralik",
+      "olcu": "ust_sinir",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "ust_sinir"
+    },
+    {
+      "degisken": "aralik",
+      "olcu": "genislik",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "genislik"
+    },
+    {
+      "degisken": "aralik",
+      "olcu": "null_aralikta",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "null_aralikta"
+    }
+  ]
+}

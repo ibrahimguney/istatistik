@@ -1,0 +1,217 @@
+{
+  "expected_rows": {
+    "spss-ozet.csv": 1
+  },
+  "mappings": [
+    {
+      "degisken": "girdi",
+      "olcu": "hacim",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "hacim"
+    },
+    {
+      "degisken": "girdi",
+      "olcu": "ortalama",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "ortalama"
+    },
+    {
+      "degisken": "girdi",
+      "olcu": "standart_sapma",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "standart_sapma"
+    },
+    {
+      "degisken": "girdi",
+      "olcu": "referans",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "referans"
+    },
+    {
+      "degisken": "girdi",
+      "olcu": "alfa",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "alfa"
+    },
+    {
+      "degisken": "plan_girdi",
+      "olcu": "hacim",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "plan_hacim"
+    },
+    {
+      "degisken": "plan_girdi",
+      "olcu": "fark",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "plan_fark"
+    },
+    {
+      "degisken": "plan_girdi",
+      "olcu": "standart_sapma",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "plan_sapma"
+    },
+    {
+      "degisken": "plan_girdi",
+      "olcu": "alfa",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "plan_alfa"
+    },
+    {
+      "degisken": "plan_girdi",
+      "olcu": "hedef_guc",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "hedef_guc"
+    },
+    {
+      "degisken": "test",
+      "olcu": "serbestlik",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "serbestlik"
+    },
+    {
+      "degisken": "test",
+      "olcu": "standart_hata",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "standart_hata"
+    },
+    {
+      "degisken": "test",
+      "olcu": "t",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "t_degeri"
+    },
+    {
+      "degisken": "test",
+      "olcu": "p_cift",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "p_cift"
+    },
+    {
+      "degisken": "test",
+      "olcu": "cohen_d",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "cohen_d"
+    },
+    {
+      "degisken": "test",
+      "olcu": "kritik_t",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "kritik_t"
+    },
+    {
+      "degisken": "test",
+      "olcu": "alt_sinir",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "alt_sinir"
+    },
+    {
+      "degisken": "test",
+      "olcu": "ust_sinir",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "ust_sinir"
+    },
+    {
+      "degisken": "test",
+      "olcu": "hata_payi",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "hata_payi"
+    },
+    {
+      "degisken": "test",
+      "olcu": "genislik",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "genislik"
+    },
+    {
+      "degisken": "test",
+      "olcu": "reddet_cift",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "reddet_cift"
+    },
+    {
+      "degisken": "plan",
+      "olcu": "plan_d",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "plan_d"
+    },
+    {
+      "degisken": "plan",
+      "olcu": "plan_serbestlik",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "plan_serbestlik"
+    },
+    {
+      "degisken": "plan",
+      "olcu": "plan_kritik_t",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "plan_kritik_t"
+    },
+    {
+      "degisken": "plan",
+      "olcu": "merkezdisilik",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "merkezdisilik"
+    },
+    {
+      "degisken": "plan",
+      "olcu": "guc",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "guc"
+    },
+    {
+      "degisken": "plan",
+      "olcu": "beta",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "beta"
+    },
+    {
+      "degisken": "plan",
+      "olcu": "gereken_hacim",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "gereken_hacim"
+    },
+    {
+      "degisken": "plan",
+      "olcu": "onceki_guc",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "onceki_guc"
+    },
+    {
+      "degisken": "plan",
+      "olcu": "gereken_guc",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "gereken_guc"
+    }
+  ]
+}

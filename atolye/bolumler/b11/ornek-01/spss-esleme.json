@@ -1,0 +1,245 @@
+{
+  "expected_rows": {
+    "spss-ozet.csv": 1
+  },
+  "mappings": [
+    {
+      "degisken": "girdi",
+      "olcu": "hacim_1",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "hacim_1"
+    },
+    {
+      "degisken": "girdi",
+      "olcu": "ortalama_1",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "ortalama_1"
+    },
+    {
+      "degisken": "girdi",
+      "olcu": "standart_sapma_1",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "standart_sapma_1"
+    },
+    {
+      "degisken": "girdi",
+      "olcu": "hacim_2",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "hacim_2"
+    },
+    {
+      "degisken": "girdi",
+      "olcu": "ortalama_2",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "ortalama_2"
+    },
+    {
+      "degisken": "girdi",
+      "olcu": "standart_sapma_2",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "standart_sapma_2"
+    },
+    {
+      "degisken": "girdi",
+      "olcu": "cift_sayisi",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "cift_sayisi"
+    },
+    {
+      "degisken": "girdi",
+      "olcu": "ortalama_fark",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "ortalama_fark"
+    },
+    {
+      "degisken": "girdi",
+      "olcu": "fark_sapmasi",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "fark_sapmasi"
+    },
+    {
+      "degisken": "girdi",
+      "olcu": "alfa",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "alfa"
+    },
+    {
+      "degisken": "welch",
+      "olcu": "katki_1",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "katki_1"
+    },
+    {
+      "degisken": "welch",
+      "olcu": "katki_2",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "katki_2"
+    },
+    {
+      "degisken": "welch",
+      "olcu": "fark",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "w_fark"
+    },
+    {
+      "degisken": "welch",
+      "olcu": "standart_hata",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "w_se"
+    },
+    {
+      "degisken": "welch",
+      "olcu": "serbestlik",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "w_df"
+    },
+    {
+      "degisken": "welch",
+      "olcu": "t",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "w_t"
+    },
+    {
+      "degisken": "welch",
+      "olcu": "p_cift",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "w_p"
+    },
+    {
+      "degisken": "welch",
+      "olcu": "kritik_t",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "w_kritik"
+    },
+    {
+      "degisken": "welch",
+      "olcu": "hata_payi",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "w_pay"
+    },
+    {
+      "degisken": "welch",
+      "olcu": "alt_sinir",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "w_alt"
+    },
+    {
+      "degisken": "welch",
+      "olcu": "ust_sinir",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "w_ust"
+    },
+    {
+      "degisken": "welch",
+      "olcu": "genislik",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "w_genislik"
+    },
+    {
+      "degisken": "welch",
+      "olcu": "reddet_cift",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "w_reddet"
+    },
+    {
+      "degisken": "eslesmis",
+      "olcu": "standart_hata",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "es_se"
+    },
+    {
+      "degisken": "eslesmis",
+      "olcu": "serbestlik",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "es_df"
+    },
+    {
+      "degisken": "eslesmis",
+      "olcu": "t",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "es_t"
+    },
+    {
+      "degisken": "eslesmis",
+      "olcu": "p_cift",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "es_p"
+    },
+    {
+      "degisken": "eslesmis",
+      "olcu": "kritik_t",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "es_kritik"
+    },
+    {
+      "degisken": "eslesmis",
+      "olcu": "hata_payi",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "es_pay"
+    },
+    {
+      "degisken": "eslesmis",
+      "olcu": "alt_sinir",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "es_alt"
+    },
+    {
+      "degisken": "eslesmis",
+      "olcu": "ust_sinir",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "es_ust"
+    },
+    {
+      "degisken": "eslesmis",
+      "olcu": "genislik",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "es_genislik"
+    },
+    {
+      "degisken": "eslesmis",
+      "olcu": "reddet_cift",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "es_reddet"
+    },
+    {
+      "degisken": "eslesmis",
+      "olcu": "dz",
+      "file": "spss-ozet.csv",
+      "where": {},
+      "column": "dz"
+    }
+  ]
+}
